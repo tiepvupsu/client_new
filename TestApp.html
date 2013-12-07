@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+    	<head>
+    		<meta charset="UTF-8">
+    		<title>TestApp</title>
+    		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    		<link rel="shortcut icon" href="images/favicon.png">
+    		<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+            <link rel="stylesheet" href="css/ResetCss.css">
+    		<link rel="stylesheet" href="css/TestApp.css">
+    		<link rel="stylesheet" href="css/jquery.mobile.structure-1.3.2.css">
+    		<link rel="stylesheet" href="css/jquery.mobile.theme-1.3.2.css">
+    		<link rel="stylesheet" href="css/jquery.mobile-1.3.2.css">
+    		<script src="js/jquery-1.10.2.js"></script>
+    		<script src="js/jquery.mobile-1.3.2.js"></script>
+    		<script src="js/xml2json.js"></script>
+		    <script src="js/md5.js"></script>
+		    <script src="js/common.js"></script>
+    		
+    	</head>
+<body id="content" >
+
+<!--application UI goes here-->
+<div id="page-addsite" data-role="page" data-transition="flip">
+    <div  data-role="header" >
+        <a id="bexit" data-transition="slide">Exit</a>
+        <h1>Login</h1>
+        <a  data-icon="grid" data-mini="true" data-inline="true" id="bsave"> Connect</a>
+    </div>
+    <div data-role="content">
+		<div class="whiteroundtable">
+            <div data-role="fieldcontain">
+                <label for="isiteurl"><span data-lang="siteurl">Site URL</span></label>
+                <input type="url" name="siteurl" id="isiteurl" value="http://localhost/moodle"  />
+            </div>
+            <div data-role="fieldcontain">
+                <label for="iusername"><span data-lang="username">Username</span></label>
+                <input type="text" name="username" id="iusername" value=""  />
+            </div>
+            <div data-role="fieldcontain">
+                <label for="ipassword"><span data-lang="password">Password</span></label>
+                <input type="password" name="password" id="ipassword" value=""  />
+            </div>
+        </div>        
+
+	</div>
+    <div  data-role="footer">     
+        <h1>Footer</h1>  
+    </div>
+</div>
+    		
+
+<!--application UI end here-->
+			<script type="text/javascript" src="js/pages/addsite.js"></script>
+    		<script src="js/initOptions.js"></script>
+    		<script src="js/TestApp.js"></script>
+    		<script src="js/messages.js"></script>
+    	</body>
+</html>

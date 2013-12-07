@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<toeic>
+<content code="toeic01">
+<listening>
+	<part1>
+		<questions>		
+			<question>
+				<id>1</id>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>2</id>
+				<answer>1</answer>	
+			</question>
+			<question>
+				<id>3</id>
+				<answer>3</answer>	
+			</question>
+			<question>
+				<id>4</id>
+				<answer>4</answer>	
+			</question>
+			<question>
+				<id>5</id>
+				<answer>1</answer>	
+			</question>
+			<question>
+				<id>6</id>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>7</id>
+				<answer>1</answer>	
+			</question>
+			<question>
+				<id>8</id>
+				<answer>4</answer>	
+			</question>
+			<question>
+				<id>9</id>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>10</id>
+				<answer>1</answer>	
+			</question>
+		</questions>
+	</part1>
+
+	<part2>
+		<questions>		
+			<question>
+				<id>11</id>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>12</id>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>13</id>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>14</id>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>15</id>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>16</id>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>17</id>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>18</id>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>19</id>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>20</id>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>21</id>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>22</id>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>23</id>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>24</id>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>25</id>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>26</id>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>27</id>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>28</id>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>29</id>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>30</id>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>31</id>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>32</id>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>33</id>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>34</id>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>35</id>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>36</id>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>37</id>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>38</id>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>39</id>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>40</id>
+				<answer>2</answer>	
+			</question>
+		</questions>
+	</part2>
+
+	<part3>
+		<questions>		
+			<question>
+				<id>41</id>
+				<description>What does the man ask the woman?</description>
+				<choice1>Information about the project materials</choice1>
+				<choice2>The budget for the project</choice2>
+				<choice3>The deadline of the report</choice3>
+				<choice4>The location of the building</choice4>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>42</id>
+				<description>What does the woman suggest?</description>
+				<choice1>Choosing the cheaper product</choice1>
+				<choice2>Handing in the report as soon as possible</choice2>
+				<choice3>Considering both options carefully</choice3>
+				<choice4>Going straight to the construction site</choice4>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>43</id>
+				<description>What likely is their relationship?</description>
+				<choice1>They are business partners.</choice1>
+				<choice2>The man is the woman’s boss.</choice2>
+				<choice3>The woman is the man’s boss.</choice3>
+				<choice4>The woman is selling the product to the man.</choice4>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>44</id>
+				<description>What are they talking about?</description>
+				<choice1>A kind of food</choice1>
+				<choice2>A promotion</choice2>
+				<choice3>A sale</choice3>
+				<choice4>A bank account</choice4>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>45</id>
+				<description>Who is the woman?</description>
+				<choice1>A potential customer</choice1>
+				<choice2>A patron of the restaurant</choice2>
+				<choice3>Representative for a food supplier</choice3>
+				<choice4>An inspector</choice4>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>46</id>
+				<description>What is the earliest time the woman can use the restaurant card?</description>
+				<choice1>Right now</choice1>
+				<choice2>In the afternoon</choice2>
+				<choice3>In the evening</choice3>
+				<choice4>Tomorrow</choice4>
+				
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>47</id>
+				<description>How will they get to the airport?</description>
+				<choice1>By taxi</choice1>
+				<choice2>By subway</choice2>
+				<choice3>By bus</choice3>
+				<choice4>By train</choice4>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>48</id>
+				<description>Where will they meet?</description>
+				<choice1>At the airport</choice1>
+				<choice2>At the office</choice2>
+				<choice3>At the train station</choice3>
+				<choice4>At the bus stop</choice4>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>49</id>
+				<description>What time will they leave for the airport?</description>
+				<choice1>5:00</choice1>
+				<choice2>5:30</choice2>
+				<choice3>6:00</choice3>
+				<choice4>7:30</choice4>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>50</id>
+				<description>Where does the conversation take place?</description>
+				<choice1>At a restaurant</choice1>
+				<choice2>At a clock store</choice2>
+				<choice3>At a train station</choice3>
+				<choice4>At a news stand</choice4>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>51</id>
+				<description>What does the man want?</description>
+				<choice1>A ticket</choice1>
+				<choice2>A clock</choice2>
+				<choice3>Something to read</choice3>
+				<choice4>Something to eat</choice4>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>52</id>
+				<description>What does the woman offer to do?</description>
+				<choice1>Help the man find what he is interested in</choice1>
+				<choice2>Determine the price of the item</choice2>
+				<choice3>Find a new model</choice3>
+				<choice4>Sell him the item at a cheaper price</choice4>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>53</id>
+				<description>What did the man intend to do at 3 o'clock?</description>
+				<choice1>Go to the airport</choice1>
+				<choice2>Call someone</choice2>
+				<choice3>Write a report</choice3>
+				<choice4>Have a meeting</choice4>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>54</id>
+				<description>What does the woman suggest?</description>
+				<choice1>Setting up a new branch</choice1>
+				<choice2>Going to the airport</choice2>
+				<choice3>Reschedule the meeting</choice3>
+				<choice4>Picking up someone from the airport</choice4>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>55</id>
+				<description>What is their likely relationship?</description>
+				<choice1>Two close friends</choice1>
+				<choice2>Boss and secretary</choice2>
+				<choice3>A hotel receptionist and a customer</choice3>
+				<choice4>A travel representative and a tourist</choice4>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>56</id>
+				<description>Where are they likely to be working at?</description>
+				<choice1>A restaurant</choice1>
+				<choice2>A department store</choice2>
+				<choice3>An accounting firm</choice3>
+				<choice4>A beauty salon</choice4>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>57</id>
+				<description>What does the woman expect</description>
+				<choice1>A bonus</choice1>
+				<choice2>A tax refund</choice2>
+				<choice3>A gift card</choice3>
+				<choice4>A reimbursement</choice4>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>58</id>
+				<description>Why did the man know the information</description>
+				<choice1>He listened to the news</choice1>
+				<choice2>He happened to overhear the conversation</choice2>
+				<choice3>He read the memorandum</choice3>
+				<choice4>He got a notice about it</choice4>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>59</id>
+				<description>What is their likely relationship</description>
+				<choice1>Two weathermen</choice1>
+				<choice2>A taxi driver and a customer</choice2>
+				<choice3>A shop assistant and a customer</choice3>
+				<choice4>Two co-workers</choice4>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>60</id>
+				<description>What may happen if the current weather situation continues</description>
+				<choice1>The airport will be closed</choice1>
+				<choice2>The road will be widened</choice2>
+				<choice3>The TV station may be closed temporarily</choice3>
+				<choice4>They may not have to work</choice4>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>61</id>
+				<description>What do they need to wait for</description>
+				<choice1>A notice from the weather station</choice1>
+				<choice2>The decision from someone else</choice2>
+				<choice3>Their boss' arrival</choice3>
+				<choice4>The final decision from the meeting</choice4>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>62</id>
+				<description>Where is the woman during his conversation</description>
+				<choice1>At the bank</choice1>
+				<choice2>In the street</choice2>
+				<choice3>At the post office</choice3>
+				<choice4>At a supermarket</choice4>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>63</id>
+				<description>What advice does the man give the woman</description>
+				<choice1>She should ask for her rights</choice1>
+				<choice2>She needs to consult someone else</choice2>
+				<choice3>She should close early</choice3>
+				<choice4>She should hurry</choice4>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>64</id>
+				<description>What can be said about the man</description>
+				<choice1>He is very helpful</choice1>
+				<choice2>He is humorous</choice2>
+				<choice3>He is arrogant</choice3>
+				<choice4>He is creative</choice4>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>65</id>
+				<description>Why does the man come back late</description>
+				<choice1>Because he has a sudden business trip</choice1>
+				<choice2>Because he has to prepare a contract</choice2>
+				<choice3>Because he had an argument with the customers</choice3>
+				<choice4>Because he has to talk with the partner over some terms</choice4>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>66</id>
+				<description>What does the customer not agree to with their company</description>
+				<choice1>Material costs</choice1>
+				<choice2>Project's deadline</choice2>
+				<choice3>Termination term</choice3>
+				<choice4>Employee's skills</choice4>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>67</id>
+				<description>What can be inferred from the conversation</description>
+				<choice1>The man will stay another day</choice1>
+				<choice2>The man will stay for half a week</choice2>
+				<choice3>The man did not prepare carefully for the meeting</choice3>
+				<choice4>The man is unqualified</choice4>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>68</id>
+				<description>Why is the man so excited?</description>
+				<choice1>Because he got a bonus</choice1>
+				<choice2>Because he got a promotion</choice2>
+				<choice3>Because he was eligible to retire</choice3>
+				<choice4>Because he won an award</choice4>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>69</id>
+				<description>What is the man supposed to do?</description>
+				<choice1>Make a speech in front of all his colleagues</choice1>
+				<choice2>Sign in a guarantee</choice2>
+				<choice3>Make a presentation</choice3>
+				<choice4>Share his experience</choice4>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>70</id>
+				<description>What can be said about the woman?</description>
+				<choice1>She works very well</choice1>
+				<choice2>She is helpful</choice2>
+				<choice3>She is sensitive.</choice3>
+				<choice4>She is courageous</choice4>
+				<answer>2</answer>	
+			</question>
+		</questions>
+	</part3>
+	<part4>
+		<questions>
+			<question>
+				<id>71</id>
+				<description>What is the advertisement for?</description>
+				<choice1>Hiring employees</choice1>
+				<choice2>Selling a product</choice2>
+				<choice3>Introducing a product</choice3>
+				<choice4>Introducing a service</choice4>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>72</id>
+				<description>What is NOT a requirement for candidates?</description>
+				<choice1>Creativity</choice1>
+				<choice2>Enthusiasm</choice2>
+				<choice3>A Ph.D Degree</choice3>
+				<choice4>At least 5 years of experience</choice4>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>73</id>
+				<description>What should candidates do to apply?</description>
+				<choice1>Come for an interview</choice1>
+				<choice2>Telephone for an interview</choice2>
+				<choice3>Mail their cover letters and resumes</choice3>
+				<choice4>Submit their resumes in person</choice4>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>74</id>
+				<description>At what time of day is this announcement being made?</description>
+				<choice1>In the morning</choice1>
+				<choice2>In the afternoon</choice2>
+				<choice3>In the evening</choice3>
+				<choice4>At night</choice4>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>75</id>
+				<description>Why are they apologizing?</description>
+				<choice1>Heavy traffic</choice1>
+				<choice2>A short delay</choice2>
+				<choice3>Bad weather</choice3>
+				<choice4>Overbooking</choice4>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>76</id>
+				<description>What is offered to passengers?</description>
+				<choice1>Free accommodation</choice1>
+				<choice2>Free meals</choice2>
+				<choice3>Free drinks</choice3>
+				<choice4>Free tickets</choice4>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>77</id>
+				<description>What is Ms. Smith going to do?</description>
+				<choice1>Retire</choice1>
+				<choice2>Transfer</choice2>
+				<choice3>Apply for a job</choice3>
+				<choice4>Get married</choice4>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>78</id>
+				<description>What is Ms. Smith NOT admired for?</description>
+				<choice1>Optimistic outlook</choice1>
+				<choice2>Punctuality</choice2>
+				<choice3>Bright attitude</choice3>
+				<choice4>Efficient manner</choice4>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>79</id>
+				<description>Where will the celebration take place?</description>
+				<choice1>At a hotel</choice1>
+				<choice2>In the conference room</choice2>
+				<choice3>In Ms. Smith’s office</choice3>
+				<choice4>At a restaurant</choice4>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>80</id>
+				<description>What will happen right after the film showing?</description>
+				<choice1>A discussion</choice1>
+				<choice2>A concert</choice2>
+				<choice3>A book sale</choice3>
+				<choice4>A charity activity</choice4>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>81</id>
+				<description>What is true about the painting class?</description>
+				<choice1>It will be held in Room 3402</choice1>
+				<choice2>It will be held in the morning</choice2>
+				<choice3>It requires pre-registration</choice3>
+				<choice4>It is for elementary guests</choice4>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>82</id>
+				<description>What should listeners do for more information?</description>
+				<choice1>Send an email</choice1>
+				<choice2>Make a call</choice2>
+				<choice3>Go in person</choice3>
+				<choice4>Send a letter</choice4>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>83</id>
+				<description>When did the Kenyan Minister of Trade visit Uganda?</description>
+				<choice1>Today</choice1>
+				<choice2>Last week</choice2>
+				<choice3>Yesterday morning</choice3>
+				<choice4>Last January</choice4>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>84</id>
+				<description>What is the topic of their talks?</description>
+				<choice1>The medical relationship</choice1>
+				<choice2>The trade relationship</choice2>
+				<choice3>The education relationship</choice3>
+				<choice4>The politics relationship</choice4>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>85</id>
+				<description>When was the first trade pact signed between the two countries?</description>
+				<choice1>Six months ago</choice1>
+				<choice2>Last week</choice2>
+				<choice3>Last January</choice3>
+				<choice4>Today</choice4>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>86</id>
+				<description>Where will it rain?</description>
+				<choice1>In the Pacific Northwest</choice1>
+				<choice2>Along the central and southern Pacific coast</choice2>
+				<choice3>In the North</choice3>
+				<choice4>In all the places above</choice4>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>87</id>
+				<description>What is NOT true about the weather along the central and southern Pacific coast?</description>
+				<choice1>Fair skies</choice1>
+				<choice2>Low humidity</choice2>
+				<choice3>No rain</choice3>
+				<choice4>Thunderstorms</choice4>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>88</id>
+				<description>How long will it NOT rain in the North?</description>
+				<choice1>3 days</choice1>
+				<choice2>3 weeks</choice2>
+				<choice3>3 months</choice3>
+				<choice4>3 years</choice4>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>89</id>
+				<description>In what field does Universal Corporation operate?</description>
+				<choice1>Medicine</choice1>
+				<choice2>Garment</choice2>
+				<choice3>Construction</choice3>
+				<choice4>Education</choice4>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>90</id>
+				<description>Where will Mr. Lewis be working in his new position?</description>
+				<choice1>In Paris</choice1>
+				<choice2>In Hong Kong</choice2>
+				<choice3>In New York</choice3>
+				<choice4>In Tokyo</choice4>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>91</id>
+				<description>When will Mr. Lewis start his new post?</description>
+				<choice1>In early March</choice1>
+				<choice2>In mid-March</choice2>
+				<choice3>In late March</choice3>
+				<choice4>No information</choice4>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>92</id>
+				<description>Why is this announcement being made?</description>
+				<choice1>Bad weather</choice1>
+				<choice2>Fine weather</choice2>
+				<choice3>Underway construction</choice3>
+				<choice4>Heavy traffic</choice4>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>93</id>
+				<description>What are commuters advised to do?</description>
+				<choice1>Go to work on Monday</choice1>
+				<choice2>Dial a number</choice2>
+				<choice3>Stay home</choice3>
+				<choice4>Drive slowly</choice4>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>94</id>
+				<description>When will temperatures be higher?</description>
+				<choice1>By Friday afternoon</choice1>
+				<choice2>By Saturday afternoon</choice2>
+				<choice3>By Sunday afternoon</choice3>
+				<choice4>By Monday afternoon</choice4>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>95</id>
+				<description>What was the weather in the previous months?</description>
+				<choice1>Cool and dry</choice1>
+				<choice2>Sunny</choice2>
+				<choice3>Rainy</choice3>
+				<choice4>Cold and dry</choice4>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>96</id>
+				<description>What will the weather in the afternoon be like?</description>
+				<choice1>Dry and cool</choice1>
+				<choice2>Dry and sunny</choice2>
+				<choice3>Dry and cloudy</choice3>
+				<choice4>Wet and cloudy</choice4>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>97</id>
+				<description>What is true about the rains this week?</description>
+				<choice1>They can be dangerous.</choice1>
+				<choice2>They can last very long</choice2>
+				<choice3>They will not be very heavy</choice3>
+				<choice4>They are expected in the afternoon</choice4>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>98</id>
+				<description>By whom is this announcement most likely to be made?</description>
+				<choice1>The high school</choice1>
+				<choice2>The mayor</choice2>
+				<choice3>City Hall</choice3>
+				<choice4>The musicians</choice4>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>99</id>
+				<description>When is the concert?</description>
+				<choice1>Before school</choice1>
+				<choice2>At eight in the morning</choice2>
+				<choice3>At eight in the evening</choice3>
+				<choice4>After school</choice4>
+				<answer>2</answer>	
+			</question>
+			<question>
+				<id>100</id>
+				<description>How many seats are available for the event?</description>
+				<choice1>100</choice1>
+				<choice2>405</choice2>
+				<choice3>400</choice3>
+				<choice4>500</choice4>
+				<answer>2</answer>	
+			</question>
+		</questions>
+	</part4>
+</listening>
+
+<reading>
+</reading>
+
+</content>	
+</toeic>
