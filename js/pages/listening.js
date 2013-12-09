@@ -3,16 +3,20 @@
 	//load audio script
 	//Declaration here for global varible :D, not declare them in function () , caus this act will cause them tranlate into local varible- sorry for my bad english if it's not good
 	var audioUrl = "../toeic01/Toeic01.mp3";
-	var currentQues = 41;
+	var currentQues = 0;
 	var urlXML="../toeic01/toeic01new.xml";
+	var urlImg="../toeic01/lis_img/";
 	var isPraceticeMode="";
 	var lastAns=-1;
 	var ansQues=[];
 	var codeName="toeic01";
+	var maxQues=48;
+
 
 	//init
 	sessionStorage.clear();
 
+	
 	function changeAudio(url){
 			var audio = $("#audioPlayer");
 			$("#audioSrc").attr('src', url);
@@ -34,24 +38,63 @@
 
 	function parseXml(xml){
 		$(xml).find('question').each(function(){
-				var id = $(this).attr('id');
-				var part = $(this).attr('part');
+				var order = $(this).attr('order');
 				var description = $(this).find('description').text();
 				var choiceA = $(this).find('a').text();
 				var choiceB = $(this).find('b').text();
 				var choiceC = $(this).find('c').text();
 				var choiceD = $(this).find('d').text();
-				if(id == currentQues){
-					$("#quesTitle").html("Question " + id);
-					$("#quesDetail").html(description);
-					$("#lbChoiceA span.ui-btn-text").html("(A) " + choiceA);
-					$("#lbChoiceB span.ui-btn-text").html("(B) " + choiceB);
-					$("#lbChoiceC span.ui-btn-text").html("(C) " + choiceC);
-					$("#lbChoiceD span.ui-btn-text").html("(D) " + choiceD);
+				var part=0;
+
+				if (11>order){
+					part=1;
+				}else if (41>order){
+					part=2;
+				}else if (101>order){
+					part=3;
 				}
-				else{
-					console.log("id null");
+				switch (part){
+						case 1:
+							description="<image class='imglis' src="+urlImg+$(this).find('description').attr('image')+".jpg />";
+							if(0==order){
+								$("div.choices").hide();
+							}else{
+								$("div.choices").show();
+							}	
+
+							break;
+						case 2:
+
+							break;
+						case 3:
+							
+							break;
+						case 4:
+
+							break;
+						default:
+							break;
+					}
+				if(order == currentQues){
+							$("#quesTitle").html("Question " + order);
+							$("#quesDetail").html(description);
+							$("#lbChoiceA span.ui-btn-text").html("(A) " + choiceA);
+							$("#lbChoiceB span.ui-btn-text").html("(B) " + choiceB);
+							$("#lbChoiceC span.ui-btn-text").html("(C) " + choiceC);
+							//$("#lbChoiceD span.ui-btn-text").html("(D) " + choiceD);
+
+							console.log(part+ " --" + order +" --"+description);
+							// need to hide the D answer, part have just 3 choices.
+							if (2==part){
+								$("div.ui-radio:last").hide();
+							}else{
+								$("#lbChoiceD span.ui-btn-text").html("(D) " + choiceD);
+								$("div.ui-radio:last").show();
+							}
+
 				}
+				
+				
 			});
 		}
 
@@ -124,6 +167,9 @@
 			clearLastAnswer();
 
 			currentQues++;
+			if (currentQues>maxQues){
+				currentQues=0;
+			}
 			$("input[type='radio'].radio-ans").prop("checked",false).checkboxradio("refresh");
 			//$("input[name=radio-choice]").attr('checked', false).checkboxradio('refresh',true);
 			//check if question has been already ans
@@ -152,7 +198,9 @@
 			clearLastAnswer();
 
 			currentQues--;
-
+			if (currentQues<0){
+				currentQues=maxQues;	
+			}
 			//$("input[name=radio-choice]").attr('checked', false).checkboxradio('refresh',true);
 			$("input[type='radio'].radio-ans").prop("checked",false).checkboxradio("refresh");
 			//check if question has been already ans

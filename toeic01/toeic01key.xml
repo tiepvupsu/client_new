@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<toeic>
+<content code="toeic01">
+	<question id='1' answer='b' />
+	<question id='2' answer='c' />
+	<question id='3' answer='d' />
+	<question id='4' answer='c' />
+	<question id='5' answer='c' />
+	
+	<question id='11' answer='b' />
+	<question id='12' answer='a' />
+	<question id='13' answer='c' />
+	<question id='14' answer='a' />
+	<question id='15' answer='a' />
+	<question id='16' answer='b' />
+	<question id='17' answer='a' />
+	<question id='18' answer='b' />
+	<question id='19' answer='b' />
+	<question id='20' answer='a' />
+	<question id='21' answer='a' />
+	<question id='22' answer='c' />
+	<question id='23' answer='a' />
+	<question id='24' answer='a' />
+	<question id='25' answer='c' />
+	<question id='26' answer='b' />
+	<question id='27' answer='c' />
+	<question id='28' answer='c' />
+	<question id='29' answer='a' />
+	<question id='30' answer='a' />
+	<question id='31' answer='a' />
+	<question id='32' answer='a' />
+	<question id='33' answer='b' />
+	<question id='34' answer='b' />
+	<question id='35' answer='b' />
+	<question id='36' answer='a' />
+	<question id='37' answer='b' />
+	<question id='38' answer='a' />
+	<question id='39' answer='a' />
+	<question id='40' answer='c' />
+	<question id='41' answer='d' />
+	<question id='42' answer='b' />
+	<question id='43' answer='d' />
+	<question id='44' answer='c' />
+	<question id='45' answer='b' />
+	
+	<question id='71' answer='b' />
+	<question id='72' answer='c' />
+	<question id='73' answer='a' />
+	
+	<question id='101' answer='d' />
+	<question id='102' answer='d' />
+	<question id='103' answer='c' />
+	<question id='104' answer='a' />
+	<question id='105' answer='a' />
+	
+	<question id='141' answer='d' />
+	<question id='142' answer='b' />
+	<question id='143' answer='a' />
+	<question id='144' answer='a' />
+	<question id='145' answer='b' />
+	
+	<question id='153' answer='b' />
+	<question id='154' answer='a' />
+</content>	
+</toeic>
