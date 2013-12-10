@@ -3,23 +3,25 @@
 	//load audio script
 	//Declaration here for global varible :D, not declare them in function () , caus this act will cause them tranlate into local varible- sorry for my bad english if it's not good
 	var audioUrl = "../toeic01/Toeic01.mp3";
-	var currentQues = 0;
+	var currentQues = 1;
 	var urlXML="../toeic01/toeic01new.xml";
+	var urlXMLKey="../toeic01/toeic01key.xml";
 	var urlImg="../toeic01/lis_img/";
-	var isPraceticeMode="";
+	var isPraceticeMode=true;//set mode pratice or test
 	var lastAns=-1;
 	var ansQues=[];
 	var codeName="toeic01";
-	var maxQues=48;
-
-
+	var maxQues=45;
+	var correctAns=0;
+	var mark=10;
 	//init
 	sessionStorage.clear();
-
+	$("div.result").hide();
 	
 	function changeAudio(url){
 			var audio = $("#audioPlayer");
 			$("#audioSrc").attr('src', url);
+			audio.seekable=false;
 	    	/*audio[0].pause();
 		    audio[0].load();
 		    audio[0].play();*/
@@ -159,6 +161,9 @@
 			console.log((container));
 			console.log("current aswer is "+ans);
 		}
+		function getAllAnswer(){
+
+		}
 		//next question
 		$("#btnNextQues").click(function() {
 			console.clear();
@@ -168,7 +173,7 @@
 
 			currentQues++;
 			if (currentQues>maxQues){
-				currentQues=0;
+				currentQues=1;
 			}
 			$("input[type='radio'].radio-ans").prop("checked",false).checkboxradio("refresh");
 			//$("input[name=radio-choice]").attr('checked', false).checkboxradio('refresh',true);
@@ -198,7 +203,7 @@
 			clearLastAnswer();
 
 			currentQues--;
-			if (currentQues<0){
+			if (currentQues<1){
 				currentQues=maxQues;	
 			}
 			//$("input[name=radio-choice]").attr('checked', false).checkboxradio('refresh',true);
@@ -216,7 +221,46 @@
 				dataType: "xml",
 				success: parseXml
 			});
-	
+			
+			
+		});
+		
+		function getAnswerKey(xml){
+			$(xml).find('question').each(function(){
+				var order = $(this).attr('order');
+				var key = $(this).attr('answer');
+				console.log(order+" "+key);
+				
+				if (null!==getSavedAnswer(order)){
+					if (getSavedAnswer(order)==key){
+						++correctAns;
+					}
+				}
+
+
+			});
+			console.log("correct answer "+correctAns);
+			
+			$("div.main").fadeOut('slow/400/fast', function() {
+				
+			});
+			$("div.result").fadeIn('slow/400/fast', function() {
+				$(this).find(".correctLis").html(correctAns);
+			});
+
+		}
+		$("#btnSumit").click(function(event) {
+			/* Act on the event */
+			//event.preventDefault();
+			
+			mark=5;
+			console.log("checking answer...");
+			$.ajax({
+				type: "GET",
+				url: urlXMLKey,
+				dataType: "xml",
+				success: getAnswerKey
+			});
 			
 		});
 

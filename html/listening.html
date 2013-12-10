@@ -21,22 +21,24 @@
 	<!--application UI goes here-->
 	<section id="page" data-role="page">
 	    <header data-theme="a" data-role="header">
-	        <a data-role="button" data-theme="b" href="#page1" data-icon="check" data-iconpos="right"
-	        class="ui-btn-right">
+	        <a data-rel="dialog" data-transition="pop" data-theme="b" href="#" data-icon="check" data-iconpos="right"
+	        class="ui-btn-right" id="btnSumit">
 	            Submit
 	        </a>
 	        <a data-role="button" href="#page1" data-icon="home" data-iconpos="left"
 	        class="ui-btn-left">
 	            Home
 	        </a>
+	   
 	        <h3>
 	            TOEIC EXAM
 	        </h3>
 	    </header>
 		<article data-role="content">
+		<div class="main">	
 			<div id="player">
-				<audio id="audioPlayer" controls>
-					<source id="audioSrc" src="" type="audio/mpeg">
+				<audio id="audioPlayer" seekable="false" tracks controls>
+					<source id="audioSrc" src=""  type="audio/mpeg">
 					Your browser does not support the audio tag.
 				</audio>
 			</div>
@@ -69,6 +71,20 @@
         		</div>
             </div>
 		</article><!-- /content -->
+		</div>
+		<div class="result">
+			<h1>Correct Answer is </h1>
+			<h3 class="correctLis"></h3>
+			<h1>Your mark in Listening is </h1>
+			<h3 class="lisMark"></h3>
+			<h1>Your mark in Reading is </h1>
+			<h3 class="redMark"></h3>
+			<h1>Total mark is </h1>
+			<h3 class="totalMar"></h3>
+			<div class="leveltext">
+				
+			</div>
+		</div>
 		<footer data-theme="a" data-role="footer" data-position="fixed">
       		<div data-role="navbar" data-iconpos="top">
 	            <ul>

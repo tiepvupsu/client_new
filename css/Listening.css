@@ -4,3 +4,9 @@
 	margin: 0 auto;
 	width: 320px
 }
+div.result{
+	margin: 20px 200px;
+}
+h3.correctLis{
+	color: green;
+}
