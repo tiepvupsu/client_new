@@ -4,11 +4,19 @@
 
 <listening>
 	<part1>
-		<question order="0">
-			<description image="0">
-			
-			</description>
-		</question>
+		<direction>
+			<![CDATA[[Listening Test] In the listening test, you will be asked to demonstrate how well you understand spoken English. The entire listening test will last approximately 45 minutes. There are four parts, and directions are given for each part.<br />
+			<br />
+			[Part 1] For each question in this part, you will hear four statements about a picture in your test book. When you hear the statements, you must select the one statement that best describes what you see in the picture by marking the correct answer option: A, B, C, or D on the answer sheet. The statements will not be printed in your test book and will be spoken only one time.<br />
+			Example:<br />
+			<img src="../toeic01/lis_img/0.jpg" alt="Direction Part 1"/><br />
+			(A) There is only one rescue vehicle in the picture.<br />
+			(B) One of the buildings in the picture is on fire.<br />
+			(C) A large crowd is watching the rescue efforts.<br />
+			(D) There are two people trapped in the car.<br />
+			<br />
+			Statement (A), “There is only one rescue vehicle in the picture,” is the best description of the picture, so you should mark answer (A).]]>
+		</direction>
 		<question id="1" order="1">
 			<description image="1" />
 		</question>
@@ -42,6 +50,19 @@
 	</part1>
 	
 	<part2>
+		<direction>
+			<![CDATA[[Part 2] You will hear a question or statement and three responses spoken in English. They will not be printed in your test book and will be spoken only one time. Select the best response to the question or statement and select (A), (B), or (C) to mark your answer on the answer sheet.<br /> 
+			<br />
+			Example:<br />
+			You will hear: Where did you last see Ms. Montgomery?<br />
+			You will also hear:<br />
+			<br />
+			(A) Yes, I can see it on the flat screen.<br />
+			(B) It was about three weeks ago.<br />
+			(C) At the First Street coffee shop.<br />
+			<br />
+			The best response to the question “Where did you last see Ms. Montgomery?” is choice (C), “At the First Street coffee shop.,” so (C) is the correct answer. You should mark answer (C).]]>
+		</direction>
 		<question id="11" order="11" />
 		<question id="12" order="12" />
 		<question id="13" order="13" />
@@ -75,6 +96,9 @@
 	</part2>
 
 	<part3>
+		<direction>
+			[Part 3] You will hear several conversations between two people. You will be asked to answer three questions about what the speakers say in each conversation. Select the best response to each question and mark answer (A), (B), (C), or (D) on the answer sheet. The conversations will not be printed in your test book and will be spoken only one time.
+		</direction>
 		<question id="41" order="41">
 			<description>What does the man ask the woman?</description>
 			<a>Information about the project materials</a>
@@ -113,6 +137,9 @@
 	</part3>
 
 	<part4>
+		<direction>
+			[Part 4] You will hear several talks given by a single speaker. You will be asked to answer three questions about what the speaker says in each talk. Select the best response to each question and mark answer (A), (B), (C), or (D). The conversations will not be printed in your test book and will be spoken only one time. 
+		</direction>
 		<question id="71" order="46">
 			<description>What is the main purpose of the announcement?</description>
 			<a>To declare an emergency</a>
@@ -139,6 +166,11 @@
 
 <reading>
 	<part5>
+		<direction>
+			<![CDATA[[Reading Test] In the reading test, you will read a variety of texts and answer several different types of reading comprehension questions. The entire Reading Test will last 75 minutes. There are three parts, and directions are given for each part. You are encouraged to answer as many questions as possible within the time allowed.
+			<br />
+			[Part 5] A word or phrase is missing in each of the sentences below. Four answer choices are given below each sentence. Select the best answer to complete the sentence. Then mark answer (A), (B), (C), or (D).]]>
+		</direction>
 		<question id="101" order="101">
 			<description>Employees who wish to take the day after Thanksgiving as a personal day off _____ to get managerial approval.</description>
 			<a>must</a>
@@ -177,6 +209,9 @@
 	</part5>
 
 	<part6>
+		<direction>
+			Read the texts that follow. A word or phrase is missing in some of the sentences. Four answer choices are given below each of the sentences. Select the best answer to complete the text by marking (A), (B), (C), or (D). 
+		</direction>
 		<question id="141" order="141">
 			<description>
 				<![CDATA[<u>Letter</u><br />
@@ -245,6 +280,9 @@
 	</part6>
 
 	<part7>
+		<direction>
+			In this part you will read a selection of texts, such as magazine and newspaper articles, letters, and advertisements. Each text is followed by several questions. Select the best answer for each question and mark (A), (B), (C), or (D). 
+		</direction>
 		<question id="153" order="153">
 			<description>
 				<![CDATA[Put some excitement in your life..<br />

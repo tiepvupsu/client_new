@@ -14,12 +14,13 @@
 	var maxQues=45;
 	var correctAns=0;
 	var mark=10;
+	var audio = $("#audioPlayer");
 	//init
 	sessionStorage.clear();
 	$("div.result").hide();
 	
 	function changeAudio(url){
-			var audio = $("#audioPlayer");
+			
 			$("#audioSrc").attr('src', url);
 			audio.seekable=false;
 	    	/*audio[0].pause();
@@ -240,7 +241,7 @@
 
 			});
 			console.log("correct answer "+correctAns);
-			
+			audio[0].pause();
 			$("div.main").fadeOut('slow/400/fast', function() {
 				
 			});
