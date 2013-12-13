@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ielts>
+<content code="ielts01">
+
+<listening>
+	<section1>
+		<direction><![CDATA[Complete the notes below<br />
+			Write <b><i>MORE THAN THREE WORDS AND/OR A NUMBER</i></b> for each answer.]]>
+		</direction>
+		<question>
+			<![CDATA[
+			<div style="text-align: center; font-size: x-large; font-weight: bold;">JOB ENQUIRY</div><br />
+			<i>Example</i><br />
+			<ul><li>Work at: <u>a restaurant</u></li></ul><br />
+			<ul>
+				<li><b>Type of work: 1</b> <input id="ques1" type="text" /></li>
+				<li><b>Number of hours per week:</b> 12 hours</li>
+				<li><b>Would need work permit</b></li>
+				<li><b>Work in the: 2</b> <input id="ques2" type="text" /> branch</li>
+				<li><b>Nearest bus stop: next to</b><input id="ques3" type="text" /></li>
+				<li><b>Pay: 4 &#163;</b> <input id="ques4" type="text" /> an hour</li>
+				<li><b>Extra benefits:</b>
+					<ul>
+						<li>a free dinner</li>
+						<li>extra pay when you work on <b>5</b> <input id="ques5" type="text" /></li>
+						<li>transport home when you work <b>6</b> <input id="ques6" type="text" /></li>	
+					</ul>
+				</li>
+				<li><b>Qualities required:</b>
+					<ul>
+						<li><b>7</b> <input id="ques7" type="text" /></li>
+						<li>ability to <b>8</b> <input id="ques8" type="text" /></li>	
+					</ul>
+				</li>
+				<li><b>Interview arranged for:</b> Thursday <b>9</b> <input id="ques9" type="text" /> at 6 p.m</li>
+				<li><b>Bring the names of two referees</b></li>
+				<li><b>Ask for:</b> Samira <b>10</b> <input id="ques10" type="text" /></li>
+			</ul>
+			]]>
+		</question>
+	</section1>
+	<section2>
+		<direction>
+			<![CDATA[Complete the notes below<br />
+			Write <b><i>ONE WORDS AND/OR A NUMBER</i></b> for each answer.]]>
+		</direction>
+		<question>
+			<![CDATA[
+			<div style="text-align: center; font-size: x-large; font-weight: bold;">SPORTS WORLD</div>
+			<ul>
+				<li>a new <b>11</b> <input id="ques11" type="text" /> of an international sports goods company</li>
+				<li>located in the shopping centre to the <b>12</b> <input id="ques12" type="text" /> of Bradcaster</li>
+				<li>has sports <b>13</b> <input id="ques13" type="text" /> and enquipment on floors 1 - 3</li>
+				<li>can get you any item within <b>14</b> <input id="ques14" type="text" /> days</li>
+				<li>shop specialises in equipment for <b>15</b> <input id="ques15" type="text" /></li>
+				<li>has a special section which just sells <b>16</b> <input id="ques16" type="text" /></li>
+			</ul>
+			]]>
+		</question>
+		<direction>Choose the correct letter, A, B or C</direction>
+		<question id="17">
+			<description>A champion athlete will be in the shop</description>
+			<a>on Saturday morning only.</a>
+			<b>all day Saturday.</b>
+			<c>for the whole weekend.</c>
+		</question>
+		<question id="18">
+			<description>The first person to answer 20 quiz questions correctly will win</description>
+			<a>gym membership.</a>
+			<b>a video.</b>
+			<c>a calendar.</c>
+		</question>
+		<direction>Choose TWO letter, A - E </direction>
+		<question id="19">
+			<description>Which TWO pieces of information does the speaker give about the fitness test?</description>
+			<a>You need to reserve a place.</a>
+			<b>It is free to account holders.</b>
+			<c>You get advice on how to improve your health.</c>
+			<d>It takes place in a special clinic.</d>
+			<e>It is cheaper this month.</e>
+		</question>
+		<question id="20">
+			<a></a>
+			<b></b>
+			<c></c>
+			<d></d>
+			<e></e>
+		</question>
+	</section2>
+	

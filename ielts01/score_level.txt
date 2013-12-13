@@ -1,0 +1,10 @@
+9	Expert User	Has full operational command of the language: appropriate, accurate and fluent with complete understanding.
+8	Very Good User	Has full operational command of the language with only occasional unsystematic inaccuracies and inappropriacies. Misunderstandings may occur in unfamiliar situations. Handles complex detailed argumentation well.
+7	Good User	Has operational command of the language, though with occasional inaccuracies, inappropriateness and misunderstandings in some situations. Generally handles complex language well and understands detailed reasoning.
+6	Competent User	Has generally effective command of the language despite some inaccuracies, inappropriacies and misunderstandings. Can use and understand fairly complex language, particularly in familiar situations.
+5	Modest user	Has partial command of the language, coping with overall meaning in most situations, though is likely to make many mistakes. Should be able to handle basic communication in own field.
+4	Limited User	Basic competence is limited to familiar situations. Has frequent problems in using complex language.
+3	Extremely Limited User	Conveys and understands only general meaning in very familiar situations.
+2	Intermittent User	No real communication is possible except for the most basic information using isolated words or short formulae in familiar situations and to meet immediate needs.
+1	Non User	Essentially has no ability to use the language beyond possibly a few isolated words.
+0	Did not attempt the test	No assessable information provided at all.
