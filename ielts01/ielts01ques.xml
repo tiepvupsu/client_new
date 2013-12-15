@@ -87,4 +87,77 @@
 			<e></e>
 		</question>
 	</section2>
-	
+	<section3>
+		<direction>Choose the correct letter, A, B or C</direction>
+		<question id="21">
+			<direction>One reason why Spiros felt happy about his marketing presentation was that</direction>
+			<a>he was not nervous.</a>
+			<b>his style was good.</b>
+			<c>the presentation was the best in his group.</c>
+		</question>
+		<question id="22">
+			<description>What surprised Hiroko about the other students’ presentations?</description>
+			<a>Their presentations were not interesting.</a>
+			<b>They found their presentations stressful.</b>
+			<c>They didn’t look at the audience enough.</c>
+		</question>
+		<question id="23">
+			<description>After she gave her presentation, Hiroko felt</description>
+			<a>delighted.</a>
+			<b>dissatisfied.</b>
+			<c>embarrassed.</c>
+		</question>
+		<question id="24">
+			<description>How does Spiros feel about his performance in tutorials?</description>
+			<a>not very happy</a>
+			<b>really pleased</b>
+			<c>fairly confident</c>
+		</question>
+		<question id="25">
+			<description>Why can the other students participate so easily in discussions?</description>
+			<a>They are polite to each other.</a>
+			<b>They agree to take turns in speaking.</b>
+			<c>They know each other well.</c>
+		</question>
+		<question id="26">
+			<description>Why is Hiroko feeling more positive about tutorials now?</description>
+			<a>She finds the other students’ opinions more interesting.</a>
+			<b>She is making more of a contribution.</b>
+			<c>The tutor includes her in the discussion.</c>
+		</question>
+		<question id="27">
+			<description>To help her understand lectures, Hiroko</description>
+			<a>consulted reference materials.</a>
+			<b>had extra tutorials with her lecturers.</b>
+			<c>borrowed lecture notes from other students.</c>
+		</question>
+		<question id="28">
+			<description>What does Spiros think of his reading skills?</description>
+			<a>He reads faster than he used to.</a>
+			<b>It still takes him a long time to read.</b>
+			<c>He tends to struggle with new vocabulary.</c>
+		</question>
+		<question id="29">
+			<description>What is Hiroko’s subject area?</description>
+			<a>environmental studies</a>
+			<b>health education</b>
+			<c>engineering</c>
+		</question>
+		<question id="30">
+			<description>Hiroko thinks that in the reading classes the students should</description>
+			<a>learn more vocabulary.</a>
+			<b>read more in their own subject areas.</b>
+			<c>develop better reading strategies.</c>
+		</question>
+	</section3>
+	<section4>
+		<direction><![CDATA[Complete the notes below.<br />
+		Write <b>NO MORE THAN TWO WORDS</b> for each answer.]]></direction>
+		<question>
+			<b>Mass Strandings of Whales and Dolphins</b>
+Mass strandings: situations where groups of whales, dolphins, etc. swim onto the beach
+and die
+Common in areas where the 31
+can change quickly
+Several other theories:
+		</question>
