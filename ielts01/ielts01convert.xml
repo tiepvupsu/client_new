@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ielts>
+<content code='ielts01'>
+	<question correct='1' rmark='1' lmark='1' />
+	<question correct='2' rmark='2' lmark='2' />
+	<question correct='3' rmark='2' lmark='2' />
+	<question correct='4' rmark='3' lmark='3' />
+	<question correct='5' rmark='3' lmark='3' />
+	<question correct='6' rmark='3' lmark='3' />
+	<question correct='7' rmark='3' lmark='3.5' />
+	<question correct='8' rmark='3.5' lmark='3.5' />
+	<question correct='9' rmark='3.5' lmark='3.5' />
+	<question correct='10' rmark='3.5' lmark='4' />
+	<question correct='11' rmark='4' lmark='4' />
+	<question correct='12' rmark='4' lmark='4' />
+	<question correct='13' rmark='4' lmark='4.5' />
+	<question correct='14' rmark='4.5' lmark='4.5' />
+	<question correct='15' rmark='4.5' lmark='4.5' />
+	<question correct='16' rmark='4.5' lmark='4.5' />
+	<question correct='17' rmark='5' lmark='5' />
+	<question correct='18' rmark='5' lmark='5' />
+	<question correct='19' rmark='5' lmark='5' />
+	<question correct='20' rmark='5.5' lmark='5' />
+	<question correct='21' rmark='5.5' lmark='5.5' />
+	<question correct='22' rmark='5.5' lmark='5.5' />
+	<question correct='23' rmark='5.5' lmark='5.5' />
+	<question correct='24' rmark='6' lmark='5.5' />
+	<question correct='25' rmark='6' lmark='6' />
+	<question correct='26' rmark='6' lmark='6' />
+	<question correct='27' rmark='6' lmark='6' />
+	<question correct='28' rmark='6.5' lmark='6' />
+	<question correct='29' rmark='6.5' lmark='6.5' />
+	<question correct='30' rmark='6.5' lmark='6.5' />
+	<question correct='31' rmark='7' lmark='6.5' />
+	<question correct='32' rmark='7' lmark='7' />
+	<question correct='33' rmark='7' lmark='7' />
+	<question correct='34' rmark='7.5' lmark='7.5' />
+	<question correct='35' rmark='7.5' lmark='7.5' />
+	<question correct='36' rmark='8' lmark='8' />
+	<question correct='37' rmark='8' lmark='8' />
+	<question correct='38' rmark='8.5' lmark='8.5' />
+	<question correct='39' rmark='8.5' lmark='8.5' />
+	<question correct='40' rmark='9' lmark='9' />
+</content>
+</ielts>
