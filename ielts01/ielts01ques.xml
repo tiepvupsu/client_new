@@ -201,6 +201,7 @@
 			]]>
 		</direction>
 		<question>
+			<![CDATA[
 			<h3>William Henry Perkin</h3>
 			<h6>The man who invented synthetic dyes</h6>
 			<p>William Henry Perkin was born on March 12, 1838, in London, England. As a boy, Perkin’s curiosity prompted early interests in the arts, sciences, photography, and engineering. But it was a chance stumbling upon a run-down, yet functional, laboratory in his late grandfather’s home that solidified the young man’s enthusiasm for chemistry.</p>
@@ -237,13 +238,9 @@
 			<b>11</b> What was the name of the person Perkin consulted before setting up his own dye works?<br /><input id="ques1" type="text" /><br />
 			<b>12</b> In what country did Perkin’s newly invented colour first become fashionable?<br /><input id="ques12" type="text" /><br />
 			<b>13</b> According to the passage, which disease is now being targeted by researchers using synthetic dyes?<br /><input id="ques13" type="text" />
+			]]>
 		</question>
 	</passage1>
-	<passage2>
-		<question>
-
-		</question>
-	</passage2>
 </reading>
 </content>
 <ielts>
