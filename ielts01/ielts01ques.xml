@@ -13,28 +13,28 @@
 			<i>Example</i><br />
 			<ul><li>Work at: <u>a restaurant</u></li></ul><br />
 			<ul>
-				<li><b>Type of work: 1</b> <div id="ques1" /></li>
+				<li><b>Type of work: 1</b> <div id="ques1"></div></li>
 				<li><b>Number of hours per week:</b> 12 hours</li>
 				<li><b>Would need work permit</b></li>
-				<li><b>Work in the: 2</b> <div id="ques2" /> branch</li>
-				<li><b>Nearest bus stop: next to</b><div id="ques3" /></li>
-				<li><b>Pay: 4 &#163;</b> <div id="ques4" /> an hour</li>
+				<li><b>Work in the: 2</b> <div id="ques2"></div> branch</li>
+				<li><b>Nearest bus stop: next to</b><div id="ques3"></div></li>
+				<li><b>Pay: 4 &#163;</b> <div id="ques4"></div> an hour</li>
 				<li><b>Extra benefits:</b>
 					<ul>
 						<li>a free dinner</li>
-						<li>extra pay when you work on <b>5</b> <div id="ques5" /></li>
-						<li>transport home when you work <b>6</b> <div id="ques6" /></li>	
+						<li>extra pay when you work on <b>5</b> <div id="ques5"></div></li>
+						<li>transport home when you work <b>6</b> <div id="ques6"></div></li>	
 					</ul>
 				</li>
 				<li><b>Qualities required:</b>
 					<ul>
-						<li><b>7</b> <div id="ques7" /></li>
-						<li>ability to <b>8</b> <div id="ques8" /></li>	
+						<li><b>7</b> <div id="ques7"></div></li>
+						<li>ability to <b>8</b> <div id="ques8"></div></li>	
 					</ul>
 				</li>
-				<li><b>Interview arranged for:</b> Thursday <b>9</b> <div id="ques9" /> at 6 p.m</li>
+				<li><b>Interview arranged for:</b> Thursday <b>9</b> <div id="ques9"></div> at 6 p.m</li>
 				<li><b>Bring the names of two referees</b></li>
-				<li><b>Ask for:</b> Samira <b>10</b> <div id="ques10" /></li>
+				<li><b>Ask for:</b> Samira <b>10</b> <div id="ques10"></div></li>
 			</ul>
 			]]>
 		</question>
@@ -48,12 +48,12 @@
 			<![CDATA[
 			<h2>SPORTS WORLD</h2>
 			<ul>
-				<li>a new <b>11</b><div id="ques11" /> of an international sports goods company</li>
-				<li>located in the shopping centre to the <b>12</b><div id="ques12" /> of Bradcaster</li>
-				<li>has sports <b>13</b><div id="ques13" /> and enquipment on floors 1 &#8211; 3</li>
-				<li>can get you any item within <b>14</b><div id="ques14" /> days</li>
-				<li>shop specialises in equipment for <b>15</b><div id="ques15" /></li>
-				<li>has a special section which just sells <b>16</b><div id="ques16" /></li>
+				<li>a new <b>11</b><div id="ques11"></div> of an international sports goods company</li>
+				<li>located in the shopping centre to the <b>12</b><div id="ques12"></div> of Bradcaster</li>
+				<li>has sports <b>13</b><div id="ques13"></div> and enquipment on floors 1 &#8211; 3</li>
+				<li>can get you any item within <b>14</b><div id="ques14"></div> days</li>
+				<li>shop specialises in equipment for <b>15</b><div id="ques15"></div></li>
+				<li>has a special section which just sells <b>16</b><div id="ques16"></div></li>
 			</ul>
 			]]>
 		</question>
@@ -151,36 +151,36 @@
 			<h2>Mass Strandings of Whales and Dolphins</h2>
 			Mass strandings: situations where groups of whales, dolphins, etc. swim onto the beach
 			and die<br />
-			Common in areas where the <b>31</b><div id="ques31" /> can change quickly<br />
+			Common in areas where the <b>31</b><div id="ques31"></div> can change quickly<br />
 			Several other theories:<br />
 			<br />
 			<b>Parasites</b><br />
-			e.g. some parasites can affect marine animals&#39; <b>32</b><div id="ques32" />, which they depend on for navigation<br />
+			e.g. some parasites can affect marine animals&#39; <b>32</b><div id="ques32"></div>, which they depend on for navigation<br />
 			<br />
 			<b>Toxins</b><br />
-			Poisons from <b>33</b><div id="ques33" /> or <div id="ques33" /> are commonly consumed by whales<br />
+			Poisons from <b>33</b><div id="ques33"></div> or <div id="ques33"></div> are commonly consumed by whales<br />
 			e.g. Cape Cod (1988) &#8211; whales were killed by saxitoxin<br />
 			<br />
 			<b>Accidental  Strandings</b><br />
 			Animals may follow prey ashore, e.g. Thurston (1995)<br />
-			Unlikely because the majority of animals were not <b>34</b><div id="ques34" /> when they stranded<br />
+			Unlikely because the majority of animals were not <b>34</b><div id="ques34"></div> when they stranded<br />
 			<br />
 			<b>Human Activity</b><br />
-			<b>35</b><div id="ques35" />from military tests are linked to some recent strandings<br />
+			<b>35</b><div id="ques35"></div>from military tests are linked to some recent strandings<br />
 			The Bahamas (2000) stranding was unusual because the whales<br />
 			<ul>
-				<li>were all <b>36</b><div id="ques36" /></li>
-				<li>were not in a <b>37</b><div id="ques37" /></li>
+				<li>were all <b>36</b><div id="ques36"></div></li>
+				<li>were not in a <b>37</b><div id="ques37"></div></li>
 			</ul>
 			<br />
 			<b>Group Behaviour</b><br />
 			<ul>
-				<li>More strandings in the most <b>38</b><div id="ques38" /> species of whales</li>
-				<li>1994 dolphin stranding &#8211; only the <b>39</b><div id="ques39" /> was ill</li>
+				<li>More strandings in the most <b>38</b><div id="ques38"></div> species of whales</li>
+				<li>1994 dolphin stranding &#8211; only the <b>39</b><div id="ques39"></div> was ill</li>
 			</ul>
 			<br />
 			<b>Further Reading</b><br />
-			Marine Mammals Ashore (Connor) &#8211; gives information about stranding <b>40</b><div id="ques40" />.
+			Marine Mammals Ashore (Connor) &#8211; gives information about stranding <b>40</b><div id="ques40"></div>.
 			]]>
 		</question>
 	</section4>
@@ -214,25 +214,25 @@
 			<b>FALSE</b> if  the statement contradicts the information<br />
 			<b>NOT GIVEN</b> if  there is no information on this</i><br />
 			<br />
-			<b>1</b> Michael Faraday was the first person to recognise Perkin&#39;s ability as a student of chemistry.<br /><div id="ques1" /><br />
-			<b>2</b> Michael Faraday suggested Perkin should enrol in the Royal College of Chemistry.<br /><div id="ques2" /><br />
-			<b>3</b> Perkin employed August Wilhelm Hofmann as his assistant.<br /><div id="ques3" /><br />
-			<b>4</b> Perkin was still young when he made the discovery that made him rich and famous.<br /><div id="ques4" /><br />
-			<b>5</b> The trees from which quinine is derived grow only in South America.<br /><div id="ques5" /><br />
-			<b>6</b> Perkin hoped to manufacture a drug from a coal tar waste product.<br /><div id="ques6" /><br />
-			<b>7</b> Perkin was inspired by the discoveries of the famous scientist Louis Pasteur.<br /><div id="ques7" /><br />
+			<b>1</b> Michael Faraday was the first person to recognise Perkin&#39;s ability as a student of chemistry.<br /><div id="ques1"></div><br />
+			<b>2</b> Michael Faraday suggested Perkin should enrol in the Royal College of Chemistry.<br /><div id="ques2"></div><br />
+			<b>3</b> Perkin employed August Wilhelm Hofmann as his assistant.<br /><div id="ques3"></div><br />
+			<b>4</b> Perkin was still young when he made the discovery that made him rich and famous.<br /><div id="ques4"></div><br />
+			<b>5</b> The trees from which quinine is derived grow only in South America.<br /><div id="ques5"></div><br />
+			<b>6</b> Perkin hoped to manufacture a drug from a coal tar waste product.<br /><div id="ques6"></div><br />
+			<b>7</b> Perkin was inspired by the discoveries of the famous scientist Louis Pasteur.<br /><div id="ques7"></div><br />
 			<br />
 			<i>Questions 8 &#8211; 13<br />
 			Answer the questions below.<br />
 			Choose <b>NO MORE THAN TWO WORDS</b> from the passage for each answer.<br />
 			Write your answers in boxes 8-13 on your answer sheet.</i><br />
 			<br />
-			<b>8</b> Before Perkin&#39; discovery, with what group in society was the colour purple associated?<br /><div id="ques8" /><br />
-			<b>9</b> What potential did Perkin immediately understand that his new dye had?<br /><div id="ques9" /><br />
-			<b>10</b> What was the name finally used to refer to the first colour Perkin invented?<br /><div id="ques10" /><br />
-			<b>11</b> What was the name of the person Perkin consulted before setting up his own dye works?<br /><div id="ques11" /><br />
-			<b>12</b> In what country did Perkin&#39;s newly invented colour first become fashionable?<br /><div id="ques12" /><br />
-			<b>13</b> According to the passage, which disease is now being targeted by researchers using synthetic dyes?<br /><div id="ques13" />
+			<b>8</b> Before Perkin&#39; discovery, with what group in society was the colour purple associated?<br /><div id="ques8"></div><br />
+			<b>9</b> What potential did Perkin immediately understand that his new dye had?<br /><div id="ques9"></div><br />
+			<b>10</b> What was the name finally used to refer to the first colour Perkin invented?<br /><div id="ques10"></div><br />
+			<b>11</b> What was the name of the person Perkin consulted before setting up his own dye works?<br /><div id="ques11"></div><br />
+			<b>12</b> In what country did Perkin&#39;s newly invented colour first become fashionable?<br /><div id="ques12"></div><br />
+			<b>13</b> According to the passage, which disease is now being targeted by researchers using synthetic dyes?<br /><div id="ques13"></div>
 			]]>
 		</question>
 	</passage1>
