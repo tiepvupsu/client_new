@@ -3,8 +3,8 @@
 <content code="ielts01">
 
 <listening>
-	<section1>
-		<direction><![CDATA[Complete the notes below<br />
+	<section1 from="1" to="10">
+		<direction from="1" to="10"><![CDATA[Complete the notes below<br />
 			Write <b><i>MORE THAN THREE WORDS AND/OR A NUMBER</i></b> for each answer.]]>
 		</direction>
 		<question>
@@ -13,34 +13,34 @@
 			<i>Example</i><br />
 			<ul><li>Work at: <u>a restaurant</u></li></ul><br />
 			<ul>
-				<li><b>Type of work: 1</b> <input id="ques1" type="text" /></li>
+				<li><b>Type of work: 1</b> <div id="ques1" /></li>
 				<li><b>Number of hours per week:</b> 12 hours</li>
 				<li><b>Would need work permit</b></li>
-				<li><b>Work in the: 2</b> <input id="ques2" type="text" /> branch</li>
-				<li><b>Nearest bus stop: next to</b><input id="ques3" type="text" /></li>
-				<li><b>Pay: 4 &#163;</b> <input id="ques4" type="text" /> an hour</li>
+				<li><b>Work in the: 2</b> <div id="ques2" /> branch</li>
+				<li><b>Nearest bus stop: next to</b><div id="ques3" /></li>
+				<li><b>Pay: 4 &#163;</b> <div id="ques4" /> an hour</li>
 				<li><b>Extra benefits:</b>
 					<ul>
 						<li>a free dinner</li>
-						<li>extra pay when you work on <b>5</b> <input id="ques5" type="text" /></li>
-						<li>transport home when you work <b>6</b> <input id="ques6" type="text" /></li>	
+						<li>extra pay when you work on <b>5</b> <div id="ques5" /></li>
+						<li>transport home when you work <b>6</b> <div id="ques6" /></li>	
 					</ul>
 				</li>
 				<li><b>Qualities required:</b>
 					<ul>
-						<li><b>7</b> <input id="ques7" type="text" /></li>
-						<li>ability to <b>8</b> <input id="ques8" type="text" /></li>	
+						<li><b>7</b> <div id="ques7" /></li>
+						<li>ability to <b>8</b> <div id="ques8" /></li>	
 					</ul>
 				</li>
-				<li><b>Interview arranged for:</b> Thursday <b>9</b> <input id="ques9" type="text" /> at 6 p.m</li>
+				<li><b>Interview arranged for:</b> Thursday <b>9</b> <div id="ques9" /> at 6 p.m</li>
 				<li><b>Bring the names of two referees</b></li>
-				<li><b>Ask for:</b> Samira <b>10</b> <input id="ques10" type="text" /></li>
+				<li><b>Ask for:</b> Samira <b>10</b> <div id="ques10" /></li>
 			</ul>
 			]]>
 		</question>
 	</section1>
-	<section2>
-		<direction>
+	<section2 from="11" to="20">
+		<direction from="11" to="16">
 			<![CDATA[Complete the notes below<br />
 			Write <b><i>ONE WORDS AND/OR A NUMBER</i></b> for each answer.]]>
 		</direction>
@@ -48,30 +48,30 @@
 			<![CDATA[
 			<h2>SPORTS WORLD</h2>
 			<ul>
-				<li>a new <b>11</b><input id="ques11" type="text" /> of an international sports goods company</li>
-				<li>located in the shopping centre to the <b>12</b><input id="ques12" type="text" /> of Bradcaster</li>
-				<li>has sports <b>13</b><input id="ques13" type="text" /> and enquipment on floors 1 &#8211; 3</li>
-				<li>can get you any item within <b>14</b><input id="ques14" type="text" /> days</li>
-				<li>shop specialises in equipment for <b>15</b><input id="ques15" type="text" /></li>
-				<li>has a special section which just sells <b>16</b><input id="ques16" type="text" /></li>
+				<li>a new <b>11</b><div id="ques11" /> of an international sports goods company</li>
+				<li>located in the shopping centre to the <b>12</b><div id="ques12" /> of Bradcaster</li>
+				<li>has sports <b>13</b><div id="ques13" /> and enquipment on floors 1 &#8211; 3</li>
+				<li>can get you any item within <b>14</b><div id="ques14" /> days</li>
+				<li>shop specialises in equipment for <b>15</b><div id="ques15" /></li>
+				<li>has a special section which just sells <b>16</b><div id="ques16" /></li>
 			</ul>
 			]]>
 		</question>
-		<direction>Choose the correct letter, A, B or C</direction>
-		<question id="17">
+		<direction from="17" to="18">Choose the correct letter, A, B or C</direction>
+		<question id="17" multiple="1">
 			<description>A champion athlete will be in the shop</description>
 			<a>on Saturday morning only.</a>
 			<b>all day Saturday.</b>
 			<c>for the whole weekend.</c>
 		</question>
-		<question id="18">
+		<question id="18" multiple="1">
 			<description>The first person to answer 20 quiz questions correctly will win</description>
 			<a>gym membership.</a>
 			<b>a video.</b>
 			<c>a calendar.</c>
 		</question>
-		<direction>Choose TWO letter, A &#8211; E </direction>
-		<question id="19">
+		<direction from="19" to="19">Choose TWO letter, A &#8211; E </direction>
+		<question id="19" multiple="2">
 			<description>Which TWO pieces of information does the speaker give about the fitness test?</description>
 			<a>You need to reserve a place.</a>
 			<b>It is free to account holders.</b>
@@ -79,115 +79,108 @@
 			<d>It takes place in a special clinic.</d>
 			<e>It is cheaper this month.</e>
 		</question>
-		<question id="20">
-			<a></a>
-			<b></b>
-			<c></c>
-			<d></d>
-			<e></e>
-		</question>
 	</section2>
-	<section3>
-		<direction>Choose the correct letter, A, B or C</direction>
-		<question id="21">
+	<section3 from="21" to="30">
+		<direction from="21" to="30">Choose the correct letter, A, B or C</direction>
+		<question id="21" multiple="1">
 			<direction>One reason why Spiros felt happy about his marketing presentation was that</direction>
 			<a>he was not nervous.</a>
 			<b>his style was good.</b>
 			<c>the presentation was the best in his group.</c>
 		</question>
-		<question id="22">
+		<question id="22" multiple="1">
 			<description>What surprised Hiroko about the other students&#39; presentations?</description>
 			<a>Their presentations were not interesting.</a>
 			<b>They found their presentations stressful.</b>
 			<c>They didn&#39;t look at the audience enough.</c>
 		</question>
-		<question id="23">
+		<question id="23" multiple="1">
 			<description>After she gave her presentation, Hiroko felt</description>
 			<a>delighted.</a>
 			<b>dissatisfied.</b>
 			<c>embarrassed.</c>
 		</question>
-		<question id="24">
+		<question id="24" multiple="1">
 			<description>How does Spiros feel about his performance in tutorials?</description>
 			<a>not very happy</a>
 			<b>really pleased</b>
 			<c>fairly confident</c>
 		</question>
-		<question id="25">
+		<question id="25" multiple="1">
 			<description>Why can the other students participate so easily in discussions?</description>
 			<a>They are polite to each other.</a>
 			<b>They agree to take turns in speaking.</b>
 			<c>They know each other well.</c>
 		</question>
-		<question id="26">
+		<question id="26" multiple="1">
 			<description>Why is Hiroko feeling more positive about tutorials now?</description>
 			<a>She finds the other students&#39; opinions more interesting.</a>
 			<b>She is making more of a contribution.</b>
 			<c>The tutor includes her in the discussion.</c>
 		</question>
-		<question id="27">
+		<question id="27" multiple="1">
 			<description>To help her understand lectures, Hiroko</description>
 			<a>consulted reference materials.</a>
 			<b>had extra tutorials with her lecturers.</b>
 			<c>borrowed lecture notes from other students.</c>
 		</question>
-		<question id="28">
+		<question id="28" multiple="1">
 			<description>What does Spiros think of his reading skills?</description>
 			<a>He reads faster than he used to.</a>
 			<b>It still takes him a long time to read.</b>
 			<c>He tends to struggle with new vocabulary.</c>
 		</question>
-		<question id="29">
+		<question id="29" multiple="1">
 			<description>What is Hiroko&#39;s subject area?</description>
 			<a>environmental studies</a>
 			<b>health education</b>
 			<c>engineering</c>
 		</question>
-		<question id="30">
+		<question id="30" multiple="1">
 			<description>Hiroko thinks that in the reading classes the students should</description>
 			<a>learn more vocabulary.</a>
 			<b>read more in their own subject areas.</b>
 			<c>develop better reading strategies.</c>
 		</question>
 	</section3>
-	<section4>
-		<direction><![CDATA[Complete the notes below.<br />
+	<section4 from="31" to="40">
+		<direction from="31" to="40"><![CDATA[Complete the notes below.<br />
 		Write <b>NO MORE THAN TWO WORDS</b> for each answer.]]></direction>
 		<question>
 			<![CDATA[
 			<h2>Mass Strandings of Whales and Dolphins</h2>
 			Mass strandings: situations where groups of whales, dolphins, etc. swim onto the beach
 			and die<br />
-			Common in areas where the <b>31</b><input id="ques31" type="text" /> can change quickly<br />
+			Common in areas where the <b>31</b><div id="ques31" /> can change quickly<br />
 			Several other theories:<br />
 			<br />
 			<b>Parasites</b><br />
-			e.g. some parasites can affect marine animals&#39; <b>32</b><input id="ques32" type="text" />, which they depend on for navigation<br />
+			e.g. some parasites can affect marine animals&#39; <b>32</b><div id="ques32" />, which they depend on for navigation<br />
 			<br />
 			<b>Toxins</b><br />
-			Poisons from <b>33</b><input id="ques33" type="text" /> or <input id="ques33" type="text" /> are commonly consumed by whales<br />
+			Poisons from <b>33</b><div id="ques33" /> or <div id="ques33" /> are commonly consumed by whales<br />
 			e.g. Cape Cod (1988) &#8211; whales were killed by saxitoxin<br />
 			<br />
 			<b>Accidental  Strandings</b><br />
 			Animals may follow prey ashore, e.g. Thurston (1995)<br />
-			Unlikely because the majority of animals were not <b>34</b><input id="ques34" type="text" /> when they stranded<br />
+			Unlikely because the majority of animals were not <b>34</b><div id="ques34" /> when they stranded<br />
 			<br />
 			<b>Human Activity</b><br />
-			<b>35</b><input id="ques35" type="text" />from military tests are linked to some recent strandings<br />
+			<b>35</b><div id="ques35" />from military tests are linked to some recent strandings<br />
 			The Bahamas (2000) stranding was unusual because the whales<br />
 			<ul>
-				<li>were all <b>36</b><input id="ques36" type="text" /></li>
-				<li>were not in a <b>37</b><input id="ques37" type="text" /></li>
+				<li>were all <b>36</b><div id="ques36" /></li>
+				<li>were not in a <b>37</b><div id="ques37" /></li>
 			</ul>
 			<br />
 			<b>Group Behaviour</b><br />
 			<ul>
-				<li>More strandings in the most <b>38</b><input id="ques38" type="text" /> species of whales</li>
-				<li>1994 dolphin stranding &#8211; only the <b>39</b><input id="ques39" type="text" /> was ill</li>
+				<li>More strandings in the most <b>38</b><div id="ques38" /> species of whales</li>
+				<li>1994 dolphin stranding &#8211; only the <b>39</b><div id="ques39" /> was ill</li>
 			</ul>
 			<br />
 			<b>Further Reading</b><br />
-			Marine Mammals Ashore (Connor) &#8211; gives information about stranding <b>40</b><input id="ques40" type="text" />.
+			Marine Mammals Ashore (Connor) &#8211; gives information about stranding <b>40</b><div id="ques40" />.
 			]]>
 		</question>
 	</section4>
@@ -221,25 +214,25 @@
 			<b>FALSE</b> if  the statement contradicts the information<br />
 			<b>NOT GIVEN</b> if  there is no information on this</i><br />
 			<br />
-			<b>1</b> Michael Faraday was the first person to recognise Perkin&#39;s ability as a student of chemistry.<br /><input id="ques1" type="text" /><br />
-			<b>2</b> Michael Faraday suggested Perkin should enrol in the Royal College of Chemistry.<br /><input id="ques2" type="text" /><br />
-			<b>3</b> Perkin employed August Wilhelm Hofmann as his assistant.<br /><input id="ques3" type="text" /><br />
-			<b>4</b> Perkin was still young when he made the discovery that made him rich and famous.<br /><input id="ques4" type="text" /><br />
-			<b>5</b> The trees from which quinine is derived grow only in South America.<br /><input id="ques5" type="text" /><br />
-			<b>6</b> Perkin hoped to manufacture a drug from a coal tar waste product.<br /><input id="ques6" type="text" /><br />
-			<b>7</b> Perkin was inspired by the discoveries of the famous scientist Louis Pasteur.<br /><input id="ques7" type="text" /><br />
+			<b>1</b> Michael Faraday was the first person to recognise Perkin&#39;s ability as a student of chemistry.<br /><div id="ques1" /><br />
+			<b>2</b> Michael Faraday suggested Perkin should enrol in the Royal College of Chemistry.<br /><div id="ques2" /><br />
+			<b>3</b> Perkin employed August Wilhelm Hofmann as his assistant.<br /><div id="ques3" /><br />
+			<b>4</b> Perkin was still young when he made the discovery that made him rich and famous.<br /><div id="ques4" /><br />
+			<b>5</b> The trees from which quinine is derived grow only in South America.<br /><div id="ques5" /><br />
+			<b>6</b> Perkin hoped to manufacture a drug from a coal tar waste product.<br /><div id="ques6" /><br />
+			<b>7</b> Perkin was inspired by the discoveries of the famous scientist Louis Pasteur.<br /><div id="ques7" /><br />
 			<br />
 			<i>Questions 8 &#8211; 13<br />
 			Answer the questions below.<br />
 			Choose <b>NO MORE THAN TWO WORDS</b> from the passage for each answer.<br />
 			Write your answers in boxes 8-13 on your answer sheet.</i><br />
 			<br />
-			<b>8</b> Before Perkin&#39; discovery, with what group in society was the colour purple associated?<br /><input id="ques8" type="text" /><br />
-			<b>9</b> What potential did Perkin immediately understand that his new dye had?<br /><input id="ques9" type="text" /><br />
-			<b>10</b> What was the name finally used to refer to the first colour Perkin invented?<br /><input id="ques10" type="text" /><br />
-			<b>11</b> What was the name of the person Perkin consulted before setting up his own dye works?<br /><input id="ques11" type="text" /><br />
-			<b>12</b> In what country did Perkin&#39;s newly invented colour first become fashionable?<br /><input id="ques12" type="text" /><br />
-			<b>13</b> According to the passage, which disease is now being targeted by researchers using synthetic dyes?<br /><input id="ques13" type="text" />
+			<b>8</b> Before Perkin&#39; discovery, with what group in society was the colour purple associated?<br /><div id="ques8" /><br />
+			<b>9</b> What potential did Perkin immediately understand that his new dye had?<br /><div id="ques9" /><br />
+			<b>10</b> What was the name finally used to refer to the first colour Perkin invented?<br /><div id="ques10" /><br />
+			<b>11</b> What was the name of the person Perkin consulted before setting up his own dye works?<br /><div id="ques11" /><br />
+			<b>12</b> In what country did Perkin&#39;s newly invented colour first become fashionable?<br /><div id="ques12" /><br />
+			<b>13</b> According to the passage, which disease is now being targeted by researchers using synthetic dyes?<br /><div id="ques13" />
 			]]>
 		</question>
 	</passage1>
