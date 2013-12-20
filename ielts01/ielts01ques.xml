@@ -3,24 +3,25 @@
 <content code="ielts01">
 
 <listening>
+	<directions>
+		<direction1>
+			<![CDATA[Complete the notes below<br />
+			Write <b><i>MORE THAN THREE WORDS AND/OR A NUMBER</i></b> for each answer.]]>
+		</direction1>
+		<direction2>
+			<![CDATA[Complete the notes below<br />
+			Write <b><i>ONE WORDS AND/OR A NUMBER</i></b> for each answer.]]>
+		</direction2>
+		<direction3>Choose the correct letter, A, B or C</direction3>
+		<direction4><![CDATA[Choose TWO letter, A &#8211; E]]></direction4>
+		<direction5>Choose the correct letter, A, B or C</direction5>
+		<direction6>
+			<![CDATA[Complete the notes below.<br />
+			Write <b>NO MORE THAN TWO WORDS</b> for each answer.]]>
+		</direction6>
+	</directions>
+
 	<section1 from="1" to="10">
-		<directions>
-			<direction1>
-				<![CDATA[Complete the notes below<br />
-				Write <b><i>MORE THAN THREE WORDS AND/OR A NUMBER</i></b> for each answer.]]>
-			</direction1>
-			<direction2>
-				<![CDATA[Complete the notes below<br />
-				Write <b><i>ONE WORDS AND/OR A NUMBER</i></b> for each answer.]]>
-			</direction2>
-			<direction3>Choose the correct letter, A, B or C</direction3>
-			<direction4><![CDATA[Choose TWO letter, A &#8211; E]]></direction4>
-			<direction5>Choose the correct letter, A, B or C</direction5>
-			<direction6>
-				<![CDATA[Complete the notes below.<br />
-				Write <b>NO MORE THAN TWO WORDS</b> for each answer.]]>
-			</direction6>
-		</directions>
 		<question id="1" qty="10" dir="1">
 			<![CDATA[
 			<h3>JOB ENQUIRY</h3><br />
@@ -53,6 +54,7 @@
 			]]>
 		</question>
 	</section1>
+
 	<section2 from="11" to="20">
 		<question id="11" qty="5" dir="2">
 			<![CDATA[
@@ -88,6 +90,7 @@
 			<e>It is cheaper this month.</e>
 		</question>
 	</section2>
+
 	<section3 from="21" to="30" dir="5">
 		<question id="21" multiple="1">
 			<direction>One reason why Spiros felt happy about his marketing presentation was that</direction>
@@ -150,6 +153,7 @@
 			<c>develop better reading strategies.</c>
 		</question>
 	</section3>
+	
 	<section4 from="31" to="40">
 		<question id="31" qty="10" dir="6">
 			<![CDATA[
