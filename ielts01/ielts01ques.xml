@@ -4,10 +4,24 @@
 
 <listening>
 	<section1 from="1" to="10">
-		<direction from="1" to="10"><![CDATA[Complete the notes below<br />
-			Write <b><i>MORE THAN THREE WORDS AND/OR A NUMBER</i></b> for each answer.]]>
-		</direction>
-		<question>
+		<directions>
+			<direction1>
+				<![CDATA[Complete the notes below<br />
+				Write <b><i>MORE THAN THREE WORDS AND/OR A NUMBER</i></b> for each answer.]]>
+			</direction1>
+			<direction2>
+				<![CDATA[Complete the notes below<br />
+				Write <b><i>ONE WORDS AND/OR A NUMBER</i></b> for each answer.]]>
+			</direction2>
+			<direction3>Choose the correct letter, A, B or C</direction3>
+			<direction4><![CDATA[Choose TWO letter, A &#8211; E]]></direction4>
+			<direction5>Choose the correct letter, A, B or C</direction5>
+			<direction6>
+				<![CDATA[Complete the notes below.<br />
+				Write <b>NO MORE THAN TWO WORDS</b> for each answer.]]>
+			</direction6>
+		</directions>
+		<question id="1" qty="10" dir="1">
 			<![CDATA[
 			<h3>JOB ENQUIRY</h3><br />
 			<i>Example</i><br />
@@ -40,11 +54,7 @@
 		</question>
 	</section1>
 	<section2 from="11" to="20">
-		<direction from="11" to="16">
-			<![CDATA[Complete the notes below<br />
-			Write <b><i>ONE WORDS AND/OR A NUMBER</i></b> for each answer.]]>
-		</direction>
-		<question>
+		<question id="11" qty="5" dir="2">
 			<![CDATA[
 			<h2>SPORTS WORLD</h2>
 			<ul>
@@ -57,21 +67,19 @@
 			</ul>
 			]]>
 		</question>
-		<direction from="17" to="18">Choose the correct letter, A, B or C</direction>
-		<question id="17" multiple="1">
+		<question id="17" multiple="1" dir="3">
 			<description>A champion athlete will be in the shop</description>
 			<a>on Saturday morning only.</a>
 			<b>all day Saturday.</b>
 			<c>for the whole weekend.</c>
 		</question>
-		<question id="18" multiple="1">
+		<question id="18" multiple="1" dir="3">
 			<description>The first person to answer 20 quiz questions correctly will win</description>
 			<a>gym membership.</a>
 			<b>a video.</b>
 			<c>a calendar.</c>
 		</question>
-		<direction from="19" to="19">Choose TWO letter, A &#8211; E </direction>
-		<question id="19" multiple="2">
+		<question id="19" multiple="2" dir="4">
 			<description>Which TWO pieces of information does the speaker give about the fitness test?</description>
 			<a>You need to reserve a place.</a>
 			<b>It is free to account holders.</b>
@@ -80,63 +88,62 @@
 			<e>It is cheaper this month.</e>
 		</question>
 	</section2>
-	<section3 from="21" to="30">
-		<direction from="21" to="30">Choose the correct letter, A, B or C</direction>
+	<section3 from="21" to="30" dir="5">
 		<question id="21" multiple="1">
 			<direction>One reason why Spiros felt happy about his marketing presentation was that</direction>
 			<a>he was not nervous.</a>
 			<b>his style was good.</b>
 			<c>the presentation was the best in his group.</c>
 		</question>
-		<question id="22" multiple="1">
+		<question id="22" multiple="1" dir="5">
 			<description>What surprised Hiroko about the other students&#39; presentations?</description>
 			<a>Their presentations were not interesting.</a>
 			<b>They found their presentations stressful.</b>
 			<c>They didn&#39;t look at the audience enough.</c>
 		</question>
-		<question id="23" multiple="1">
+		<question id="23" multiple="1" dir="5">
 			<description>After she gave her presentation, Hiroko felt</description>
 			<a>delighted.</a>
 			<b>dissatisfied.</b>
 			<c>embarrassed.</c>
 		</question>
-		<question id="24" multiple="1">
+		<question id="24" multiple="1" dir="5">
 			<description>How does Spiros feel about his performance in tutorials?</description>
 			<a>not very happy</a>
 			<b>really pleased</b>
 			<c>fairly confident</c>
 		</question>
-		<question id="25" multiple="1">
+		<question id="25" multiple="1" dir="5">
 			<description>Why can the other students participate so easily in discussions?</description>
 			<a>They are polite to each other.</a>
 			<b>They agree to take turns in speaking.</b>
 			<c>They know each other well.</c>
 		</question>
-		<question id="26" multiple="1">
+		<question id="26" multiple="1" dir="5">
 			<description>Why is Hiroko feeling more positive about tutorials now?</description>
 			<a>She finds the other students&#39; opinions more interesting.</a>
 			<b>She is making more of a contribution.</b>
 			<c>The tutor includes her in the discussion.</c>
 		</question>
-		<question id="27" multiple="1">
+		<question id="27" multiple="1" dir="5">
 			<description>To help her understand lectures, Hiroko</description>
 			<a>consulted reference materials.</a>
 			<b>had extra tutorials with her lecturers.</b>
 			<c>borrowed lecture notes from other students.</c>
 		</question>
-		<question id="28" multiple="1">
+		<question id="28" multiple="1" dir="5">
 			<description>What does Spiros think of his reading skills?</description>
 			<a>He reads faster than he used to.</a>
 			<b>It still takes him a long time to read.</b>
 			<c>He tends to struggle with new vocabulary.</c>
 		</question>
-		<question id="29" multiple="1">
+		<question id="29" multiple="1" dir="5">
 			<description>What is Hiroko&#39;s subject area?</description>
 			<a>environmental studies</a>
 			<b>health education</b>
 			<c>engineering</c>
 		</question>
-		<question id="30" multiple="1">
+		<question id="30" multiple="1" dir="5">
 			<description>Hiroko thinks that in the reading classes the students should</description>
 			<a>learn more vocabulary.</a>
 			<b>read more in their own subject areas.</b>
@@ -144,9 +151,7 @@
 		</question>
 	</section3>
 	<section4 from="31" to="40">
-		<direction from="31" to="40"><![CDATA[Complete the notes below.<br />
-		Write <b>NO MORE THAN TWO WORDS</b> for each answer.]]></direction>
-		<question>
+		<question id="31" qty="10" dir="6">
 			<![CDATA[
 			<h2>Mass Strandings of Whales and Dolphins</h2>
 			Mass strandings: situations where groups of whales, dolphins, etc. swim onto the beach
