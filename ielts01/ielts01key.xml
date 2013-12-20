@@ -2,15 +2,15 @@
 <ielts>
 <content code="ielts01">
 	<listening>
-		<question id="1" answer="answering the phone" />
+		<question id="1" answer="answer phone" />
 		<question id="2" answer="Hillsdunne Road" />
-		<question id="3" answer="the Library" />
+		<question id="3" answer="library" />
 		<question id="4" answer="4.45" />
 		<question id="5" answer="national holidays" />
-		<question id="6" answer="after 11 o'clock" />
+		<question id="6" answer="after 11" />
 		<question id="7" answer="clear voice" />
 		<question id="8" answer="think quickly" />
-		<question id="9" answer="22nd of October" />
+		<question id="9" answer="22 October" />
 		<question id="10" answer="Manuja" />
 		<question id="11" answer="branch" />
 		<question id="12" answer="west" />
@@ -38,10 +38,53 @@
 		<question id="34" answer="feeding" />
 		<question id="35" answer="Noises" />
 		<question id="36" answer="healthy" />
-		<question id="37" answer="coast" />
+		<question id="37" answer="group" />
 		<question id="38" answer="social" />
 		<question id="39" answer="leader" />
-		<question id="40" answer="networks" />
+		<question id="40" answer="network" />
 	</listening>
+
+	<reading>
+		<question id="1" answer="false" />
+		<question id="2" answer="not given" />
+		<question id="3" answer="false" />
+		<question id="4" answer="true" />
+		<question id="5" answer="not given" />
+		<question id="6" answer="true" />
+		<question id="7" answer="not given" />
+		<question id="8" answer="rich" />
+		<question id="9" answer="commercial" />
+		<question id="10" answer="mauve" />
+		<question id="11" answer="Pullar" />
+		<question id="12" answer="France" />
+		<question id="13" answer="malaria" />
+		<question id="14" answer="iv" />
+		<question id="15" answer="vii" />
+		<question id="16" answer="i" />
+		<question id="17" answer="ii" />
+		<question id="18" answer="several billion years" />
+		<question id="19" answer="radio" />
+		<question id="20" answer="1000" />
+		<question id="21" answer="yes" />
+		<question id="22" answer="yes" />
+		<question id="23" answer="not given" />
+		<question id="24" answer="no" />
+		<question id="25" answer="not given" />
+		<question id="26" answer="no" />
+		<question id="27" answer="plants" />
+		<question id="28" answer="breathing reproduction" />
+		<question id="29" answer="gills" />
+		<question id="30" answer="dolphins" />
+		<question id="31" answer="not given" />
+		<question id="32" answer="false" />
+		<question id="33" answer="true" />
+		<question id="34" answer="3 measurements" />
+		<question id="35" answer="graph" />
+		<question id="36" answer="cluster" />
+		<question id="37" answer="amphibious" />
+		<question id="38" answer="half way" />
+		<question id="39" answer="dry-land tortoises" />
+		<question id="40" answer="d" />
+	</reading>
 </content>
 </ielts>
