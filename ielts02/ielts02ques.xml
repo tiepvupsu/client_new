@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ielts>
+<content code="ielts02">
+
+<listening>
+	<directions>
+		<direction1>
+			<![CDATA[Complete the notes below<br />
+			Write <b><i>ONE WORD AND/OR A NUMBER</i></b> for each answer.]]>
+		</direction1>
+		<direction2>
+			<![CDATA[Complete the notes below<br />
+			Write <b><i>NO MORE THAN THREE WORDS</i></b> for each answer.]]>
+		</direction2>
+		<direction3>Choose the correct letter, A, B or C</direction3>
+		<direction4><![CDATA[Label the map below.<br />Write the correct letter, A&#8211;I, next to question 17&#8211;20.]]></direction4>
+		<direction5>
+			<![CDATA[Choose the correct letter, A, B or C<br />
+			<h2>Self&#8211;Access Centre</h2>]]>
+		</direction5>
+		<direction6>
+			<![CDATA[Complete the notes below.<br />
+			Write <b>NO MORE THAN TWO WORDS</b> for each answer.]]>
+		</direction6>
+	</directions>
+
+	<section1 from="1" to="10">
+		<question id="1" qty="10" dir="1">
+			<![CDATA[
+			<table border="1">
+				<tr><th colspan="2"><h3>Accommodation Form &#8211; Student Information</h3></th></tr>
+				<tr><td><i>Example</i><br />Type of accommodation:</td><td><u>hall</u> of residence</td></tr>
+				<tr><td>Name:</td><td>Anu <b>1</b><div id="ques1"></div></td></tr>
+				<tr><td>Date of birth:</td><td><b>2</b><div id="ques2"></div></td></tr>
+				<tr><td>Country of origin:</td><td>India</td></tr>
+				<tr><td>Course of study:</td><td><b>3</b><div id="ques3"></div></td></tr>
+				<tr><td>Number of years planned in hall:</td><td><b>4</b><div id="ques4"></div></td></tr>
+				<tr><td>Preferred catering arrangement:</td><td>half board</td></tr>
+				<tr><td>Special dietary requirements:</td><td>no <b>5</b><div id="ques5"></div> (red)</td></tr>
+				<tr><td>Preferred room type:</td><td>a single <b>6</b><div id="ques6"></div></td></tr>
+				<tr><td>Interests:</td><td>the <b>7</b><div id="ques7"></div><br />
+				badminton</td></tr>
+				<tr><td>Priorities in choice of hall:</td><td>to be with other students who are <b>8</b><div id="ques8"></div><br />
+				to live outside the <b>9</b><div id="ques9"></div><br />
+				to have a <b>10</b><div id="ques10"></div> area for socialising</td></tr>
+				<tr><td>Contact phone number:</td><td>667549</td></tr>
+			</table>
+			]]>
+		</question>
+	</section1>
+
+	<section2 from="11" to="20">
+		<question id="11" qty="3" dir="2">
+			<![CDATA[
+			<h2>Parks and open spaces</h2>
+			<table border="1">
+				<tr><th>Name of place</th><th>Of particular interest </th><th>Open</th></tr>
+				<tr><td>Halland Common</td><td>source of River Ouse</td><td>24 hours</td></tr>
+				<tr><td>Holt Island</td><td>many different <b>11</b><div id="ques11"></div></td><td>between <b>12</b><div id="ques12.1"></div> and <div id="ques11"></div></td></tr>
+				<tr><td>Longfield Country Par</td><td>reconstruction of a 2,000thyearthold <b>13</b><div id="ques13"></div> with activities for children</td><td>daylight hours</td></tr>
+			</table>
+			]]>
+		</question>
+		<question id="14" multiple="1" dir="3">
+			<description>As part of Monday&#39;s activity, visitors will</description>
+			<a>prepare food with herbs.</a>
+			<b>meet a wellthknown herbalist.</b>
+			<c>dye cloth with herb.</c>
+		</question>
+		<question id="15" multiple="1" dir="3">
+			<description> For the activity on Wednesday,</description>
+			<a>only group bookings are accepted.</a>
+			<b>visitors should book in advance.</b>
+			<c>attendance is free.</c>
+		</question>
+		<question id="16" multiple="1" dir="3">
+			<description>For the activity on Saturday, visitors should</description>
+			<a>come in suitable clothing.</a>
+			<b>make sure they are able to stay for the whole day.</b>
+			<c>tell the rangers before the event what they wish to do.</c>
+		</question>
+		<question id="17" qty="4" dir="4">
+			<img src="images/17.jpg" alt="image error!">
+			<b>17</b> bird hide <div id="ques17"></div>
+			<b>18</b> dogthwalking area <div id="ques18"></div>
+			<b>19</b> flower garden <div id="ques19"></div>
+			<b>20</b> wooded area <div id="ques20"></div>
+		</question>
+	</section2>
+
+	<section3 from="21" to="30">
+		<question id="21" multiple="1" dir="5">
+			<description>Students want to keep the SelfthAccess Centre because</description>
+			<a>they enjoy the variety of equipment.</a>
+			<b>they like being able to work on their own.</b>
+			<c>it is an important part of their studies.</c>
+		</question>
+		<question id="22" multiple="1" dir="5">
+			<description>Some teachers would prefer to</description>
+			<a>close the Self&#8211;Access Centre.</a>
+			<b>move the Self&#8211;Access Centre elsewhere.</b>
+			<c>restrict access to the Self&#8211;Access Centre.</c>
+		</question>
+		<question id="23" multiple="1" dir="5">
+			<description>The students&#39; main concern about using the library would be</description>
+			<a>the size of the library.</a>
+			<b>difficulty in getting help.</b>
+			<c>the lack of material.</c>
+		</question>
+		<question id="24" multiple="1" dir="5">
+			<description>The Director of Studies is concerned about</description>
+			<a>the cost of upgrading the centre.</a>
+			<b>the lack of space in the centre.</b>
+			<c>the difficulty in supervising the centre.</c>
+		</question>
+	</section3>
