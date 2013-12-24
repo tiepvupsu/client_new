@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ielts>
+<content code="ielts02">
+	<listening>
+		<question id="1" answer="Bhatt" />
+		<question id="2" answer="31 March" />
+		<question id="3" answer="nursing" />
+		<question id="4" answer="2" />
+		<question id="5" answer="meat" />
+		<question id="6" answer="bedsit" />
+		<question id="7" answer="theatre" />
+		<question id="8" answer="mature" />
+		<question id="9" answer="town" />
+		<question id="10" answer="shared" />
+		<question id="11" answer="trees" />
+		<question id="12" answer="Friday" answer2="Sunday"/>
+		<question id="13" answer="farm" />
+		<question id="14" answer="C" />
+		<question id="15" answer="B" />
+		<question id="16" answer="A" />
+		<question id="17" answer="A" />
+		<question id="18" answer="I" />
+		<question id="19" answer="F" />
+		<question id="20" answer="E" />
+		<question id="21" answer="C" />
+		<question id="22" answer="B" />
+		<question id="23" answer="B" />
+		<question id="24" answer="C" />
+		<question id="25" answer="reading" />
+		<question id="26" answer="CD" />
+		<question id="27" answer="workbooks" />
+		<question id="28" answer="timetable" />
+		<question id="29" answer="alarm" />
+		<question id="30" answer="email" />
+		<question id="31" answer="central" />
+		<question id="32" answer="conversation" />
+		<question id="33" answer="effectively" />
+		<question id="34" answer="risk" />
+		<question id="35" answer="levels" />
+		<question id="36" answer="description" />
+		<question id="37" answer="technocal" />
+		<question id="38" answer="change" />
+		<question id="39" answer="reponsibility" />
+		<question id="40" answer="flexible" />
+	</listening>
+</content>
+</ielts>

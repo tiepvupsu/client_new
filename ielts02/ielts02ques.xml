@@ -22,6 +22,10 @@
 			<![CDATA[Complete the notes below.<br />
 			Write <b>NO MORE THAN TWO WORDS</b> for each answer.]]>
 		</direction6>
+		<direction7>
+			<![CDATA[Complete the notes below.<br />
+			Write <b>ONE WORD ONLY</b> for each answer.]]>
+		</direction7>
 	</directions>
 
 	<section1 from="1" to="10">
@@ -56,8 +60,8 @@
 			<table border="1">
 				<tr><th>Name of place</th><th>Of particular interest </th><th>Open</th></tr>
 				<tr><td>Halland Common</td><td>source of River Ouse</td><td>24 hours</td></tr>
-				<tr><td>Holt Island</td><td>many different <b>11</b><div id="ques11"></div></td><td>between <b>12</b><div id="ques12.1"></div> and <div id="ques11"></div></td></tr>
-				<tr><td>Longfield Country Par</td><td>reconstruction of a 2,000thyearthold <b>13</b><div id="ques13"></div> with activities for children</td><td>daylight hours</td></tr>
+				<tr><td>Holt Island</td><td>many different <b>11</b><div id="ques11"></div></td><td>between <b>12</b><div id="ques12.1"></div> and <div id="ques12.2"></div></td></tr>
+				<tr><td>Longfield Country Par</td><td>reconstruction of a 2,000&#8211;year&#8211;old <b>13</b><div id="ques13"></div> with activities for children</td><td>daylight hours</td></tr>
 			</table>
 			]]>
 		</question>
@@ -113,4 +117,100 @@
 			<b>the lack of space in the centre.</b>
 			<c>the difficulty in supervising the centre.</c>
 		</question>
+		<question id="25" qty="4" dir="6">
+			<![CDATA[
+			<h3>Necessary improvements to the  existing Self&#8211;Access Centre</h3>
+			<b>Equipment</b><br />
+			Replace computers to create more space.<br />
+			<b>Resources</b><br />
+			The level of the <b>25</b><div id="ques25"></div> materials, in particular, should be more clearly shown.<br />
+			Update the <b>26</b><div id="ques26"></div> collection.<br />
+			Buy some <b>27</b><div id="ques27"></div> and divide them up.<br />
+			<b>Use of the room</b><br />
+			Speak to the teachers and organise a <b>28</b><div id="ques28"></div> for supervising the centre.<br />
+			Install an <b>29</b><div id="ques29"></div>.<br />
+			Restrict personal use of <b>30</b><div id="ques30"></div> on computers.
+			]]>
+		</question>
 	</section3>
+
+	<section4 from="31" to="40">
+		<question id="31" qty="10" dir="7">
+			<![CDATA[
+			<h3>Business Cultures</h3>
+			<table border="0">
+				<tr>
+			        <td><b>Power culture</b></td>
+			        <td></td>
+				</tr>
+				<tr>
+					<td>Characteristics of organisation:</td>
+					<td><li>small</li>
+						<li><b>31</b><div id="ques31"></div> power source</li>
+						<li>few rules and procedures</li>
+						<li>communication by <b>32</b><div id="ques32"></div></li></td>
+				</tr>
+				<tr>
+					<td>Advantage:</td>
+					<td><li>can act quickly</li></td>
+				</tr>
+				<tr>
+					<td>Disadvantage:</td>
+			        <td><li>might not act <b>33</b><div id="ques33"></div></li></td>
+				</tr>
+				<tr>
+					<td>Suitable employee:</td>
+			        <td><li>not afraid of <b>34</b><div id="ques34"></div></li>
+			            <li>doesn&#39;t need job security</li></td>
+				</tr>
+				<tr>
+			        <td><b>Role  culture</b></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Characteristics of organisation:</td>
+			        <td><li>large, many <b>35</b><div id="ques35"></div></li>
+			            <li>specialised departments</li>
+			            <li>rules and procedure, e.g. job <b>36</b><div id="ques36"></div> and rules for discipline</li></td>
+				</tr>
+				<tr>
+					<td>Advantages:</td>
+			        <td><li>economies of scale</li>
+			            <li>successful when <b>37</b><div id="ques37"></div> ability is important</li></td>
+				</tr>
+				<tr>
+					<td>Disadvantages:</td>
+			        <td><li>slow to see when <b>38</b><div id="ques38"></div> is needed</li>
+			            <li>slow to react</li></td>
+				</tr>
+				<tr>
+					<td>Suitable employee:</td>
+			        <td><li>values security</li>
+			            <li>doesn&#39;t want <b>39</b><div id="ques39"></div></li></td>
+				</tr>
+				<tr>
+			        <td><b>Task  culture</b></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Characteristics of organisation:</td>
+			        <td><li>project orientated</li>
+			            <li>in competitive market or making product with short life</li>
+			            <li>a lot of delegation</li></td>
+				</tr>
+				<tr>
+					<td>Advantage:</td>
+			        <td><li><b>40</b><div id="ques40"></div></li></td>
+				</tr>
+				<tr>
+					<td>Diasdvantage:</td>
+			        <td><li>no economies of scale or special expertise</li></td>
+				</tr>
+				<tr>
+					<td>Suitable employee:</td>
+			        <td><li>likes to work in groups</li></td>
+				</tr>
+			</table>
+			]]>
+		</question>
+	</section4>
