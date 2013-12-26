@@ -1,0 +1,21 @@
+{
+    "studentId": "09520223",
+    "result": [
+        {
+            "time": "a",
+            "point": "2"
+        },
+        {
+            "time": "b",
+            "point": "6"
+        },
+        {
+            "time": "c",
+            "point": "7"
+        },
+        {
+            "time": "d",
+            "point": "9"
+        }
+    ]
+}
