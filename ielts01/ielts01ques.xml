@@ -14,7 +14,10 @@
 		</direction2>
 		<direction3>Choose the correct letter, A, B or C</direction3>
 		<direction4><![CDATA[Choose TWO letter, A &#8211; E]]></direction4>
-		<direction5>Choose the correct letter, A, B or C</direction5>
+		<direction5>
+			<![CDATA[Choose the correct letter, A, B or C<br />
+			<h2>Course Feedback</h2>]]>
+		</direction5>
 		<direction6>
 			<![CDATA[Complete the notes below.<br />
 			Write <b>NO MORE THAN TWO WORDS</b> for each answer.]]>
