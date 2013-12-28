@@ -13,27 +13,101 @@
 </head>
 
 <body>
-	<div id="chart1" style="height:600px;width:400px;"></div>
+	<section id="page" data-role="page">
+		<header data-role="header">
+			<h1>Header</h1>
+		</header><!-- /header -->
+		<article data-role="content">
+			<div id="chart1" style="height:480px;width:360px;"></div>
+		</article><!-- /content -->
+		<footer data-role="footer">
+			<h1>Footer</h1>
+		</footer><!-- /footer -->
+	</section><!-- /page -->
+	
 	<script>
 		$(document).ready(function(){
 			var url = "extData.json";
 			
-
-			$.jqplot.config.enablePlugins = true;
-			var s1 = [2, 6, 7, 10];
-			var ticks = ['a', 'b', 'c', 'd'];
+			var s1 = [];
+			var ticks = [];
 			var sId;
 
 			$.getJSON(url, function (jsonData) {
+				$.jqplot.config.enablePlugins = true;
+				
 			    sId = jsonData.studentId;
-			    $.each(jsonData.result, function (i, fb) {
-			        alert(fb.result);
+			    $.each(jsonData.result, function (key, val) {
+			    	ticks.push(val.time);
+			        s1.push(val.point);
 			    });
+			    console.log(s1);
+
+				plot1 = $.jqplot('chart1', [s1], {
+					title: sId + "'s Statistics",
+					animate: !$.jqplot.use_excanvas,
+					seriesDefaults: {
+						renderer:$.jqplot.BarRenderer,
+						pointLabels: { show: true },
+						rendererOptions: { varyBarColor: true }
+					},
+					axes: {
+						xaxis: {
+							label: "Time",
+							renderer: $.jqplot.CategoryAxisRenderer,
+							labelRenderer: $.jqplot.CanvasAxisLabelRenderer,
+							ticks: ticks
+						},
+						yaxis: {
+							label: "Score",
+							numberTicks: 10,
+							min: 0, 
+							max: 9
+						}
+					},
+					highlighter: { show: false }
+				});
 			});
-			
-			plot1 = $.jqplot('chart1', [s1], {
-				title: sId+'aafg',
+
+		});
+	</script>
+	<!--script type="text/javascript">
+		$(document).ready(function(){
+			// Our ajax data renderer which here retrieves a text file.
+			// it could contact any source and pull data, however.
+			// The options argument isn't used in this renderer.
+			var url = "extData.json";
+			var ajaxDataRenderer = function(url, plot, options) {
+				var ret = null;
+				$.ajax({
+					// have to use synchronous here, else the function 
+					// will return before the data is fetched
+					async: false,
+					url: url,
+					dataType:"json",
+					success: function(data) {
+						ret = data;
+						console.log(ret.studentId);
+					}
+				});
+				return ret;
+			};
+
+			// The url for our json data
+			var jsonurl = "extData.json";
+			$.jqplot.config.enablePlugins = true;
+			// passing in the url string as the jqPlot data argument is a handy
+			// shortcut for our renderer.  You could also have used the
+			// "dataRendererOptions" option to pass in the url.
+			var plot2 = $.jqplot('chart1', jsonurl,{
+				title: {
+					text: 'Student Statistics' 
+				},
 				animate: !$.jqplot.use_excanvas,
+				dataRenderer: ajaxDataRenderer,
+				dataRendererOptions: {
+					unusedOptionalUrl: jsonurl
+				},
 				seriesDefaults:{
 					renderer:$.jqplot.BarRenderer,
 					pointLabels: { show: true },
@@ -48,6 +122,6 @@
 				highlighter: { show: false }
 			});
 		});
-	</script>
+	</script-->
 </body>
 </html>
