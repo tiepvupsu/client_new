@@ -2,186 +2,154 @@
 
 	//load audio script
 	//Declaration here for global varible :D, not declare them in function () , caus this act will cause them tranlate into local varible- sorry for my bad english if it's not good
-	var audioUrl = "../toeic01/Toeic01.mp3";
+	var unitUrl="../ielts01/ielts01";
+	var audioUrl = unitUrl+".mp3";
 	var currentQues = 1;
-	var urlXML="../toeic01/toeic01new.xml";
-	var urlXMLKey="../toeic01/toeic01key.xml";
-	var urlImg="../toeic01/lis_img/";
+	var typeQues=-1;
+	var offsetInc=0,offsetDesc=1;
+	var urlXML=unitUrl+"ques.xml";
+	var urlXMLKey=unitUrl+"key.xml";
+	var urlImg=unitUrl+"_lis_img/";
 	var isPraceticeMode=true;//set mode pratice or test
 	var lastAns=-1;
 	var ansQues=[];
-	var codeName="toeic01";
-	var maxQues=45;
+	var codeName="ielts01";
+	var maxQues=40;
 	var correctAns=0;
-	var mark=10;
+	var mark=0;
 	var audio = $("#audioPlayer");
+
 	//init
-	sessionStorage.clear();
-	$("div.result").hide();
+	__init();
+	handle_user_multichoices();
+	handle_audio_control(audio);
 	
-	function changeAudio(url){
-			
-			$("#audioSrc").attr('src', url);
-			audio.seekable=false;
-	    	/*audio[0].pause();
-		    audio[0].load();
-		    audio[0].play();*/
+	
+	/*
+			$$$$$$$$$$$$$$$$$$$$$$$$$$$
+			$ event handler area here $
+			$$$$$$$$$$$$$$$$$$$$$$$$$$$
+	*/
+		/*
+			catch input...
+		*/
+		//save the last answer of current question ,may be use sessionStorage for saving???
+		
+		function handle_user_multichoices(){
+				$("input[name=radio-choice]").click(function(){
+					/* Act on the event */
+		    		console.log(currentQues+$(this).attr('value'));
+		    		lastAns=$(this).attr('value');
+				});
+
+				$("input[type=checkbox]").click(function(event) {
+					/* Act on the event */
+					console.log("checkbox selected "+$(this).val());
+				});
 		}
-	changeAudio(audioUrl);
-
-	//parse xml script
-	$(document).ready(function(){
-			$.ajax({
-				type: "GET",
-				url: urlXML,
-				dataType: "xml",
-				success: parseXml
-		});
-	});
-
-	function parseXml(xml){
-		$(xml).find('question').each(function(){
-				var order = $(this).attr('order');
-				var description = $(this).find('description').text();
-				var choiceA = $(this).find('a').text();
-				var choiceB = $(this).find('b').text();
-				var choiceC = $(this).find('c').text();
-				var choiceD = $(this).find('d').text();
-				var part=0;
-
-				if (11>order){
-					part=1;
-				}else if (41>order){
-					part=2;
-				}else if (101>order){
-					part=3;
-				}
-				switch (part){
-						case 1:
-							description="<image class='imglis' src="+urlImg+$(this).find('description').attr('image')+".jpg />";
-							if(0==order){
-								$("div.choices").hide();
-							}else{
-								$("div.choices").show();
-							}	
-
-							break;
-						case 2:
-
-							break;
-						case 3:
-							
-							break;
-						case 4:
-
-							break;
-						default:
-							break;
-					}
-				if(order == currentQues){
-							$("#quesTitle").html("Question " + order);
-							$("#quesDetail").html(description);
-							$("#lbChoiceA span.ui-btn-text").html("(A) " + choiceA);
-							$("#lbChoiceB span.ui-btn-text").html("(B) " + choiceB);
-							$("#lbChoiceC span.ui-btn-text").html("(C) " + choiceC);
-							//$("#lbChoiceD span.ui-btn-text").html("(D) " + choiceD);
-
-							console.log(part+ " --" + order +" --"+description);
-							// need to hide the D answer, part have just 3 choices.
-							if (2==part){
-								$("div.ui-radio:last").hide();
-							}else{
-								$("#lbChoiceD span.ui-btn-text").html("(D) " + choiceD);
-								$("div.ui-radio:last").show();
-							}
-
-				}
+		function handle_user_type(cQues,qty){
+			$( "input[type=text].quesfil" ).keyup(function() {
+				var value = $( this ).val();
+				var key=$(this).attr("id");
 				
-				
+				sessionStorage.setItem(key, value);
 			});
-		}
-
-
-
-	//button functions
-		function play(action)
-				 { 
-				   if(action=='play') { 
-				      $("#btnMarkQues").val('pause');
-				   }
-				   else { 
-				      $("#btnMarkQues").val('play');
-				   }
+			//get answer if have
+			for (i=0;i<qty;i++){
+				var container="#"+codeName+(cQues+i);
+				var key=codeName+(cQues+i);
+				if(sessionStorage.getItem(key)){
+					$(container).val(sessionStorage.getItem(key));
 				}
-		$("#btnMarkQues").click(function(){
-			val = $(this).val();
-			   play(val);
+				console.log($(container).attr("id"));
+			}
+			if ($( "input[type=text].quesfil" ).val()!=''){
+				$(this).addClass('.active');
+			}
+		}	
+		function handle_audio_control(audioSelector){
+			var audio=$(audioSelector).get(0);
+			var offsecTime=5;
+
+			$("#btnPlay").click(function(event) {
+				/* Act on the event */
+				if (audio.paused){
+					$(this).html('Pause');
+					audio.play();
+					
+				}else{
+					$(this).html('Play');
+					audio.pause();
+				}	
+			});
+			$("#btnSkipBack").click(function(event) {
+				/* Act on the event */
+				audio.currentTime-=offsecTime;
+			});
+			$("#btnSkipForward").click(function(event) {
+				/* Act on the event */
+				audio.currentTime+=offsecTime;
+			});
+			$("#seekBar").change(function(event) {
+				/* Act on the event */
+				var updateTime=$(this).val()*(audio.duration/100);
+				console.log(updateTime);
+				audio.currentTime=updateTime;
+			});
+	
+			/*
+			$(audio).bind('timeupdate', function(event) {
+				
+				var updateSeek=audio.currentTime*(100/audio.duration);
+				console.log(updateSeek);
+				$("#seekBar").val(updateSeek).slider("refresh");
+			}); 
+			*/
 			
-			/*if($(this).val() == "Mark"){
-				$("#quesTitle").css('background-color', 'yellow');
-				$(this).val("Unmark");
-				alert($(this).val());
+		
+			
+
+		}
+		
+		//start the test
+		$("#btnPlayTest").click(function(){
+			$("audio").get(0).play();
+			if (isTestMode) {
+				$(this).addClass('ui-state-disabled');
+				console.log("test");
 			}
-			else{
-				$("#quesTitle").css('background-color', 'none');
-				$(this).val("Mark");
-				alert($(this).val());
-			}
-			//$("#quesTitle").css('background-color', 'yellow');
-			//$("#quesTitle").highlight("Question");
-			/*if($("#quesTitle").css('background-color') == 'transparent'){
-		    	$("#quesTitle").css('background-color', 'yellow');
-		    }
-			else{
-		    	$("#quesTitle").css('background-color', 'transparent');
-			}*/
+			//start timer countdown
+			/*<script> 
+					var myCountdown2 = new Countdown({
+										time: 40*60, 
+										width:200, 
+										height:80, 
+										rangeHi:"minute"	// <- no comma on last item!
+										});
+				</script>*/
 		});
-
-		//save the last answer of current question ,may be use localStorage for saving???
-		$("input[name=radio-choice]").click(function(){
-    		console.log(currentQues+$(this).attr('value'));
-    		lastAns=$(this).attr('value');
-		});
-		function saveAnswer(ques,ans){
-			if (-1==ans){
-				return;
-			}
-			sessionStorage.setItem(codeName+ques, ans);
-		}
-		function getSavedAnswer(ques){
-			return sessionStorage.getItem(codeName+ques);
-		}
-		function clearLastAnswer(){
-			lastAns=-1;
-		}
-		function showSavedAnswer(ans){
-			var container="input[name=radio-choice]#radio-choice-"+ans;
-
-			//$(container).attr('checked', true).checkboxradio('refresh',true);
-			$(container).prop("checked",true).checkboxradio("refresh");
-			console.log((container));
-			console.log("current aswer is "+ans);
-		}
-		function getAllAnswer(){
-
-		}
 		//next question
 		$("#btnNextQues").click(function() {
 			console.clear();
-			//storing user answer before change question , using localStorage :D, maximum 5MB :(o)
-			saveAnswer(currentQues,lastAns);
+			//storing user answer before change question , using sessionStorage :D, maximum 5MB :(o)
+			saveSingleAnswer(currentQues,lastAns);
+			$( "input[type=text].quesfil" ).addClass('aaaaaaaa');
 			clearLastAnswer();
-
-			currentQues++;
+			
+			
+			//change question id
+			currentQues+=offsetInc;
 			if (currentQues>maxQues){
 				currentQues=1;
 			}
+			//clear checkbox or radio
 			$("input[type='radio'].radio-ans").prop("checked",false).checkboxradio("refresh");
-			//$("input[name=radio-choice]").attr('checked', false).checkboxradio('refresh',true);
+			$("input[type='checkbox'].checkbox-ans").attr("checked",false).checkboxradio("refresh");
+			
 			//check if question has been already ans
 			if (null!==getSavedAnswer(currentQues))
 			{
-				showSavedAnswer(getSavedAnswer(currentQues));
+				showSavedMultiChoiceAnswer(getSavedAnswer(currentQues));
 			}
 				
 			//change question content 
@@ -189,30 +157,32 @@
 				type: "GET",
 				url: urlXML,
 				dataType: "xml",
-				success: parseXml
+				success: parseXml,
 			});
-			
-			
-			
+
+			console.log("current "+currentQues);
+			console.log("currentQues type" +typeQues);
 			
 		});
 		//previous 
 		$("#btnPrevQues").click(function() {
 			console.clear();
 			//storing user answer before change question , using localStorage :D, maximum 5MB :(o)
-			saveAnswer(currentQues,lastAns);
+			saveSingleAnswer(currentQues,lastAns);
 			clearLastAnswer();
 
-			currentQues--;
+			currentQues-=offsetDesc;
 			if (currentQues<1){
-				currentQues=maxQues;	
+				currentQues=maxQues-offsetDesc+1;	
 			}
 			//$("input[name=radio-choice]").attr('checked', false).checkboxradio('refresh',true);
 			$("input[type='radio'].radio-ans").prop("checked",false).checkboxradio("refresh");
+			$("input[type='checkbox'].checkbox-ans").attr("checked",false).checkboxradio("refresh");
+
 			//check if question has been already ans
 			if (null!==getSavedAnswer(currentQues))
 			{
-				showSavedAnswer(getSavedAnswer(currentQues));
+				showSavedMultiChoiceAnswer(getSavedAnswer(currentQues));
 			}
 
 			//change question content 
@@ -223,33 +193,9 @@
 				success: parseXml
 			});
 			
-			
 		});
 		
-		function getAnswerKey(xml){
-			$(xml).find('question').each(function(){
-				var order = $(this).attr('order');
-				var key = $(this).attr('answer');
-				console.log(order+" "+key);
-				
-				if (null!==getSavedAnswer(order)){
-					if (getSavedAnswer(order)==key){
-						++correctAns;
-					}
-				}
-
-
-			});
-			console.log("correct answer "+correctAns);
-			audio[0].pause();
-			$("div.main").fadeOut('slow/400/fast', function() {
-				
-			});
-			$("div.result").fadeIn('slow/400/fast', function() {
-				$(this).find(".correctLis").html(correctAns);
-			});
-
-		}
+		
 		$("#btnSumit").click(function(event) {
 			/* Act on the event */
 			//event.preventDefault();
@@ -265,5 +211,230 @@
 			
 		});
 
+	/* 
+		*********************
+		*function area here *
+		*********************
+	*/
+		function __init(){
+			if (isTestMode()){
+				$(".practice_mode").hide();
+				$(".test_mode").show();
+			}else{
+				$(".practice_mode").show();
+				$(".test_mode").hide();
+			}
+			sessionStorage.clear();
+			$("div.result").hide();
+			updateAudioUrl(audioUrl);
+			//parse xml script, to load data
+					$.ajax({
+							type: "GET",
+							url: urlXML,
+							dataType: "xml",
+							success: parseXml
+						});
+				console.log("currentQues type" +typeQues);
+				console.log("current "+currentQues);
+			
+		}
+		
+		function updateAudioUrl(url){
+			$("#audioSrc").attr('src', url);
+			console.log($("#audioSrc"));
+		}
+		function parseXml(xml){
+			var multiNumber; 
+			var qty;
+			var description ="";
+			
+			$(xml).find('listening question').each(function(){
+				var id = parseInt($(this).attr('id'));
+				
+				//find the current question and act :D
+				if(id === currentQues){
+					multiNumber = parseInt($(this).attr('multiple'));
+					qty=parseInt($(this).attr('qty'));
+					typeQues=multiNumber;
+					
+					if (currentQues===1){
+						preMulti=parseInt($(xml).find('listening question').last().attr('multiple'));
+						if (preMulti===0){
+							offsetDesc=parseInt($(xml).find('listening question').last().attr('qty'));
+						}else{
+							offsetDesc=preMulti;
+						} 
+					}else{			
+						preMulti=parseInt($(this).closest("question").prev().attr("multiple"));
+						if (preMulti===0){
+							offsetDesc=parseInt($(this).closest("question").prev().attr("qty"));
+						}else{
+							offsetDesc=preMulti;
+						}
+					}
+					
+					switch (multiNumber){
+						case 0:
+							description=$(this).text();
+							
+							if (!isNaN(qty))	offsetInc=qty;
+							$(".choices_single,.choices_multi").hide();
+							$("#quesDetail").html(description);
+							for (i=0;i<qty;i++){
+								var container="#ques"+(id+i);
+								$(container).html('<input type="text" name="'+(codeName+(id+i))+'" id="'+(codeName+(id+i))+'" data-mini="true" class="quesfil"/>');
+							}
+							//<input type="text" name="name" id="basic" data-mini="true" />
+							handle_user_type(currentQues,qty);
+							break;
+						case 1:
+							description=$(this).find('description').text();
+		
+							$("#quesDetail").html(description);
+							$(".choices_single").show();
+							$(".choices_multi").hide();
+							var choiceA = $(this).find('a').text();
+							var choiceB = $(this).find('b').text();
+							var choiceC = $(this).find('c').text();
+							$("#lbChoiceA").html("(A) " + choiceA);
+							$("#lbChoiceB").html("(B) " + choiceB);
+							$("#lbChoiceC").html("(C) " + choiceC);
+							offsetInc=1;
+							break;
+						case 2:
+							description=$(this).find('description').text();
+				
+							$("#quesDetail").html(description);
+							$(".choices_multi").show();
+							$(".choices_single").hide();
+							var choiceA = $(this).find('a').text();
+							var choiceB = $(this).find('b').text();
+							var choiceC = $(this).find('c').text();
+							var choiceD = $(this).find('d').text();
+							var choiceE = $(this).find('e').text();
+							$("#lbChoice_multi_A").html("(A) " + choiceA);
+							$("#lbChoice_multi_B").html("(B) " + choiceB);
+							$("#lbChoice_multi_C").html("(C) " + choiceC);
+							$("#lbChoice_multi_D").html("(D) " + choiceD);
+							$("#lbChoice_multi_E").html("(E) " + choiceE);
+							
+							offsetInc=2;
+							break;
+						default:
+							break;
+					}
+
+					if (qty > 0){
+						$("#quesTitle").html("Question " + currentQues + " to "+(id+qty-1));
+						console.log("current ques :" +currentQues +" --> "+(id+qty-1));
+					}else if (multiNumber===2){
+						$("#quesTitle").html("Question " + currentQues+" to " +(currentQues+1));
+						console.log("current ques :" +currentQues +"-->"+(currentQues+1));
+					}else{
+						$("#quesTitle").html("Question " + currentQues);
+						console.log("current ques :" +currentQues);
+					}
+					console.log("___________________________________________");
+
+					
+				}
+			});
+			
+		}
+		function getQuestTypeFromXml(xml){
+			$(xml).find('listening question').each(function(){
+				var id = parseInt($(this).attr('id'));
+
+				//find the current question and act :D
+				if(id === currentQues){
+					typeQues=(parseInt($(this).attr('multiple')));
+				}
+			});
+		}
+		function findTypeOfQuest(ques){
+			$.ajax({
+				type: "GET",
+				url: urlXML,
+				dataType: "xml",
+				success: getQuestTypeFromXml
+			});
+		}
+		function saveSingleAnswer(ques,ans){
+			if (-1==ans){
+				return;
+			}
+			sessionStorage.setItem(codeName+ques, ans);
+		}
+		function saveMultiAnswer(ques,ans1,ans2){
+			if (-1==ans){
+				return;
+			}
+
+		}
+		function getSavedAnswer(ques){
+			return sessionStorage.getItem(codeName+ques);
+		}
+		function clearLastAnswer(){
+			lastAns=-1;
+		}
+		function translateAnswerToNumber(ans){
+			if ((ans==='A') || (ans ==='a')){
+				return 1;
+			}
+			if ((ans==='B') || (ans ==='b')){
+				return 2;
+			}
+			if ((ans==='C') || (ans ==='c')){
+				return 3;
+			}
+			if ((ans==='D') || (ans ==='d')){
+				return 4;
+			}
+			if ((ans==='E') || (ans ==='e')){
+				return 5;
+			}
+			return -1;
+		}
+		function showSavedMultiChoiceAnswer(ans){
+			ansNum=translateAnswerToNumber(ans);
+			var con_single="input[name=radio-choice]#radio-choice-"+ansNum;
+
+			//$(con_single).attr('checked', true).checkboxradio('refresh',true);
+			$(con_single).prop("checked",true).checkboxradio("refresh");
+			console.log((con_single));
+			console.log("current aswer is "+ans);
+		}
+
+		function getAllAnswer(){
+
+		}
+		function isTestMode(){
+			if (sessionStorage.getItem("mode")==='test'){
+				return true;
+			}
+			return false;
+		}
+		function getAnswerKey(xml){
+			$(xml).find('question').each(function(){
+				var order = $(this).attr('order');
+				var key = $(this).attr('answer');
+				console.log(order+" "+key);
+				
+				if (null!==getSavedAnswer(order)){
+					if (getSavedAnswer(order)==key){
+						++correctAns;
+					}
+				}
+			});
+			audio[0].pause();
+			$("div.main").fadeOut('slow/400/fast', function() {
+				
+			});
+			$("div.result").fadeIn('slow/400/fast', function() {
+				$(this).find(".correctLis").html(correctAns);
+			});
+
+		}
+		/* function area end here */
 
 })();//end here

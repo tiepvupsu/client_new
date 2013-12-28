@@ -10,3 +10,33 @@ div.result{
 h3.correctLis{
 	color: green;
 }
+.choices_single,.choices_multi{
+	display: none;
+}
+.questext {
+	display: inline-block;
+
+}
+input.quesfil{
+	border: none;
+	border-bottom: 2px solid red;
+	background: none;
+}
+.questext input select{
+	border-bottom: 2px solid green;
+}
+.left{
+	width: 70%;
+	float: left;
+	padding: 4px;
+	border: 1px solid red;
+
+}
+.right{
+	width: 25%;
+	float: right;
+	border: 1px solid red;
+}
+.active{
+	border-bottom: 2px solid green;
+}
