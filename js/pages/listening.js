@@ -2,7 +2,8 @@
 
 	//load audio script
 	//Declaration here for global varible :D, not declare them in function () , caus this act will cause them tranlate into local varible- sorry for my bad english if it's not good
-	var unitUrl="../ielts01/ielts01";
+	var codeName="ielts02";
+	var unitUrl="../data/"+codeName+"/"+codeName;
 	var audioUrl = unitUrl+".mp3";
 	var currentQues = 1;
 	var typeQues=-1;
@@ -13,7 +14,6 @@
 	var isPraceticeMode=true;//set mode pratice or test
 	var lastAns=-1;
 	var ansQues=[];
-	var codeName="ielts01";
 	var maxQues=40;
 	var correctAns=0;
 	var mark=0;
@@ -415,24 +415,19 @@
 			return false;
 		}
 		function getAnswerKey(xml){
-			$(xml).find('question').each(function(){
-				var order = $(this).attr('order');
+			$(xml).find('listening question').each(function(){
+				var id = $(this).attr('id');
 				var key = $(this).attr('answer');
-				console.log(order+" "+key);
+				console.log(id+" "+key);
 				
-				if (null!==getSavedAnswer(order)){
-					if (getSavedAnswer(order)==key){
+				if (null!==getSavedAnswer(id)){
+					if (getSavedAnswer(id)==key){
 						++correctAns;
 					}
 				}
 			});
-			audio[0].pause();
-			$("div.main").fadeOut('slow/400/fast', function() {
-				
-			});
-			$("div.result").fadeIn('slow/400/fast', function() {
-				$(this).find(".correctLis").html(correctAns);
-			});
+			
+			console.log(correctAns);
 
 		}
 		/* function area end here */

@@ -2,19 +2,19 @@
     "studentId": "09520223",
     "result": [
         {
-            "time": "a",
+            "time": "Day1",
             "point": "2"
         },
         {
-            "time": "b",
+            "time": "Day2",
             "point": "6"
         },
         {
-            "time": "c",
+            "time": "Day3",
             "point": "7"
         },
         {
-            "time": "d",
+            "time": "Day4",
             "point": "7.5"
         }
     ]

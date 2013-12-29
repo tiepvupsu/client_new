@@ -27,9 +27,9 @@
 			Write <b>ONE WORD ONLY</b> for each answer.]]>
 		</direction7>
 	</directions>
+<questions>
 
-	<section1 from="1" to="10">
-		<question id="1" qty="10" dir="1">
+		<question id="1" multiple="0" qty="10" dir="1">
 			<![CDATA[
 			<table border="1">
 				<tr><th colspan="2"><h3>Accommodation Form &#8211; Student Information</h3></th></tr>
@@ -51,10 +51,7 @@
 			</table>
 			]]>
 		</question>
-	</section1>
-
-	<section2 from="11" to="20">
-		<question id="11" qty="3" dir="2">
+		<question id="11" multiple="0" qty="3" dir="2">
 			<![CDATA[
 			<h2>Parks and open spaces</h2>
 			<table border="1">
@@ -83,16 +80,14 @@
 			<b>make sure they are able to stay for the whole day.</b>
 			<c>tell the rangers before the event what they wish to do.</c>
 		</question>
-		<question id="17" qty="4" dir="4">
-			<img src="images/17.jpg" alt="image error!">
+		<question id="17" multiple="0" qty="4" dir="4">
+			<description img="17.jpg">For the activity on Saturday, visitors should</description>
 			<b>17</b> bird hide <div id="ques17"></div>
 			<b>18</b> dogthwalking area <div id="ques18"></div>
 			<b>19</b> flower garden <div id="ques19"></div>
 			<b>20</b> wooded area <div id="ques20"></div>
 		</question>
-	</section2>
 
-	<section3 from="21" to="30">
 		<question id="21" multiple="1" dir="5">
 			<description>Students want to keep the SelfthAccess Centre because</description>
 			<a>they enjoy the variety of equipment.</a>
@@ -117,7 +112,7 @@
 			<b>the lack of space in the centre.</b>
 			<c>the difficulty in supervising the centre.</c>
 		</question>
-		<question id="25" qty="4" dir="6">
+		<question id="25" multiple="0" qty="6" dir="6">
 			<![CDATA[
 			<h3>Necessary improvements to the  existing Self&#8211;Access Centre</h3>
 			<b>Equipment</b><br />
@@ -132,10 +127,7 @@
 			Restrict personal use of <b>30</b><div id="ques30"></div> on computers.
 			]]>
 		</question>
-	</section3>
-
-	<section4 from="31" to="40">
-		<question id="31" qty="10" dir="7">
+		<question id="31" multiple="0" qty="10" dir="7">
 			<![CDATA[
 			<h3>Business Cultures</h3>
 			<table border="0">
@@ -213,4 +205,7 @@
 			</table>
 			]]>
 		</question>
-	</section4>
+</questions>
+</listening>
+</content>
+</ielts>
