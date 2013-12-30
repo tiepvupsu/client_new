@@ -57,7 +57,7 @@
 			<table border="1">
 				<tr><th>Name of place</th><th>Of particular interest </th><th>Open</th></tr>
 				<tr><td>Halland Common</td><td>source of River Ouse</td><td>24 hours</td></tr>
-				<tr><td>Holt Island</td><td>many different <b>11</b><div id="ques11"></div></td><td>between <b>12</b><div id="ques12.1"></div> and <div id="ques12.2"></div></td></tr>
+				<tr><td>Holt Island</td><td>many different <b>11</b><div id="ques11"></div></td><td>between <b>12</b><div id="ques12"></div> and <div id="ques12"></div></td></tr>
 				<tr><td>Longfield Country Par</td><td>reconstruction of a 2,000&#8211;year&#8211;old <b>13</b><div id="ques13"></div> with activities for children</td><td>daylight hours</td></tr>
 			</table>
 			]]>
@@ -82,14 +82,14 @@
 		</question>
 		<question id="17" multiple="0" qty="4" dir="4">
 			<description img="17.jpg">For the activity on Saturday, visitors should</description>
-			<b>17</b> bird hide <div id="ques17"></div>
-			<b>18</b> dogthwalking area <div id="ques18"></div>
-			<b>19</b> flower garden <div id="ques19"></div>
-			<b>20</b> wooded area <div id="ques20"></div>
+			<![CDATA[<br /><b>17</b> bird hide <div id="ques17"></div>
+			<br /><b>18</b> dogthwalking area <div id="ques18"></div>
+			<br /><b>19</b> flower garden <div id="ques19"></div>
+			<br /><b>20</b> wooded area <div id="ques20"></div>]]>
 		</question>
 
 		<question id="21" multiple="1" dir="5">
-			<description>Students want to keep the SelfthAccess Centre because</description>
+			<description>Students want to keep the Self&#8211;Access Centre because</description>
 			<a>they enjoy the variety of equipment.</a>
 			<b>they like being able to work on their own.</b>
 			<c>it is an important part of their studies.</c>
