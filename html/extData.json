@@ -2,20 +2,48 @@
     "studentId": "09520223",
     "result": [
         {
-            "time": "Day1",
-            "point": "2"
+            "time": "1",
+            "point": "4"
         },
         {
-            "time": "Day2",
+            "time": "2",
             "point": "6"
         },
         {
-            "time": "Day3",
+            "time": "3",
             "point": "7"
         },
         {
-            "time": "Day4",
+            "time": "4",
+            "point": "6"
+        },
+        {
+            "time": "5",
+            "point": "6"
+        },
+        {
+            "time": "6",
+            "point": "7"
+        },
+        {
+            "time": "7",
             "point": "7.5"
+        },
+        {
+            "time": "8",
+            "point": "7.5"
+        },
+        {
+            "time": "3",
+            "point": "8"
+        },
+        {
+            "time": "9",
+            "point": "7.5"
+        },
+        {
+            "time": "10",
+            "point": "8"
         }
     ]
 }

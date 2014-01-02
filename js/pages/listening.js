@@ -2,7 +2,7 @@
 
 	//load audio script
 	//Declaration here for global varible :D, not declare them in function () , caus this act will cause them tranlate into local varible- sorry for my bad english if it's not good
-	var codeName="ielts02";
+	var codeName="ielts01";
 	var unitUrl="../data/"+codeName+"/"+codeName;
 	var audioUrl = unitUrl+".mp3";
 	var currentQues = 1;
@@ -34,7 +34,7 @@
 			catch input...
 		*/
 		//save the last answer of current question ,may be use sessionStorage for saving???
-		
+		console.log(urlXMLKey);
 		function handle_user_multichoices(){
 				$("input[name=radio-choice]").click(function(){
 					/* Act on the event */
@@ -90,11 +90,12 @@
 				/* Act on the event */
 				audio.currentTime+=offsecTime;
 			});
-			$("#seekBar").change(function(event) {
+
+			$(".seekBar a").bind('change', function(event){
 				/* Act on the event */
-				var updateTime=$(this).val()*(audio.duration/100);
+				var updateTime=$(this).attr("valuenow")*(audio.duration/100);
 				console.log(updateTime);
-				audio.currentTime=updateTime;
+				//audio.currentTime=updateTime;
 			});
 	
 			/*
@@ -103,21 +104,23 @@
 				var updateSeek=audio.currentTime*(100/audio.duration);
 				console.log(updateSeek);
 				$("#seekBar").val(updateSeek).slider("refresh");
-			}); 
-			*/
-			
-		
-			
-
+				
+				//var second=Math.round(audio.currentTime);
+				//var minute=(second / 60);
+				//$(".counter").html(minute+" mm :"+second+" ss");
+			}); */
 		}
-		
+
 		//start the test
 		$("#btnPlayTest").click(function(){
 			$("audio").get(0).play();
 			if (isTestMode) {
 				$(this).addClass('ui-state-disabled');
 				console.log("test");
+
 			}
+			//timeout_trigger();
+
 			//start timer countdown
 			/*<script> 
 					var myCountdown2 = new Countdown({
@@ -199,8 +202,6 @@
 		$("#btnSumit").click(function(event) {
 			/* Act on the event */
 			//event.preventDefault();
-			
-			mark=5;
 			console.log("checking answer...");
 			$.ajax({
 				type: "GET",
@@ -415,7 +416,7 @@
 			return false;
 		}
 		function getAnswerKey(xml){
-			$(xml).find('listening question').each(function(){
+			$(xml).find('question').each(function(){
 				var id = $(this).attr('id');
 				var key = $(this).attr('answer');
 				console.log(id+" "+key);
@@ -423,6 +424,7 @@
 				if (null!==getSavedAnswer(id)){
 					if (getSavedAnswer(id)==key){
 						++correctAns;
+						sessionStorage.setItem("correctAns",correctAns);
 					}
 				}
 			});
@@ -430,6 +432,7 @@
 			console.log(correctAns);
 
 		}
+		
 		/* function area end here */
 
 })();//end here

@@ -29,14 +29,23 @@ input.quesfil{
 	width: 70%;
 	float: left;
 	padding: 4px;
-	border: 1px solid red;
+
 
 }
 .right{
 	width: 25%;
 	float: right;
-	border: 1px solid red;
+	
 }
 .active{
 	border-bottom: 2px solid green;
+}
+.full-width-slider input {
+    display: none;
+}
+.full-width-slider .ui-slider-track {
+    margin-left: 15px;
+}
+.ui-shadow-inset .ui-body-inherit .ui-corner-all .ui-slider-input{
+	display: none;
 }

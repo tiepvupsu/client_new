@@ -23,7 +23,7 @@
 	<!--application UI goes here-->
 	<section id="page" data-role="page">
 	    <header data-theme="a" data-role="header" data-position="fixed">
-	        <a href="page_confirm_finish.html" data-transition="pop" data-theme="b" href="#" data-icon="check" data-iconpos="right"
+	        <a href="page_confirm_finish.html" data-role="button" data-transition="pop" data-theme="b" href="#" data-icon="check" data-iconpos="right"
 	        class="ui-btn-right" id="btnSumit">
 	            Finish
 	        </a>
@@ -41,7 +41,10 @@
 			<div class="player practice_mode">
 				<div data-role="controlgroup" data-type="horizontal" data-mini="true">
 					<form>
-					    <input type="range" name="slider-2" id="seekBar" data-highlight="true" min="0" max="100" value="0">
+						<div class="seekbar">
+							<input type="range" name="slider-2" id="seekBar" data-highlight="true" min="0" max="100" value="0">
+						</div>
+					    
 					</form>
 				    <a href="#" data-icon="action" data-role="button" data-mini="true" data-inline="true" id="btnPlay">Play</a>
 				    <a href="#" data-icon="arrow-l" data-role="button" data-mini="true" data-inline="true" id="btnSkipBack">Skip Backward</a>
@@ -106,6 +109,7 @@
 						</div>
 					</div>
 			</div>
+			<!--
 				<div class="right">
 					<ul data-role="listview" data-inset="true" data-divider-theme="a">
 					    <li data-role="list-divider">Mail</li>
@@ -116,6 +120,7 @@
 					    <li><a href="#">Work</a></li>
 					</ul>
 				</div>
+			-->
 			</div>
 		</article><!-- /content -->
 		</div>
