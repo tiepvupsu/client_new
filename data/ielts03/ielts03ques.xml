@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ielts>
+<content code="ielts03">
+
+<listening>
+	<directions>
+		<direction1>
+			<![CDATA[Complete the table below<br />
+			Write <b><i>ONE WORD AND/OR A NUMBER</i></b> for each answer.]]>
+		</direction1>
+		<direction2>
+			<![CDATA[Choose the correct letter, A, B or C<br />
+			<b>Winridge Forest Railway Park</b>]]>
+		</direction2>
+		<direction3>
+			<![CDATA[What is currently the main area of work of each of the following people?<br />
+			Choose <b>FIVE</b> answers from the box and write the correct letter, A&#8211;H, next to questions 14&#8211;18.]]>
+		</direction3>
+		<direction4>
+			<![CDATA[Complete the table below.<br />
+			Write <b>ONE WORD AND/OR NUMBERS</b> for each answer.]]></direction4>
+		<direction5>
+			<![CDATA[Choose the correct letter, A, B or C<br />
+			<h2>Course Feedback</h2>]]>
+		</direction5>
+		<direction6>
+			<![CDATA[Complete the notes below.<br />
+			Write <b>NO MORE THAN TWO WORDS</b> for each answer.]]>
+		</direction6>
+	</directions>
+
+	<questions>
+		<question id="1" multiple="0" qty="5" dir="1">
+			<![CDATA[
+			<table border="1">
+				<tr>
+					<th>Apartments</th>
+					<th>Facilities</th>
+					<th>Other Information</th>
+					<th>Cost</th>
+				</tr>
+				<tr>
+					<td><b>Rose Garden Apartment</b></td>
+					<td>studio flat</td>
+					<td><i>Example</i><br />entertainment programme: Greek <u>dancing</u></td>
+					<td>&#163;219</td>
+				</tr>
+				<tr>
+					<td><b>Blue Bay Apartments</b></td>
+					<td>large salt-water swimming pool</td>
+					<td>- just <b>1</b> <div id="ques1" class="questext"></div> metres from beach<br />- near shops</td>
+					<td>&#163;275</td>
+				</tr>
+				<tr>
+					<td><b>2 <div id="ques2" class="questext"></div> Apartments</b></td>
+					<td>terrace</td>
+					<td>watersports</td>
+					<td>&#163;490</td>
+				</tr>
+				<tr>
+					<td><b>The Grand</b></td>
+					<td>- Greek paintings<br />- <b>3 <div id="ques3" class="questext"></div></b></td>
+					<td>- overlooking <b>4</b> <div id="ques4" class="questext"></div><br >- near a supermarket and a disc</td>
+					<td><b>5</b> &#163;<div id="ques5" class="questext"></div></td>
+				</tr>
+			</table>
+			]]>
+		</question>
+
+		<question id="5" multiple="0" qty="5" dir="1">
+			<![CDATA[
+			<table border="1">
+				<tr>
+					<th colspan="2">GREEK ISLAND HOLIDAYS</th>
+				</tr>
+				<tr>
+					<th>Insurance  Benefits</th>
+					<th>Maximum Amount</th>
+				</tr>
+				<tr>
+					<td>Cancellation</td>
+					<td><b>6</b> &#163; <div id="ques6" class="questext"></div></td>
+				</tr>
+				<tr>
+					<td>Hospital</td>
+					<td>&#163;600. Additional benefit allows a <b>7</b> <div id="ques7" class="questext"></div> to travel to resort</td>
+				</tr>
+				<tr>
+					<td><b>8</b> <div id="ques8" class="questext"></div> departure</td>
+					<td>Up to &#163;1000. Depends on reason</td>
+				</tr>
+				<tr>
+					<td>Personal belonging</td>
+					<td>Up to &#163;3000; &#163;500 for one <b>9</b> <div id="ques9" class="questext"></div> departure</td>
+				</tr>
+				<tr>
+					<td colspan="2">Name of Assistant Manager: Ben <b>10</b> <div id="ques10" class="questext"></div></td>
+				</tr>
+				<tr>
+					<td colspan="2">Direct phone line: 081260 543216</td>
+				</tr>
+			</table>
+			]]>
+		</question>
+
+		<question id="11" multiple="1" dir="2">
+			<description>Simon&#39;s idea for a theme park came from</description>
+			<a>his childhood hobby.</a>
+			<b>his interest in landscape design.</b>
+			<c>his visit to another park.</c>
+		</question>
+		<question id="12" multiple="1" dir="2">
+			<description>When they started, the family decided to open the park only when</description>
+			<a>the weather was expected to be good.</a>
+			<b>the children weren&#39;t at school.</b>
+			<c>there were fewer farming commitments.</c>
+		</question>
+		<question id="13" multiple="1" dir="2">
+			<description>Since opening, the park has had</description>
+			<a>50,000 visitors.</a>
+			<b>1,000,000 visitors.</b>
+			<c>1,500,000 visitors</c>
+		</question>
+
+		<question id="14" multiple="0" qty="5" dir="3">
+			<table border="1">
+				<tr>
+					<td>
+						<b>Are a of work</b><br />
+						<b>A</b> advertising<br />
+						<b>B</b> animal care<br />
+						<b>C</b> building<br />
+						<b>D</b> educational links<br />
+						<b>E</b> engine maintenance<br />
+						<b>F</b> food and drink<br />
+						<b>G</b> sales<br />
+						<b>H</b> staffing
+					</td>
+				</tr>
+			</table>
+			<b>People</b><br />
+			<b>14</b> Simon (the speaker) <div id="ques14" class="questext"></div><br />
+			<b>15</b> Liz <div id="ques15" class="questext"></div><br />
+			<b>16</b> Sarah <div id="ques16" class="questext"></div><br />
+			<b>17</b> Duncan <div id="ques17" class="questext"></div><br />
+			<b>18</b> Judith <div id="ques18" class="questext"></div>
+		</question>
+
+		<question id="19" multiple="0" qty="2" dir="4">
+			<![CDATA[
+			<table border="1">
+				<tr>
+					<th>Feature</th>
+					<th>Size</th>
+					<th>Biggest challenge</th>
+					<th>Target age group</th>
+				</tr>
+				<tr>
+					<td>Railway</td>
+					<td>1.2 km</td>
+					<td>Making tunnels</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Go-Kart arena</td>
+					<td><b>19</b> <div id="ques19" class="questext"></div> m&sup2;</td>
+					<td>Removing mounds on the track</td>
+					<td><b>20</b> <div id="ques20" class="questext"></div> year-olds</td>
+				</tr>
+			</table>
+			]]>
+		</question>
