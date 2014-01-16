@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ielts>
+<content code="ielts03">
+	<listening>
+		<question id="1" answer="300" />
+		<question id="2" answer="Sunshade" />
+		<question id="3" answer="balcony" />
+		<question id="4" answer="forest" />
+		<question id="5" answer="319" />
+		<question id="6" answer="10000" />
+		<question id="7" answer="relative" />
+		<question id="8" answer="missed" />
+		<question id="9" answer="item" />
+		<question id="10" answer="Ludlow" />
+		<question id="11" answer="C" />
+		<question id="12" answer="A" />
+		<question id="13" answer="C" />
+		<question id="14" answer="E" />
+		<question id="15" answer="H" />
+		<question id="16" answer="F" />
+		<question id="17" answer="C" />
+		<question id="18" answer="G" />
+		<question id="19" answer="120" />
+		<question id="20" answer="5 to 12" />
+		<question id="21" answer="fishing industry" />
+		<question id="22" answer="statistics" />
+		<question id="23" answer="note-taking" />
+		<question id="24" answer="confidence" />
+		<question id="25" answer="ideas" />
+		<question id="26" answer="student support" />
+		<question id="27" answer="places" />
+		<question id="28" answer="general" />
+		<question id="29" answer="3 times" />
+		<question id="30" answer="25" />
+		<question id="31" answer="B" />
+		<question id="32" answer="A" />
+		<question id="33" answer="glass" />
+		<question id="34" answer="insulation" />
+		<question id="35" answer="windows" />
+		<question id="36" answer="electricity" />
+		<question id="37" answer="floor" />
+		<question id="38" answer="waste" />
+		<question id="39" answer="concrete" />
+		<question id="40" answer="15 years" />
+	</listening>
+</content>
+</ielts>

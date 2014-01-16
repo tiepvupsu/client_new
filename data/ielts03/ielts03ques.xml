@@ -14,19 +14,23 @@
 		</direction2>
 		<direction3>
 			<![CDATA[What is currently the main area of work of each of the following people?<br />
-			Choose <b>FIVE</b> answers from the box and write the correct letter, A&#8211;H, next to questions 14&#8211;18.]]>
+			Choose <b>FIVE</b> answers from the box and write the correct letter, A-H, next to questions 14-18.]]>
 		</direction3>
 		<direction4>
 			<![CDATA[Complete the table below.<br />
-			Write <b>ONE WORD AND/OR NUMBERS</b> for each answer.]]></direction4>
+			Write <b>ONE WORD AND/OR NUMBERS</b> for each answer.]]>
+		</direction4>
 		<direction5>
-			<![CDATA[Choose the correct letter, A, B or C<br />
-			<h2>Course Feedback</h2>]]>
+			<![CDATA[Complete the notes below.<br />
+			Write <b>NO MORE THAN TWO WORDS AND/OR A NUMBER</b> for each answer.]]>
 		</direction5>
 		<direction6>
-			<![CDATA[Complete the notes below.<br />
-			Write <b>NO MORE THAN TWO WORDS</b> for each answer.]]>
+			Choose the correct letter, A, B or C.
 		</direction6>
+		<direction7>
+			<![CDATA[Complete the notes below.<br />
+			Write <b>ONE WORD AND/OR NUMBERS</b> for each answer.]]>
+		</direction7>
 	</directions>
 
 	<questions>
@@ -67,7 +71,7 @@
 			]]>
 		</question>
 
-		<question id="5" multiple="0" qty="5" dir="1">
+		<question id="6" multiple="0" qty="5" dir="1">
 			<![CDATA[
 			<table border="1">
 				<tr>
@@ -104,7 +108,7 @@
 		</question>
 
 		<question id="11" multiple="1" dir="2">
-			<description>Simon&#39;s idea for a theme park came from</description>
+			<description>Simon's idea for a theme park came from</description>
 			<a>his childhood hobby.</a>
 			<b>his interest in landscape design.</b>
 			<c>his visit to another park.</c>
@@ -112,7 +116,7 @@
 		<question id="12" multiple="1" dir="2">
 			<description>When they started, the family decided to open the park only when</description>
 			<a>the weather was expected to be good.</a>
-			<b>the children weren&#39;t at school.</b>
+			<b>the children weren't at school.</b>
 			<c>there were fewer farming commitments.</c>
 		</question>
 		<question id="13" multiple="1" dir="2">
@@ -123,6 +127,7 @@
 		</question>
 
 		<question id="14" multiple="0" qty="5" dir="3">
+			<![CDATA[
 			<table border="1">
 				<tr>
 					<td>
@@ -144,6 +149,7 @@
 			<b>16</b> Sarah <div id="ques16" class="questext"></div><br />
 			<b>17</b> Duncan <div id="ques17" class="questext"></div><br />
 			<b>18</b> Judith <div id="ques18" class="questext"></div>
+			]]>
 		</question>
 
 		<question id="19" multiple="0" qty="2" dir="4">
@@ -170,3 +176,117 @@
 			</table>
 			]]>
 		</question>
+
+		<question id="21" multiple="0" qty="10" dir="5">
+			<![CDATA[
+			<h3>Study Skills Tutorial – Caroline Benning</h3>
+			<table>
+				<tr>
+					<td>Dissertation topic:</td>
+					<td><ul>the <b>21</b> <div id="ques21" class="questext"></div></ul></td>
+				</tr>
+				<tr>
+					<td>Strengths:</td>
+					<td>
+						<ul>
+							<li><b>22</b> <div id="ques22" class="questext"></div></li>
+							<li>computer modelling</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td>Weaknesses:</td>
+					<td>
+						<ul>
+							<li>lack of background information</li>
+							<li>poor <b>23</b> <div id="ques23" class="questext"></div> skills</li>
+						</ul>
+					</td>
+				</tr>
+			</table>
+			<table border="1">
+				<tr>
+					<th>Possible strategy</th>
+					<th>Benefits</th>
+					<th>Problems</th>
+				</tr>
+				<tr>
+					<td>peer group discussion</td>
+					<td>increases <b>24</b> <div id="ques24" class="questext"></div></td>
+					<td>dissertations tend to contain the same <b>25</b> <div id="ques25" class="questext"></div></td>
+				</tr>
+				<tr>
+					<td>use the <b>26</b> <div id="ques26" class="questext"></div> service</td>
+					<td>provides structured programme</td>
+					<td>limited <b>27</b> <div id="ques27" class="questext"></div></td>
+				</tr>
+				<tr>
+					<td>consult study skills books</td>
+					<td>are a good source of reference</td>
+					<td>can be too <b>28</b> <div id="ques28" class="questext"></div></td>
+				</tr>
+			</table>
+			<table>
+				<tr>
+					<td>Recommendations:</td>
+					<td>
+						<ul>
+							<li>use a card index</li>
+							<li>read all notes <b>29</b> <div id="ques29" class="questext"></div></li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td>Next tutorial date:</td>
+					<td>
+						<ul>
+							<li>lack of background information</li>
+							<li><b>30</b> <div id="ques30" class="questext"></div> January</li>
+						</ul>
+					</td>
+				</tr>
+			</table>
+			]]>
+		</question>
+
+		<question id="31" multiple="1" dir="6">
+			<description>The owners of the underground house</description>
+			<a>had no experience of living in a rural area.</a>
+			<b>were interested in environmental issues.</b>
+			<c>wanted a professional project manager.</c>
+		</question>
+		<question id="32" multiple="1" dir="6">
+			<description>What does the speaker say about the site of the house?</description>
+			<a>The land was quite cheap.</a>
+			<b>Stone was being extracted nearby.</b>
+			<c>It was in a completely unspoilt area.</c>
+		</question>
+
+		<question id="33" multiple="0" qty="8" dir="7">
+			<![CDATA[
+			<h3>The Underground House</h3>
+			<b>Design</b>
+			<ul>
+				<li>Built in the earth, with two floors</li>
+				<li>The south-facing side was constructed of two layers of <b>33</b> <div id="ques33" class="questext"></div></li>
+				<li>Photovoltaic tiles were attached</li>
+				<li>A layer of foam was used to improve the <b>34</b> <div id="ques34" class="questext"></div> of the building</li>
+			</ul>
+			<b>Special features</b>
+			<ul>
+				<li>To increase the light, the building has many internal mirrors and <b>35</b> <div id="ques35" class="questext"></div></li>
+				<li>In future, the house may produce more <b>36</b> <div id="ques36" class="questext"></div> than it needs</li>
+				<li>Recycled wood was used for the <b>37</b> <div id="ques37" class="questext"></div> of the house</li>
+				<li>The system for processing domestic <b>38</b> <div id="ques38" class="questext"></div> is organic</li>
+			</ul>
+			<b>Environmental issues</b>
+			<ul>
+				<li>The use of large quantities of <b>39</b> <div id="ques39" class="questext"></div> in construction was environmentally harmful</li>
+				<li>But the house will have paid its 'environmental debt' within <b>40</b> <div id="ques40" class="questext"></div></li>
+			</ul>
+			]]>
+		</question>
+	</questions>
+</listening>
+</content>
+</ielts>
