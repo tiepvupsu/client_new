@@ -3,6 +3,8 @@
 <content code="ielts01">
 
 <listening>
+	<src url="http://abc.com/ielts01.mp3">
+	</src>
 	<directions>
 		<direction1>
 			<![CDATA[Complete the notes below<br />

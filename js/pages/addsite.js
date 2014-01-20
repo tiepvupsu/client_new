@@ -88,8 +88,8 @@ $("#page-addsite").on('click',function() {
            
 
         }  
-        
-        $.mobile.showPageLoadingMsg();
+        $.mobile.loadingMessage = 'Loading...Please wait';
+        //$.mobile.showPageLoadingMsg();
         $.getJSON(siteurl+"/login/token.php",
             {
                 username: username,

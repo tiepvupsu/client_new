@@ -305,7 +305,7 @@ function getCacheElements(type){
  // A wrapper function for a moodle WebService call
 function moodleWSCallXML(method, data, callBack, preSets){
                         
-    $.mobile.showPageLoadingMsg();
+    //$.mobile.showPageLoadingMsg();
     
     if(typeof(preSets.wstoken) == 'undefined'){   
         var tokens = localStorage.getItem("tokens");
@@ -374,7 +374,7 @@ function moodleWSCallXML(method, data, callBack, preSets){
         return data;
       },
       success: function(data){
-        $.mobile.hidePageLoadingMsg();
+        //$.mobile.hidePageLoadingMsg();
         
         data = xml2json(data);
         
