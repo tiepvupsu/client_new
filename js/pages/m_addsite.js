@@ -83,12 +83,12 @@ $("#page-addsite").on('click',function() {
             localStorage.setItem('tokens',JSON.stringify(tokens));
             localStorage.setItem('current_site',sites.length - 1);                                         
             alert("Your webservice token is : "+mytoken);
-            $.mobile.changePage("html/contents.html",'slideup');
-            
+            $.mobile.changePage("moodle_contents.html",'slideup');
+           // $.mobile.changePage("html/page_list.html",'slideup');
            
 
         }  
-        $.mobile.loadingMessage = 'Loading...Please wait';
+        //$.mobile.loadingMessage = 'Loading...Please wait';
         //$.mobile.showPageLoadingMsg();
         $.getJSON(siteurl+"/login/token.php",
             {

@@ -114,7 +114,7 @@ function loadLang(lang, callback) {
     
     $.ajax({
       type: "GET",
-      url: "lang/"+lang+".json",
+      url: "../lang/"+lang+".json",
       dataType: 'json',
       success: function(data){
         langStrings[lang] = data;
@@ -165,7 +165,7 @@ function checkConnection(){
 
 // Custom error popup
 function popErrorMessage(errorMessage){
-     $.mobile.hidePageLoadingMsg();
+     //$.mobile.hidePageLoadingMsg();
      $("<div class='ui-loader ui-overlay-shadow ui-body-e ui-corner-all'><h1>" + errorMessage  + "</h1></div>")
      .css({ "display": "block", "opacity": 0.96, "top": $(window).scrollTop() + 100 })
      .appendTo( $.mobile.pageContainer )

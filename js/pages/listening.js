@@ -95,9 +95,16 @@
 				/* Act on the event */
 				var updateTime=$(this).attr("valuenow")*(audio.duration/100);
 				console.log(updateTime);
-				//audio.currentTime=updateTime;
+				audio.currentTime=updateTime;
 			});
 	
+			$("#seekBar").bind('change', function(event) {
+				/* Act on the event */
+				var updateTime=$(this).attr("valuenow")*(audio.duration/100);
+				console.log(updateTime);
+				audio.currentTime=updateTime;
+
+			});
 			/*
 			$(audio).bind('timeupdate', function(event) {
 				
@@ -108,7 +115,7 @@
 				//var second=Math.round(audio.currentTime);
 				//var minute=(second / 60);
 				//$(".counter").html(minute+" mm :"+second+" ss");
-			}); */
+			});*/
 		}
 
 		//start the test
