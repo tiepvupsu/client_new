@@ -39,7 +39,7 @@
         var sites = JSON.parse(localStorage.getItem("sites"));
         data.userid = sites[localStorage.getItem("current_site")].userid;
         
-        moodleWSCall('moodle_enrol_get_users_courses', data, listCourses, {});
+        moodleWSCall('core_enrol_get_users_courses', data, listCourses, {});
             
 
 })();

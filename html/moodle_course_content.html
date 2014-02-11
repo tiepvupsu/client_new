@@ -17,22 +17,27 @@
             <script src="../js/md5.js"></script>
             <script src="../js/common.js"></script>
 </head> 
+</head> 
 
 <body> 
 
-<div data-role="page" id="page-course_contents">
+<div data-role="page" id="page-course_content">
 
     <div data-role="header">
-        <a href="moodle_contents.html" id="bback" data-icon="arrow-l"><span data-lang="back">Back</span></a>
-        <h1><span data-lang="coursecontents">Course contents</span></h1>        
+        <a href="moodle_course_contents.html" id="bback" data-icon="arrow-l"><span data-lang="back">Back</span></a>
+        <h2><span data-lang="coursecontent">Course content</span></h2>        
     </div><!-- /header -->
 
-    <div data-role="content">            
-        <ul data-role="listview" id="lsections">            
-        </ul>
+    <div data-role="content">
+	
+	<h1 id="modulename"></h1>
+	
+	<div id="mcontents"></div>
+
     </div><!-- /content -->
     
-    <script type="text/javascript" src="../js/pages/m_course_contents.js"></script>
+    <script type="text/javascript" src="../js/pages/m_course_content.js"></script>
+    
 </div><!-- /page -->
 
 </body>

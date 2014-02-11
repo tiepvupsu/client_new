@@ -2,7 +2,6 @@
     
     var sectionsData = {};
 
-    $("#page-course_contents").live('pageshow',function() {
                 
         setupPage();
         logInfo("Page show fired");
@@ -56,6 +55,5 @@
         
         moodleWSCall('core_course_get_contents', data, showContents, {});
             
-    });
     
 })();

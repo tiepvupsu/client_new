@@ -3,7 +3,7 @@ console.log("Addsite.js");
 $("#bexit").click(function(){                
         window.close();
     });
-$("#page-addsite").on('click',function() {  
+$("#page-addsite").on('change',function() {  
     
     setupPage();
     logInfo("Page show fired");
@@ -82,9 +82,9 @@ $("#page-addsite").on('click',function() {
             localStorage.setItem('sites',JSON.stringify(sites));
             localStorage.setItem('tokens',JSON.stringify(tokens));
             localStorage.setItem('current_site',sites.length - 1);                                         
-            alert("Your webservice token is : "+mytoken);
+            
             $.mobile.changePage("moodle_contents.html",'slideup');
-           // $.mobile.changePage("html/page_list.html",'slideup');
+           
            
 
         }  
@@ -94,7 +94,7 @@ $("#page-addsite").on('click',function() {
             {
                 username: username,
                 password: password,
-                service: "moodle_mobile_app"                       
+                service: "moodle_elearning"                       
             }    
             ,function(json) {
                 if(typeof(json.token) != 'undefined'){   
@@ -105,7 +105,7 @@ $("#page-addsite").on('click',function() {
                         wstoken: mytoken,
                         siteurl: siteurl
                     }                    
-                    moodleWSCall('moodle_webservice_get_siteinfo', data, addSite, preSets);
+                    moodleWSCall('core_webservice_get_site_info', data, addSite, preSets);
                     
                 }
                 else{                            
