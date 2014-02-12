@@ -23,10 +23,7 @@
 	<!--application UI goes here-->
 	<section id="page" data-role="page">
 	    <header data-theme="a" data-role="header" data-position="fixed">
-	        <a data-rel="dialog" data-transition="pop" data-theme="b" href="#" data-icon="check" data-iconpos="right"
-	        class="ui-btn-right" id="btnSumit">
-	            ReLoad
-	        </a>
+	        
 	        <a data-role="button" data-transition="pop" href="page_main.html" data-icon="home" data-iconpos="left" 
 	        class="ui-btn-left">
 	            Home
@@ -35,34 +32,16 @@
 	        <h3>
 	            IELTS EXAM
 	        </h3>
+	        <a data-role="button" data-transition="pop" data-theme="b" data-icon="check" data-iconpos="right"  class="ui-btn-right" id="btnLoadList">
+	            Refresh
+	        </a>
 	    </header>
 	    <div class="main">	
 		<article data-role="content">
-		<div class="aa">
-		<div data-role="collapsible" data-collapsed="false">
-		    <h4 class="level1">Beginner</h4>
-		    <ul data-role="listview" class="listviewOffline">
-		        <li><a href="page_select_mode.html" class="unit" data-transition="slidedown" value="ielts01">Test IELTS01</a></li>
-		        <li><a href="page_select_mode.html" class="unit" data-transition="slidedown" value="ielts02">Test IELTS02</a></li>
-		        <li><a href="page_select_mode.html" class="unit" data-transition="slidedown" value="ielts01">Test IELTS03</a></li>
-		    </ul>
-		</div>
-		<div data-role="collapsible" data-collapsed="false">
-		    <h4 class="level2">Intermediate</h4>
-		    <ul data-role="listview" class="listviewOffline">
-		        <li><a href="page_select_mode.html" class="unit" data-transition="slidedown" value="ielts01">Test IELTS04</a></li>
-		        <li><a href="page_select_mode.html" class="unit" data-transition="slidedown" value="ielts02">Test IELTS05</a></li>
-		        <li><a href="page_select_mode.html" class="unit" data-transition="slidedown" value="ielts01">Test IELTS06</a></li>
-		    </ul>
-		</div>
-		<div data-role="collapsible" data-collapsed="false">
-		    <h4 class="level3">Upper-Intermediate</h4>
-		    <ul data-role="listview" class="listviewOffline">
-		        <li><a href="page_select_mode.html" data-transition="slidedown">Test IELTS07</a></li>
-		        <li><a href="page_select_mode.html" data-transition="slidedown">Test IELTS08</a></li>
-		        <li><a href="page_select_mode.html" data-transition="slidedown">Test IELTS09</a></li>
-		    </ul>
-		</div>
+		<ul data-role="listview" id="lmytests">            
+        	
+        </ul>
+		
 		</div>
 
 
@@ -70,15 +49,14 @@
             
 		</article><!-- /content -->
 		</div>
-	
+		<script type="text/javascript" src="../js/pages/list.js" >
+		</script>
 		<footer data-theme="a" data-role="footer" data-position="fixed">
       		
     	</footer><!-- /footer -->
 	</section><!-- /page -->
 	<!--application UI end here-->
 
-	<script type="text/javascript" src="../js/pages/list.js" >
 	
-	</script>
 </body>
 </html>

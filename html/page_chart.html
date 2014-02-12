@@ -27,6 +27,7 @@
 	</section><!-- /page -->
 	
 	<script>
+		//location.reload();
 		$(document).ready(function(){
 			var url = "extData.json";
 			var data={
@@ -92,57 +93,5 @@
 
 		});
 	</script>
-	<!--script type="text/javascript">
-		$(document).ready(function(){
-			// Our ajax data renderer which here retrieves a text file.
-			// it could contact any source and pull data, however.
-			// The options argument isn't used in this renderer.
-			var url = "extData.json";
-			var ajaxDataRenderer = function(url, plot, options) {
-				var ret = null;
-				$.ajax({
-					// have to use synchronous here, else the function 
-					// will return before the data is fetched
-					async: false,
-					url: url,
-					dataType:"json",
-					success: function(data) {
-						ret = data;
-						console.log(ret.studentId);
-					}
-				});
-				return ret;
-			};
-
-			// The url for our json data
-			var jsonurl = "extData.json";
-			$.jqplot.config.enablePlugins = true;
-			// passing in the url string as the jqPlot data argument is a handy
-			// shortcut for our renderer.  You could also have used the
-			// "dataRendererOptions" option to pass in the url.
-			var plot2 = $.jqplot('chart1', jsonurl,{
-				title: {
-					text: 'Student Statistics' 
-				},
-				animate: !$.jqplot.use_excanvas,
-				dataRenderer: ajaxDataRenderer,
-				dataRendererOptions: {
-					unusedOptionalUrl: jsonurl
-				},
-				seriesDefaults:{
-					renderer:$.jqplot.BarRenderer,
-					pointLabels: { show: true },
-					rendererOptions: { varyBarColor: true }
-				},
-				axes: {
-					xaxis: {
-						renderer: $.jqplot.CategoryAxisRenderer,
-						ticks: ticks
-					}
-				},
-				highlighter: { show: false }
-			});
-		});
-	</script-->
 </body>
 </html>

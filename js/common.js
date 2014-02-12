@@ -347,7 +347,7 @@ function moodleWSCallXML(method, data, callBack, preSets){
         var cachedData = getCachedWSCall(ajaxURL, ajaxData);
         
         if(cachedData != false){
-            $.mobile.hidePageLoadingMsg();
+            //$.mobile.hidePageLoadingMsg();
             callBack(cachedData);
             return true;
         }

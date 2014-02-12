@@ -2,7 +2,7 @@
 
 	//load audio script
 	//Declaration here for global varible :D, not declare them in function () , caus this act will cause them tranlate into local varible- sorry for my bad english if it's not good
-	var codeName="ielts01";
+	var codeName=localStorage.getItem("current_test");
 	var unitUrl="../data/"+codeName+"/"+codeName;
 	var audioUrl = unitUrl+".mp3";
 	var currentQues = 1;
@@ -16,10 +16,11 @@
 	var ansQues=[];
 	var maxQues=40;
 	var correctAns=0;
-	var mark=0;
 	var audio = $("#audioPlayer");
 
 	//init
+	
+	console.log(codeName);
 	__init();
 	handle_user_multichoices();
 	handle_audio_control(audio);
@@ -34,6 +35,7 @@
 			catch input...
 		*/
 		//save the last answer of current question ,may be use sessionStorage for saving???
+		console.log(urlXML);
 		console.log(urlXMLKey);
 		function handle_user_multichoices(){
 				$("input[name=radio-choice]").click(function(){
@@ -206,7 +208,7 @@
 		});
 		
 		
-		$("#btnSumit").click(function(event) {
+		$("#btnSubmit").click(function(event) {
 			/* Act on the event */
 			//event.preventDefault();
 			console.log("checking answer...");
@@ -225,6 +227,7 @@
 		*********************
 	*/
 		function __init(){
+
 			if (isTestMode()){
 				$(".practice_mode").hide();
 				$(".test_mode").show();
@@ -232,7 +235,7 @@
 				$(".practice_mode").show();
 				$(".test_mode").hide();
 			}
-			sessionStorage.clear();
+			//sessionStorage.clear();
 			$("div.result").hide();
 			updateAudioUrl(audioUrl);
 			//parse xml script, to load data

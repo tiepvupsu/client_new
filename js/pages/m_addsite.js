@@ -1,5 +1,6 @@
 (function() {
 console.log("Addsite.js");
+var sites = localStorage.getItem("sites");
 $("#bexit").click(function(){                
         window.close();
     });
