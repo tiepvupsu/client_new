@@ -3,7 +3,7 @@
 	//load audio script
 	//Declaration here for global varible :D, not declare them in function () , caus this act will cause them tranlate into local varible- sorry for my bad english if it's not good
 	var isModeOnline=false;
-	var codeName=localStorage.getItem("current_test");
+	var codeName="ielts01";
 	var unitUrl="../data/"+codeName+"/"+codeName;
 	var audioUrl = unitUrl+".mp3";
 	var currentQues = 1;
@@ -22,12 +22,21 @@
 	//init
 	
 	console.log(codeName);
+	codeName=localStorage.getItem("current_test");
 	if(sessionStorage.getItem('isOnline')==='yes'){
 		isModeOnline=true;
 	}
 	if(isModeOnline){
 		urlXML=sessionStorage.getItem('current_xml_url');
+		urlXMLKey=urlXML;
 		audioUrl=sessionStorage.getItem('current_audio_url');
+
+		if(sessionStorage.getItem('back_to_page')){
+			btp=sessionStorage.getItem('back_to_page');
+			console.log(btp);
+			$("#btnBack").attr('href',btp);
+		}
+		
 	}
 	countQuestion(urlXML);//to set value to maxQues
 	__init();
@@ -270,9 +279,8 @@
 					url: urlXML,
 					dataType: "xml",
 					success:function(xml){
-						maxQues= parseInt($(xml).find('listening question').length);
+						maxQues= parseInt($(xml).find('listening amount').attr("value"));
 						console.log(maxQues);
-						
 					}
 			});
 		}
@@ -448,7 +456,7 @@
 			return false;
 		}
 		function getAnswerKey(xml){
-			$(xml).find('question').each(function(){
+			$(xml).find('key').each(function(){
 				var id = $(this).attr('id');
 				var key = $(this).attr('answer');
 				console.log(id+" "+key);

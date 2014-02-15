@@ -43,7 +43,7 @@
                $.mobile.changePage("moodle_course_content.html");
             });
             
-            $('#lsections').listview('refresh'); 
+            $('#lsections').listview().listview('refresh'); 
         }
         
         var data = {

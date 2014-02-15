@@ -1,12 +1,17 @@
 (function(){
 
-	window.console.clear();
 	var codeName=localStorage.getItem("current_test");
+	var correct=sessionStorage.getItem("correctAns");
 	var urlXML="../data/ielts_convert.xml";
 	var urlXMLKey="../data/"+codeName+"/"+codeName+"ques.xml";
+
 	console.log(urlXMLKey);
 	console.log(urlXML);
 
+	alert(correct);
+	$("p.correct").html("You got "+correct +" answers");
+	
+	/*
 	$.ajax({
 				type: "GET",
 				url: urlXML,
@@ -20,7 +25,7 @@
 				dataType: "xml",
 				success: getAnswerKey
 			});
-
+	*/
 	function getEILTSConvert(xml){
 			$(xml).find('question').each(function(){
 				var correct = $(this).attr('correct');
@@ -51,5 +56,5 @@
 			
 			console.log(correctAns);
 
-		}
+	}
 });

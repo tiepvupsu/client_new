@@ -44,12 +44,23 @@
 
 	</div>
     <div  data-role="footer">     
-        <h1>Footer</h1>  
+        <div data-role="navbar" data-iconpos="top">
+                <ul>
+                    <li>
+                        <a href="page_list.html" data-transition="fade" data-theme="" data-icon="info"
+                        >
+                            Offline
+                        </a>
+                    </li>
+                    <li>
+                        <a href="moodle_login.html" data-transition="fade" data-theme="" data-icon="edit"class="ui-btn-active ui-state-persist" >
+                            Online
+                        </a>
+                    </li>
+                </ul>
+            </div>
     </div>
+    <script type="text/javascript" src="../js/pages/m_addsite.js"></script>
 </div>
-    		
-
-<!--application UI end here-->
-			<script type="text/javascript" src="../js/pages/m_addsite.js"></script>
-    	</body>
+</body>
 </html>

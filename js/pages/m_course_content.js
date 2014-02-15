@@ -76,12 +76,8 @@
             contents += '<a href="#" data-slow="'+cm.url+'" data-role="button" rel="external" target="_blank">View activity in Moodle</a>';
 
             if (isAQuiz){
-                contents += '<a href="page_listening.html" data-role="button" id="btnDoQuiz">Do quiz</a>';
-                $("#btnDoQuiz").click(function(event) {
-                    /* Act on the event */
-
-                
-                });
+                contents += '<a href="page_select_mode.html" data-role="button" id="btnDoQuiz">Do quiz</a>';
+                sessionStorage.setItem('back_to_page',"moodle_course_content.html");
             }
             
             $("#mcontents").html(contents);

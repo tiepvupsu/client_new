@@ -42,7 +42,7 @@
             //$('#lmytests').listview('refresh');        
     }
     function get(id,codeName){
-    	$("#lmytests").append('<li><a id="test'+id+'" codeTest="'+codeName+'">'+codeName+'</a></li>');
+    	$("#lmytests").append('<li><a id="test'+id+'" codeTest="'+codeName+'">'+codeName+'<p>'+codeName+'</p></a></li>');
                 $("#test"+id).click(function(){                        
                     localStorage.setItem("current_test",$(this).attr('codeTest'));
                     $.mobile.changePage("page_select_mode.html");
