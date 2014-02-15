@@ -4,15 +4,13 @@
                 
         setupPage();
         logInfo("Page show fired");
-        //reloadEvent("#btnReLoad");
-
+        
         // Check if the current site is not 2.0 or 2.1
         var sites = localStorage.getItem("sites");
         sites = JSON.parse(sites);
         var currentSite = sites[localStorage.getItem("current_site")];        
         contentsSuport = false;
-        var currentToken= sessionStorage.getItem("current_token");
-
+        
         $.each(currentSite.functions, function(index,funct){            
             if(funct.name == "core_course_get_contents"){                
                 contentsSuport = true;
@@ -22,7 +20,7 @@
         
         if(! contentsSuport){
             popMessage("This Moodle site does not support this functionallity. (Moodle 2.2 at least required)");
-            setTimeout('$.mobile.changePage("moodle_login.html")',2000);
+            setTimeout('$.mobile.changePage("html/mysite.html")',2000);
         }
         
         function listCourses(courses){

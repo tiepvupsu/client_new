@@ -9,17 +9,14 @@
         var tokens = localStorage.getItem("tokens");
         var tokens = JSON.parse(tokens);
         var mytoken = tokens[localStorage.getItem("current_site")];
-        var fileXMLUrl="";
-        var fileAudioUrl="";        
+                
         var contents = "";
         var cm = sessionStorage.getItem('current_cmid');
-        var isAQuiz=false;
-        sessionStorage.setItem('isOnline','yes');
-
+        
         if(cm !== null){
             
             cm = JSON.parse(cm);
-            console.log(cm);                       
+                                   
             $("#modulename").html(cm.name);
                         
             if(cm.contents.length > 0){
@@ -32,7 +29,6 @@
                         contents += ' <p><b>Filename:</b> </p>';
                         contents += ' <div class="whiteroundtable">'+content.filename+'</div>';
                         contents += ' </p>';
-
                     }
                     
                     if(content.author){
@@ -55,17 +51,6 @@
                         token = '&token='+mytoken;
                     }
                     
-                    if (content.fileurl.indexOf('.xml')>0){
-                            isAQuiz=true;
-                            fileXMLUrl=content.fileurl+token;
-                            sessionStorage.setItem("current_xml_url",fileXMLUrl);
-                            localStorage.setItem("current_test",cm.name);
-                    }
-                    
-                    if (content.fileurl.indexOf('.mp3')>0){
-                            fileAudioUrl=content.fileurl+token;
-                            sessionStorage.setItem("current_audio_url",fileAudioUrl);
-                    }
                     contents += '<a href="#" data-slow="'+content.fileurl+token+'" rel="external" target="_blank" data-role="button">View content</a>';
                     contents += '</p></div>';
                     
@@ -74,15 +59,6 @@
             
             
             contents += '<a href="#" data-slow="'+cm.url+'" data-role="button" rel="external" target="_blank">View activity in Moodle</a>';
-
-            if (isAQuiz){
-                contents += '<a href="page_listening.html" data-role="button" id="btnDoQuiz">Do quiz</a>';
-                $("#btnDoQuiz").click(function(event) {
-                    /* Act on the event */
-
-                
-                });
-            }
             
             $("#mcontents").html(contents);
             

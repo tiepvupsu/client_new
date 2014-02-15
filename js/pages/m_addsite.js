@@ -1,9 +1,8 @@
 (function() {
 console.log("Addsite.js");
+
 var sites = localStorage.getItem("sites");
-$("#bexit").click(function(){                
-        window.close();
-    });
+
 $("#page-addsite").on('change',function() {  
     
     setupPage();
@@ -21,6 +20,7 @@ $("#page-addsite").on('change',function() {
     // Saving new site configuration
     $("#bsave").click(function(){
         
+        sessionStorage.clear();
         // Check if we are connected to Internet
         if(! connectionOn){
             popErrorMessage("Internet connection required to perform this action");
@@ -83,7 +83,7 @@ $("#page-addsite").on('change',function() {
             localStorage.setItem('sites',JSON.stringify(sites));
             localStorage.setItem('tokens',JSON.stringify(tokens));
             localStorage.setItem('current_site',sites.length - 1);                                         
-            
+            sessionStorage.setItem('current_token',mytoken);
             $.mobile.changePage("moodle_contents.html",'slideup');
            
            
@@ -95,7 +95,7 @@ $("#page-addsite").on('change',function() {
             {
                 username: username,
                 password: password,
-                service: "moodle_elearning"                       
+                service: "moodle_elearning" //change to your custom services                  
             }    
             ,function(json) {
                 if(typeof(json.token) != 'undefined'){   

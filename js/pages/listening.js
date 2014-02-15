@@ -2,6 +2,7 @@
 
 	//load audio script
 	//Declaration here for global varible :D, not declare them in function () , caus this act will cause them tranlate into local varible- sorry for my bad english if it's not good
+	var isModeOnline=false;
 	var codeName=localStorage.getItem("current_test");
 	var unitUrl="../data/"+codeName+"/"+codeName;
 	var audioUrl = unitUrl+".mp3";
@@ -14,13 +15,21 @@
 	var isPraceticeMode=true;//set mode pratice or test
 	var lastAns=-1;
 	var ansQues=[];
-	var maxQues=40;
+	var maxQues;
 	var correctAns=0;
 	var audio = $("#audioPlayer");
 
 	//init
 	
 	console.log(codeName);
+	if(sessionStorage.getItem('isOnline')==='yes'){
+		isModeOnline=true;
+	}
+	if(isModeOnline){
+		urlXML=sessionStorage.getItem('current_xml_url');
+		audioUrl=sessionStorage.getItem('current_audio_url');
+	}
+	countQuestion(urlXML);//to set value to maxQues
 	__init();
 	handle_user_multichoices();
 	handle_audio_control(audio);
@@ -37,88 +46,7 @@
 		//save the last answer of current question ,may be use sessionStorage for saving???
 		console.log(urlXML);
 		console.log(urlXMLKey);
-		function handle_user_multichoices(){
-				$("input[name=radio-choice]").click(function(){
-					/* Act on the event */
-		    		console.log(currentQues+$(this).attr('value'));
-		    		lastAns=$(this).attr('value');
-				});
-
-				$("input[type=checkbox]").click(function(event) {
-					/* Act on the event */
-					console.log("checkbox selected "+$(this).val());
-				});
-		}
-		function handle_user_type(cQues,qty){
-			$( "input[type=text].quesfil" ).keyup(function() {
-				var value = $( this ).val();
-				var key=$(this).attr("id");
-				
-				sessionStorage.setItem(key, value);
-			});
-			//get answer if have
-			for (i=0;i<qty;i++){
-				var container="#"+codeName+(cQues+i);
-				var key=codeName+(cQues+i);
-				if(sessionStorage.getItem(key)){
-					$(container).val(sessionStorage.getItem(key));
-				}
-				console.log($(container).attr("id"));
-			}
-			if ($( "input[type=text].quesfil" ).val()!=''){
-				$(this).addClass('.active');
-			}
-		}	
-		function handle_audio_control(audioSelector){
-			var audio=$(audioSelector).get(0);
-			var offsecTime=5;
-
-			$("#btnPlay").click(function(event) {
-				/* Act on the event */
-				if (audio.paused){
-					$(this).html('Pause');
-					audio.play();
-					
-				}else{
-					$(this).html('Play');
-					audio.pause();
-				}	
-			});
-			$("#btnSkipBack").click(function(event) {
-				/* Act on the event */
-				audio.currentTime-=offsecTime;
-			});
-			$("#btnSkipForward").click(function(event) {
-				/* Act on the event */
-				audio.currentTime+=offsecTime;
-			});
-
-			$(".seekBar a").bind('change', function(event){
-				/* Act on the event */
-				var updateTime=$(this).attr("valuenow")*(audio.duration/100);
-				console.log(updateTime);
-				audio.currentTime=updateTime;
-			});
-	
-			$("#seekBar").bind('change', function(event) {
-				/* Act on the event */
-				var updateTime=$(this).attr("valuenow")*(audio.duration/100);
-				console.log(updateTime);
-				audio.currentTime=updateTime;
-
-			});
-			/*
-			$(audio).bind('timeupdate', function(event) {
-				
-				var updateSeek=audio.currentTime*(100/audio.duration);
-				console.log(updateSeek);
-				$("#seekBar").val(updateSeek).slider("refresh");
-				
-				//var second=Math.round(audio.currentTime);
-				//var minute=(second / 60);
-				//$(".counter").html(minute+" mm :"+second+" ss");
-			});*/
-		}
+		
 
 		//start the test
 		$("#btnPlayTest").click(function(){
@@ -249,10 +177,104 @@
 				console.log("current "+currentQues);
 			
 		}
+		function handle_user_multichoices(){
+				$("input[name=radio-choice]").click(function(){
+					/* Act on the event */
+		    		console.log(currentQues+$(this).attr('value'));
+		    		lastAns=$(this).attr('value');
+				});
+
+				$("input[type=checkbox]").click(function(event) {
+					/* Act on the event */
+					console.log("checkbox selected "+$(this).val());
+				});
+		}
+		function handle_user_type(cQues,qty){
+			$( "input[type=text].quesfil" ).keyup(function() {
+				var value = $( this ).val();
+				var key=$(this).attr("id");
+				
+				sessionStorage.setItem(key, value);
+			});
+			//get answer if have
+			for (i=0;i<qty;i++){
+				var container="#"+codeName+(cQues+i);
+				var key=codeName+(cQues+i);
+				if(sessionStorage.getItem(key)){
+					$(container).val(sessionStorage.getItem(key));
+				}
+				console.log($(container).attr("id"));
+			}
+			if ($( "input[type=text].quesfil" ).val()!=''){
+				$(this).addClass('.active');
+			}
+		}	
+		function handle_audio_control(audioSelector){
+			var audio=$(audioSelector).get(0);
+			var offsecTime=5;
+
+			$("#btnPlay").click(function(event) {
+				/* Act on the event */
+				if (audio.paused){
+					$(this).html('Pause');
+					audio.play();
+					
+				}else{
+					$(this).html('Play');
+					audio.pause();
+				}	
+			});
+			$("#btnSkipBack").click(function(event) {
+				/* Act on the event */
+				audio.currentTime-=offsecTime;
+			});
+			$("#btnSkipForward").click(function(event) {
+				/* Act on the event */
+				audio.currentTime+=offsecTime;
+			});
+
+			$(".seekBar a").bind('change', function(event){
+				/* Act on the event */
+				var updateTime=$(this).attr("valuenow")*(audio.duration/100);
+				console.log(updateTime);
+				audio.currentTime=updateTime;
+			});
+	
+			$("#seekBar").bind('change', function(event) {
+				/* Act on the event */
+				var updateTime=$(this).attr("valuenow")*(audio.duration/100);
+				console.log(updateTime);
+				audio.currentTime=updateTime;
+
+			});
+			/*
+			$(audio).bind('timeupdate', function(event) {
+				
+				var updateSeek=audio.currentTime*(100/audio.duration);
+				console.log(updateSeek);
+				$("#seekBar").val(updateSeek).slider("refresh");
+				
+				//var second=Math.round(audio.currentTime);
+				//var minute=(second / 60);
+				//$(".counter").html(minute+" mm :"+second+" ss");
+			});*/
+		}
 		
 		function updateAudioUrl(url){
 			$("#audioSrc").attr('src', url);
 			console.log($("#audioSrc"));
+		}
+		function countQuestion(url){
+			$.ajax({
+					type: "GET",
+					url: urlXML,
+					dataType: "xml",
+					success:function(xml){
+						maxQues= parseInt($(xml).find('listening question').length);
+						console.log(maxQues);
+						
+					}
+			});
 		}
 		function parseXml(xml){
 			var multiNumber; 
