@@ -4,6 +4,7 @@
 <listening>
 	<src url="http://abc.com/ielts01.mp3">
 	</src>
+	<amount value="40" />
 	<directions>
 		<direction1>
 			<![CDATA[Complete the notes below<br />

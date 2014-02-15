@@ -3,6 +3,7 @@
 <content code="ielts02">
 
 <listening>
+	<amount value="40" />
 	<directions>
 		<direction1>
 			<![CDATA[Complete the notes below<br />
