@@ -66,7 +66,7 @@
                             fileAudioUrl=content.fileurl+token;
                             sessionStorage.setItem("current_audio_url",fileAudioUrl);
                     }
-                    contents += '<a href="#" data-slow="'+content.fileurl+token+'" rel="external" target="_blank" data-role="button">View content</a>';
+                    //contents += '<a href="#" data-slow="'+content.fileurl+token+'" rel="external" target="_blank" data-role="button">View content</a>';
                     contents += '</p></div>';
                     
                 });

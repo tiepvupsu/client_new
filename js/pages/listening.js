@@ -3,7 +3,7 @@
 	//load audio script
 	//Declaration here for global varible :D, not declare them in function () , caus this act will cause them tranlate into local varible- sorry for my bad english if it's not good
 	var isModeOnline=false;
-	var codeName="ielts01";
+	var codeName=localStorage.getItem("current_test");
 	var unitUrl="../data/"+codeName+"/"+codeName;
 	var audioUrl = unitUrl+".mp3";
 	var currentQues = 1;
@@ -22,7 +22,7 @@
 	//init
 	
 	console.log(codeName);
-	codeName=localStorage.getItem("current_test");
+	
 	if(sessionStorage.getItem('isOnline')==='yes'){
 		isModeOnline=true;
 	}
@@ -79,7 +79,7 @@
 		});
 		//next question
 		$("#btnNextQues").click(function() {
-			console.clear();
+			window.console.clear();
 			//storing user answer before change question , using sessionStorage :D, maximum 5MB :(o)
 			saveSingleAnswer(currentQues,lastAns);
 			$( "input[type=text].quesfil" ).addClass('aaaaaaaa');
@@ -115,7 +115,7 @@
 		});
 		//previous 
 		$("#btnPrevQues").click(function() {
-			console.clear();
+			window.console.clear();
 			//storing user answer before change question , using localStorage :D, maximum 5MB :(o)
 			saveSingleAnswer(currentQues,lastAns);
 			clearLastAnswer();
@@ -288,7 +288,6 @@
 			var multiNumber; 
 			var qty;
 			var description ="";
-			
 			$(xml).find('listening question').each(function(){
 				var id = parseInt($(this).attr('id'));
 				
