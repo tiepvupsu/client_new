@@ -1,7 +1,6 @@
 (function() {
 
-
-                
+        console.log("m_contents.js");         
         setupPage();
         logInfo("Page show fired");
         //reloadEvent("#btnReLoad");

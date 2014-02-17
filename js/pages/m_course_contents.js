@@ -1,5 +1,5 @@
 (function() {
-    
+ console.log("m_course_contents.js");   
     var sectionsData = {};
 
                 
@@ -31,7 +31,7 @@
                             $("#lsections").append('<li>'+labelText+'</li>');
                         }
                         else {
-                            $("#lsections").append('<li><a href="#" data-cmid="'+module.id+'"><img src="custom/pix/'+module.modname+'.gif" alt="'+module.modname+'" class="ui-li-icon">'+$('<div />').html(module.name).text()+'<span class="ui-li-count">'+module.contents.length+'</span></a></li>');
+                            $("#lsections").append('<li><a href="#" data-cmid="'+module.id+'">'+$('<div />').html(module.name).text()+'<span class="ui-li-count">'+module.contents.length+'</span></a></li>');
                             sectionsData[module.id] = module;
                         }                        
                     });

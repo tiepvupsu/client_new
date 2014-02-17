@@ -9,7 +9,7 @@
 	<link rel="shortcut icon" href="../images/favicon.png">
 	<link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
 	<link rel="stylesheet" href="../css/ResetCss.css">
-	<link rel="stylesheet" href="../css/Listening.css">
+	<link rel="stylesheet" href="../css/UITListening.css">
 	<link rel="stylesheet" href="../css/jquery.mobile.structure-1.4.0.css">
 	<link rel="stylesheet" href="../css/jquery.mobile.theme-1.4.0.css">
 	<link rel="stylesheet" href="../css/jquery.mobile-1.4.0.css">
@@ -28,7 +28,7 @@
 	            Finish
 	        </a>
 	        <a data-role="button" href="page_list.html" data-icon="back" data-iconpos="left"
-	        class="ui-btn-left" data-transition="slide" data-direction="reverse">
+	        class="ui-btn-left" data-transition="slide" data-direction="reverse" id="btnBack">
 	            Return to list
 	        </a>
 	   
@@ -38,12 +38,30 @@
 	    </header>
 		<article data-role="content">
 		<div class="main">	
-			<div>
-				<p class="correct">correct ans</p>
-				<p class="mark">mark</p>
-			</div>
-		
-		 
+			<table data-role="table" id="my-table" data-mode="reflow">
+			      <thead>
+			        <tr>
+			          <th>Datetime</th>
+			          <th>Corret Answer</th>
+			          <th>Incorret Answer</th>
+			          <th>Total Question</th>
+			          <th>Mark</th>
+			          <th>Rating</th>
+			          <th>Taken-time</th>
+			        </tr>
+			      </thead>
+			      <tbody>
+			        <tr>
+			          <td><span class="datetime rs"></span></td>
+			          <td><span class="correct rs"></span></td>
+			          <td><span class="incorrect rs"></span></td>
+			          <td><span class="totalQ rs"></span></td>
+			          <td><span class="mark rs"></span></td>
+			          <td><span class="rating rs"></span></td>
+			          <td><span class="takentime rs">1m30s</span></td>
+			        </tr>
+			      </tbody>
+			</table>
 		</div>
 		</article><!-- /content -->
 		<footer data-theme="a" data-role="footer" data-position="fixed">

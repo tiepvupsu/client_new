@@ -15,14 +15,15 @@
 	var isPraceticeMode=true;//set mode pratice or test
 	var lastAns=-1;
 	var ansQues=[];
-	var maxQues;
+	var totalQues;
 	var correctAns=0;
 	var audio = $("#audioPlayer");
-
+	var audioDuration=audio.get(0).duration;
+	var countinueCount=true;
 	//init
 	
 	console.log(codeName);
-	
+	counter();
 	if(sessionStorage.getItem('isOnline')==='yes'){
 		isModeOnline=true;
 	}
@@ -38,7 +39,7 @@
 		}
 		
 	}
-	countQuestion(urlXML);//to set value to maxQues
+	countQuestion(urlXML);//to set value to totalQues
 	__init();
 	handle_user_multichoices();
 	handle_audio_control(audio);
@@ -56,6 +57,11 @@
 		console.log(urlXML);
 		console.log(urlXMLKey);
 		
+		$("#btnBack").click(function(event) {
+			/* Act on the event */
+			countinueCount=false;
+			sessionStorage.clear();
+		});
 
 		//start the test
 		$("#btnPlayTest").click(function(){
@@ -65,30 +71,19 @@
 				console.log("test");
 
 			}
-			//timeout_trigger();
-
-			//start timer countdown
-			/*<script> 
-					var myCountdown2 = new Countdown({
-										time: 40*60, 
-										width:200, 
-										height:80, 
-										rangeHi:"minute"	// <- no comma on last item!
-										});
-				</script>*/
 		});
 		//next question
 		$("#btnNextQues").click(function() {
 			window.console.clear();
 			//storing user answer before change question , using sessionStorage :D, maximum 5MB :(o)
-			saveSingleAnswer(currentQues,lastAns);
+			//saveSingleAnswer(currentQues,lastAns);
 			$( "input[type=text].quesfil" ).addClass('aaaaaaaa');
 			clearLastAnswer();
 			
 			
 			//change question id
 			currentQues+=offsetInc;
-			if (currentQues>maxQues){
+			if (currentQues>totalQues){
 				currentQues=1;
 			}
 			//clear checkbox or radio
@@ -117,12 +112,12 @@
 		$("#btnPrevQues").click(function() {
 			window.console.clear();
 			//storing user answer before change question , using localStorage :D, maximum 5MB :(o)
-			saveSingleAnswer(currentQues,lastAns);
+			//saveSingleAnswer(currentQues,lastAns);
 			clearLastAnswer();
 
 			currentQues-=offsetDesc;
 			if (currentQues<1){
-				currentQues=maxQues-offsetDesc+1;	
+				currentQues=totalQues-offsetDesc+1;	
 			}
 			//$("input[name=radio-choice]").attr('checked', false).checkboxradio('refresh',true);
 			$("input[type='radio'].radio-ans").prop("checked",false).checkboxradio("refresh");
@@ -149,13 +144,17 @@
 			/* Act on the event */
 			//event.preventDefault();
 			console.log("checking answer...");
+			
+		});
+		$("#btnFinish").click(function(event) {
+			/* Act on the event */
+			countinueCount=false;
 			$.ajax({
 				type: "GET",
 				url: urlXMLKey,
 				dataType: "xml",
 				success: getAnswerKey
 			});
-			
 		});
 
 	/* 
@@ -163,6 +162,7 @@
 		*function area here *
 		*********************
 	*/
+
 		function __init(){
 
 			if (isTestMode()){
@@ -189,8 +189,9 @@
 		function handle_user_multichoices(){
 				$("input[name=radio-choice]").click(function(){
 					/* Act on the event */
-		    		console.log(currentQues+$(this).attr('value'));
+		    		console.log(currentQues+"->"+$(this).attr('value'));
 		    		lastAns=$(this).attr('value');
+		    		saveSingleAnswer(currentQues,lastAns);
 				});
 
 				$("input[type=checkbox]").click(function(event) {
@@ -279,8 +280,9 @@
 					url: urlXML,
 					dataType: "xml",
 					success:function(xml){
-						maxQues= parseInt($(xml).find('listening amount').attr("value"));
-						console.log(maxQues);
+						totalQues= parseInt($(xml).find('listening amount').attr("value"));
+						console.log(totalQues);
+						sessionStorage.setItem("totalQues_currenttest",totalQues);
 					}
 			});
 		}
@@ -470,6 +472,40 @@
 			
 			console.log(correctAns);
 
+		}
+		function counter(){
+			var startTime = new Date();
+
+			
+			setInterval(function () {
+				if (countinueCount==true){
+			    var time= (new Date() - startTime);
+			    var second=((Math.round(time/1000) ) % 60);
+			    var minute=Math.floor(time/1000/60);
+
+			   $("span.countS").html(second);
+			   $("span.countM").html(minute);
+
+			   sessionStorage.setItem("takentime",minute+"-"+second);
+			   if (isTestMode()){
+				   	if ( (20) <=second ){
+					   		countinueCount=false;
+					   		$.ajax({
+								type: "GET",
+								url: urlXMLKey,
+								dataType: "xml",
+								success: getAnswerKey
+							});
+							$.mobile.changePage("page_result.html",'slideup');
+							minute=0;second=0;
+							return;
+						}
+			   		}
+			   	}
+			
+			}, 1000);
+			
+			
 		}
 		
 		/* function area end here */

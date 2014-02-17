@@ -166,7 +166,7 @@ function checkConnection(){
 // Custom error popup
 function popErrorMessage(errorMessage){
      //$.mobile.hidePageLoadingMsg();
-     $("<div class='ui-loader ui-overlay-shadow ui-body-e ui-corner-all'><h1>" + errorMessage  + "</h1></div>")
+     $("<div class='ui-loader ui-overlay-shadow ui-body-e ui-corner-all'><h3>" + errorMessage  + "</h3></div>")
      .css({ "display": "block", "opacity": 0.96, "top": $(window).scrollTop() + 100 })
      .appendTo( $.mobile.pageContainer )
      .delay( 1100 )
@@ -178,7 +178,7 @@ function popErrorMessage(errorMessage){
  
 function popMessage(errorMessage){
      $.mobile.hidePageLoadingMsg();
-     $("<div class='ui-loader ui-overlay-shadow ui-body-e ui-corner-all'><h1>" + errorMessage  + "</h1></div>")
+     $("<div class='ui-loader ui-overlay-shadow ui-body-e ui-corner-all'><h3>" + errorMessage  + "</h3></div>")
      .css({ "display": "block", "opacity": 0.96, "top": $(window).scrollTop() + 100 })
      .appendTo( $.mobile.pageContainer )
      .delay( 1100 )

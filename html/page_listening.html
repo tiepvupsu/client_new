@@ -9,7 +9,7 @@
 	<link rel="shortcut icon" href="../images/favicon.png">
 	<link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
 	<link rel="stylesheet" href="../css/ResetCss.css">
-	<link rel="stylesheet" href="../css/Listening.css">
+	<link rel="stylesheet" href="../css/UITListening.css">
 	<link rel="stylesheet" href="../css/jquery.mobile.structure-1.4.0.css">
 	<link rel="stylesheet" href="../css/jquery.mobile.theme-1.4.0.css">
 	<link rel="stylesheet" href="../css/jquery.mobile-1.4.0.css">
@@ -24,19 +24,24 @@
 	<!--application UI goes here-->
 	<section id="page" data-role="page">
 	    <header data-theme="a" data-role="header" data-position="fixed">
-	        <a href="page_confirm_finish.html" data-role="button" data-transition="pop" data-theme="b" href="#" data-icon="check" data-iconpos="right"
+	        <a href="#popupDialogFinish" data-role="button" data-rel="popup" data-position-to="window" data-transition="pop" data-theme="b" href="#" data-icon="check" data-iconpos="right"
 	        class="ui-btn-right" id="btnSubmit">
-	            Finish
+	            Submit
 	        </a>
 	        <a data-role="button" href="page_list.html" data-icon="back" data-iconpos="left"
 	        class="ui-btn-left" data-transition="slide" data-direction="reverse" id="btnBack">
 	            Back
 	        </a>
 	   
-	        <h3>
-	            IELTS LISTENING
-	        </h3>
-	    </header>
+	        <h1>
+	           <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+		        <input type="radio" name="radio-choice-b" id="radio-choice-c" value="mm" checked="checked">
+		        <label for="radio-choice-c"><span class="countM"></span>Minutes</label>
+		        <input type="radio" name="radio-choice-b" id="radio-choice-d" value="ss">
+		        <label for="radio-choice-d"><span class="countS"></span>Seconds</label>
+			</fieldset>
+	        </h1>
+	      </header>  
 		<article data-role="content">
 		<div class="main">	
 			<div class="player practice_mode">
@@ -57,10 +62,12 @@
 					Your browser does not support the audio tag.
 				</audio>
 			</div>
+
 			<div class="test_mode">
 				<a href="#" data-icon="arrow-r" data-role="button" data-mini="true" data-inline="true" id="btnPlayTest">Play</a>
-				<div class="counter"></div>
+				
 			</div>
+
 			<hr>
 			<div class="core">
 			<div class="top">
@@ -111,6 +118,18 @@
 					</div>
 			</div>
 	
+			</div>
+			
+			<div data-role="popup" id="popupDialogFinish" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+			    <div data-role="header" data-theme="a">
+			    <h1>Finish Test?</h1>
+			    </div>
+			    <div role="main" class="ui-content">
+			        <h3 class="ui-title">Are you sure you want to finish this test?</h3>
+			    	<p>This action cannot be undone.</p>
+			        <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Cancel</a>
+			        <a href="page_result.html" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b"  data-transition="pop" id="btnFinish">Finish</a>
+			    </div>
 			</div>
 		</article><!-- /content -->
 		</div>

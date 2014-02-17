@@ -1,9 +1,9 @@
 (function() {
-console.log("Addsite.js");
+console.log("m_login.js");
 
 var sites = localStorage.getItem("sites");
 
-$("#page-addsite").on('change',function() {  
+$("#page-login").on('change',function() {  
     
     setupPage();
     logInfo("Page show fired");

@@ -2,7 +2,7 @@
 (function() {
 
     $("#page-course_content").on('pagebeforeshow',function() {
-                
+        console.log("m_course_content.js");        
         setupPage();
         logInfo("Page show fired");
         

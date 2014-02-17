@@ -2,7 +2,7 @@
 	
 	listTests();
 	sessionStorage.clear();
-	
+	var sites = localStorage.getItem("sites");
 	$("#btnLoadList").click(function(event) {
 		/* Act on the event */
 		event.preventDefault();
