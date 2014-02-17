@@ -1,6 +1,7 @@
 (function() {
 
-        console.log("m_contents.js");         
+        console.log("m_contents.js");
+$("#page-contents").on('pagebeforeshow',function() {        
         setupPage();
         logInfo("Page show fired");
         //reloadEvent("#btnReLoad");
@@ -42,5 +43,5 @@
         
         moodleWSCall('core_enrol_get_users_courses', data, listCourses, {});
             
-
+}); 
 })();
