@@ -1,66 +1,70 @@
 \BOOKMARK [0][]{chapter*.1}{Muc luc}{}% 1
 \BOOKMARK [0][]{chapter*.2}{Danh s\341ch h\354nh ve}{}% 2
-\BOOKMARK [0][]{chapter*.2}{Nomenclature}{}% 3
-\BOOKMARK [0][]{chapter.1}{1 Gii Thiu}{}% 4
-\BOOKMARK [1][]{section.1.1}{1.1 T\352n \040t\340i}{chapter.1}% 5
-\BOOKMARK [1][]{section.1.2}{1.2 \320t vn }{chapter.1}% 6
-\BOOKMARK [1][]{section.1.3}{1.3 Muc ti\352u \040t\340i}{chapter.1}% 7
-\BOOKMARK [1][]{section.1.4}{1.4 Ni dung v\340 gii han \040t\340i}{chapter.1}% 8
-\BOOKMARK [2][]{subsection.1.4.1}{1.4.1 Ni dung \040t\340i}{section.1.4}% 9
-\BOOKMARK [2][]{subsection.1.4.2}{1.4.2 Gii han \040t\340i}{section.1.4}% 10
-\BOOKMARK [1][]{section.1.5}{1.5 Cu tr\372c kh\363a lun}{chapter.1}% 11
-\BOOKMARK [0][]{chapter.2}{2 Kin Thc Nn Tang V\340 Khao S\341t}{}% 12
-\BOOKMARK [1][]{section.2.1}{2.1 Kin thc nn tang}{chapter.2}% 13
-\BOOKMARK [2][]{subsection.2.1.1}{2.1.1 Kin thc v HTML5}{section.2.1}% 14
-\BOOKMARK [3][]{subsubsection.2.1.1.1}{2.1.1.1 Tng quan HTML}{subsection.2.1.1}% 15
-\BOOKMARK [3][]{subsubsection.2.1.1.2}{2.1.1.2 HTML5}{subsection.2.1.1}% 16
-\BOOKMARK [3][]{subsubsection.2.1.1.3}{2.1.1.3 HTML5 trong thit bi di ng}{subsection.2.1.1}% 17
-\BOOKMARK [2][]{subsection.2.1.2}{2.1.2 Kin thc v JavaScript}{section.2.1}% 18
-\BOOKMARK [3][]{subsubsection.2.1.2.1}{2.1.2.1 Tng quan v JavaScript}{subsection.2.1.2}% 19
-\BOOKMARK [3][]{subsubsection.2.1.2.2}{2.1.2.2 Cu tr\372c v\340 c\341c th\340nh phn trong JavaScript}{subsection.2.1.2}% 20
-\BOOKMARK [3][]{subsubsection.2.1.2.3}{2.1.2.3 DOM}{subsection.2.1.2}% 21
-\BOOKMARK [3][]{subsubsection.2.1.2.4}{2.1.2.4 S kin\(event\)}{subsection.2.1.2}% 22
-\BOOKMARK [3][]{subsubsection.2.1.2.5}{2.1.2.5 AJAX}{subsection.2.1.2}% 23
-\BOOKMARK [3][]{subsubsection.2.1.2.6}{2.1.2.6 LocalStorage}{subsection.2.1.2}% 24
-\BOOKMARK [3][]{subsubsection.2.1.2.7}{2.1.2.7 Th vin Jquery}{subsection.2.1.2}% 25
-\BOOKMARK [3][]{subsubsection.2.1.2.8}{2.1.2.8 Th vin Jquery Mobile}{subsection.2.1.2}% 26
-\BOOKMARK [3][]{subsubsection.2.1.2.9}{2.1.2.9 Ghi ch\372 quan trong cn nh khi s dung JavaScript}{subsection.2.1.2}% 27
-\BOOKMARK [2][]{subsection.2.1.3}{2.1.3 H thng quan l\375 hoc tp Moodle}{section.2.1}% 28
-\BOOKMARK [2][]{subsection.2.1.4}{2.1.4 B ph\341t trin ng dung Cordova \(PhoneGap\)}{section.2.1}% 29
-\BOOKMARK [2][]{subsection.2.1.5}{2.1.5 Nn tang ng dung di ng Worklight}{section.2.1}% 30
-\BOOKMARK [2][]{subsection.2.1.6}{2.1.6 Truyn th\364ng qua Web services}{section.2.1}% 31
-\BOOKMARK [3][]{subsubsection.2.1.6.1}{2.1.6.1 Tng quan v Web services}{subsection.2.1.6}% 32
-\BOOKMARK [3][]{subsubsection.2.1.6.2}{2.1.6.2 \320c im web services}{subsection.2.1.6}% 33
-\BOOKMARK [1][]{section.2.2}{2.2 Khao s\341t}{chapter.2}% 34
-\BOOKMARK [2][]{subsection.2.2.1}{2.2.1 IELTS Listening}{section.2.2}% 35
-\BOOKMARK [2][]{subsection.2.2.2}{2.2.2 English Ant plus}{section.2.2}% 36
-\BOOKMARK [2][]{subsection.2.2.3}{2.2.3 Nhn x\351t chung}{section.2.2}% 37
-\BOOKMARK [1][]{section.2.3}{2.3 Tng kt chng}{chapter.2}% 38
-\BOOKMARK [0][]{chapter.3}{3 H Thng Luyn Nghe Ting Anh }{}% 39
-\BOOKMARK [1][]{section.3.1}{3.1 \320t vn }{chapter.3}% 40
-\BOOKMARK [1][]{section.3.2}{3.2 \320 thi nghe IELTS}{chapter.3}% 41
-\BOOKMARK [2][]{subsection.3.2.1}{3.2.1 Tai sao lai chon \040thi IELTS?}{section.3.2}% 42
-\BOOKMARK [2][]{subsection.3.2.2}{3.2.2 Cu tr\372c b\340i thi}{section.3.2}% 43
-\BOOKMARK [2][]{subsection.3.2.3}{3.2.3 C\341ch t\355nh im}{section.3.2}% 44
-\BOOKMARK [2][]{subsection.3.2.4}{3.2.4 C\341c dang c\342u hoi}{section.3.2}% 45
-\BOOKMARK [2][]{subsection.3.2.5}{3.2.5 S h\363a c\342u hoi bng c\341c th\340nh phn XML}{section.3.2}% 46
-\BOOKMARK [1][]{section.3.3}{3.3 Thit k t\355nh nang luyn nghe Offline}{chapter.3}% 47
-\BOOKMARK [1][]{section.3.4}{3.4 Thit k t\355nh nang kt ni vi Moodle}{chapter.3}% 48
-\BOOKMARK [2][]{subsection.3.4.1}{3.4.1 Thit k t\355nh nang ang nhp v\340 ly token}{section.3.4}% 49
-\BOOKMARK [2][]{subsection.3.4.2}{3.4.2 Thit k t\355nh nang ly \040luyn nghe}{section.3.4}% 50
-\BOOKMARK [2][]{subsection.3.4.3}{3.4.3 Thit k t\355nh nang chm b\340i v\340 \341nh gi\341 ky nang}{section.3.4}% 51
-\BOOKMARK [1][]{section.3.5}{3.5 Tng kt chng}{chapter.3}% 52
-\BOOKMARK [0][]{chapter.4}{4 Hin Thc H Thng Luyn Nghe Ting Anh}{}% 53
-\BOOKMARK [1][]{section.4.1}{4.1 Thit k lp giao din ng dung}{chapter.4}% 54
-\BOOKMARK [1][]{section.4.2}{4.2 Hin thc t\355nh nang luyn nghe offline}{chapter.4}% 55
-\BOOKMARK [1][]{section.4.3}{4.3 Hin thc t\355nh nang kt ni vi Moodle}{chapter.4}% 56
-\BOOKMARK [2][]{subsection.4.3.1}{4.3.1 Cu tr\372c tng t\341c gia client v\340 server}{section.4.3}% 57
-\BOOKMARK [2][]{subsection.4.3.2}{4.3.2 Cu h\354nh tr\352n moodle}{section.4.3}% 58
-\BOOKMARK [2][]{subsection.4.3.3}{4.3.3 M\364 h\354nh x l\375 tr\352n client}{section.4.3}% 59
-\BOOKMARK [1][]{section.4.4}{4.4 Hin thc vic trin khai l\352n ng dung di ng}{chapter.4}% 60
-\BOOKMARK [1][]{section.4.5}{4.5 Tng kt chng}{chapter.4}% 61
-\BOOKMARK [0][]{chapter.5}{5 Kt Lun v\340 Hng Ph\341t Trin}{}% 62
-\BOOKMARK [1][]{section.5.1}{5.1 Kt lun}{chapter.5}% 63
-\BOOKMARK [1][]{section.5.2}{5.2 Han ch, kh\363 khan}{chapter.5}% 64
-\BOOKMARK [1][]{section.5.3}{5.3 Phng hng ph\341t trin}{chapter.5}% 65
-\BOOKMARK [0][]{appendix*.3}{T\340i Liu Tham Khao}{}% 66
+\BOOKMARK [0][]{chapter.1}{1 Gii Thiu}{}% 3
+\BOOKMARK [1][]{section.1.1}{1.1 T\352n \040t\340i}{chapter.1}% 4
+\BOOKMARK [1][]{section.1.2}{1.2 \320t vn }{chapter.1}% 5
+\BOOKMARK [1][]{section.1.3}{1.3 Muc ti\352u \040t\340i}{chapter.1}% 6
+\BOOKMARK [1][]{section.1.4}{1.4 Ni dung v\340 gii han \040t\340i}{chapter.1}% 7
+\BOOKMARK [2][]{subsection.1.4.1}{1.4.1 Ni dung \040t\340i}{section.1.4}% 8
+\BOOKMARK [2][]{subsection.1.4.2}{1.4.2 Gii han \040t\340i}{section.1.4}% 9
+\BOOKMARK [1][]{section.1.5}{1.5 Cu tr\372c kh\363a lun}{chapter.1}% 10
+\BOOKMARK [0][]{chapter.2}{2 Kin Thc Nn Tang V\340 Khao S\341t}{}% 11
+\BOOKMARK [1][]{section.2.1}{2.1 Kin thc nn tang}{chapter.2}% 12
+\BOOKMARK [2][]{subsection.2.1.1}{2.1.1 Kin thc v HTML5}{section.2.1}% 13
+\BOOKMARK [3][]{subsubsection.2.1.1.1}{2.1.1.1 Tng quan HTML}{subsection.2.1.1}% 14
+\BOOKMARK [3][]{subsubsection.2.1.1.2}{2.1.1.2 HTML5}{subsection.2.1.1}% 15
+\BOOKMARK [3][]{subsubsection.2.1.1.3}{2.1.1.3 HTML5 trong thit bi di ng}{subsection.2.1.1}% 16
+\BOOKMARK [2][]{subsection.2.1.2}{2.1.2 Kin thc v JavaScript}{section.2.1}% 17
+\BOOKMARK [3][]{subsubsection.2.1.2.1}{2.1.2.1 Tng quan v JavaScript}{subsection.2.1.2}% 18
+\BOOKMARK [3][]{subsubsection.2.1.2.2}{2.1.2.2 Cu tr\372c v\340 c\341c th\340nh phn trong JavaScript}{subsection.2.1.2}% 19
+\BOOKMARK [3][]{subsubsection.2.1.2.3}{2.1.2.3 DOM}{subsection.2.1.2}% 20
+\BOOKMARK [3][]{subsubsection.2.1.2.4}{2.1.2.4 S kin \(event\)}{subsection.2.1.2}% 21
+\BOOKMARK [3][]{subsubsection.2.1.2.5}{2.1.2.5 AJAX}{subsection.2.1.2}% 22
+\BOOKMARK [3][]{subsubsection.2.1.2.6}{2.1.2.6 LocalStorage}{subsection.2.1.2}% 23
+\BOOKMARK [3][]{subsubsection.2.1.2.7}{2.1.2.7 Th vin jQuery}{subsection.2.1.2}% 24
+\BOOKMARK [3][]{subsubsection.2.1.2.8}{2.1.2.8 Th vin Jquery Mobile}{subsection.2.1.2}% 25
+\BOOKMARK [3][]{subsubsection.2.1.2.9}{2.1.2.9 Ghi ch\372 quan trong cn nh khi s dung JavaScript}{subsection.2.1.2}% 26
+\BOOKMARK [2][]{subsection.2.1.3}{2.1.3 H thng quan l\375 hoc tp Moodle}{section.2.1}% 27
+\BOOKMARK [2][]{subsection.2.1.4}{2.1.4 B ph\341t trin ng dung Cordova \(PhoneGap\)}{section.2.1}% 28
+\BOOKMARK [2][]{subsection.2.1.5}{2.1.5 Nn tang ng dung di ng Worklight}{section.2.1}% 29
+\BOOKMARK [3][]{subsubsection.2.1.5.1}{2.1.5.1 Thit lp m\364i trng}{subsection.2.1.5}% 30
+\BOOKMARK [3][]{subsubsection.2.1.5.2}{2.1.5.2 C\340i t m\341y chu}{subsection.2.1.5}% 31
+\BOOKMARK [3][]{subsubsection.2.1.5.3}{2.1.5.3 Ph\341t trin ng dung}{subsection.2.1.5}% 32
+\BOOKMARK [3][]{subsubsection.2.1.5.4}{2.1.5.4 X\342y dng mt ng dung c\363 th trin khai v\340o c\341c thit bi iOS v\340 Android}{subsection.2.1.5}% 33
+\BOOKMARK [3][]{subsubsection.2.1.5.5}{2.1.5.5 Kt lun}{subsection.2.1.5}% 34
+\BOOKMARK [2][]{subsection.2.1.6}{2.1.6 Truyn th\364ng qua Web service}{section.2.1}% 35
+\BOOKMARK [3][]{subsubsection.2.1.6.1}{2.1.6.1 Tng quan v Web service}{subsection.2.1.6}% 36
+\BOOKMARK [3][]{subsubsection.2.1.6.2}{2.1.6.2 \320c im web service}{subsection.2.1.6}% 37
+\BOOKMARK [1][]{section.2.2}{2.2 Khao s\341t}{chapter.2}% 38
+\BOOKMARK [2][]{subsection.2.2.1}{2.2.1 IELTS Listening}{section.2.2}% 39
+\BOOKMARK [2][]{subsection.2.2.2}{2.2.2 English Ant plus}{section.2.2}% 40
+\BOOKMARK [2][]{subsection.2.2.3}{2.2.3 Nhn x\351t chung}{section.2.2}% 41
+\BOOKMARK [1][]{section.2.3}{2.3 Tng kt chng}{chapter.2}% 42
+\BOOKMARK [0][]{chapter.3}{3 H Thng Luyn Nghe Ting Anh }{}% 43
+\BOOKMARK [1][]{section.3.1}{3.1 \320t vn }{chapter.3}% 44
+\BOOKMARK [1][]{section.3.2}{3.2 \320 thi nghe IELTS}{chapter.3}% 45
+\BOOKMARK [2][]{subsection.3.2.1}{3.2.1 Tai sao lai chon \040thi IELTS?}{section.3.2}% 46
+\BOOKMARK [2][]{subsection.3.2.2}{3.2.2 Cu tr\372c b\340i thi}{section.3.2}% 47
+\BOOKMARK [2][]{subsection.3.2.3}{3.2.3 C\341ch t\355nh im}{section.3.2}% 48
+\BOOKMARK [2][]{subsection.3.2.4}{3.2.4 C\341c dang c\342u hoi}{section.3.2}% 49
+\BOOKMARK [2][]{subsection.3.2.5}{3.2.5 S h\363a c\342u hoi bng c\341c th\340nh phn XML}{section.3.2}% 50
+\BOOKMARK [1][]{section.3.3}{3.3 Thit k c\341c t\355nh nang ng dung}{chapter.3}% 51
+\BOOKMARK [2][]{subsection.3.3.1}{3.3.1 Thit k t\355nh nang luyn nghe Offline}{section.3.3}% 52
+\BOOKMARK [2][]{subsection.3.3.2}{3.3.2 Thit k t\355nh nang ang nhp v\340 ly token}{section.3.3}% 53
+\BOOKMARK [2][]{subsection.3.3.3}{3.3.3 Thit k t\355nh nang ly \040luyn nghe}{section.3.3}% 54
+\BOOKMARK [2][]{subsection.3.3.4}{3.3.4 Thit k t\355nh nang chm b\340i v\340 \341nh gi\341 ky nang}{section.3.3}% 55
+\BOOKMARK [1][]{section.3.4}{3.4 Tng kt chng}{chapter.3}% 56
+\BOOKMARK [0][]{chapter.4}{4 Hin Thc H Thng Luyn Nghe Ting Anh}{}% 57
+\BOOKMARK [1][]{section.4.1}{4.1 Thit k lp giao din ng dung}{chapter.4}% 58
+\BOOKMARK [1][]{section.4.2}{4.2 Hin thc t\355nh nang luyn nghe offline}{chapter.4}% 59
+\BOOKMARK [1][]{section.4.3}{4.3 Hin thc t\355nh nang kt ni vi Moodle}{chapter.4}% 60
+\BOOKMARK [2][]{subsection.4.3.1}{4.3.1 Cu tr\372c tng t\341c gia client v\340 server}{section.4.3}% 61
+\BOOKMARK [2][]{subsection.4.3.2}{4.3.2 Cu h\354nh tr\352n moodle}{section.4.3}% 62
+\BOOKMARK [2][]{subsection.4.3.3}{4.3.3 M\364 h\354nh x l\375 tr\352n client}{section.4.3}% 63
+\BOOKMARK [1][]{section.4.4}{4.4 Hin thc vic trin khai ng dung}{chapter.4}% 64
+\BOOKMARK [1][]{section.4.5}{4.5 Tng kt chng}{chapter.4}% 65
+\BOOKMARK [0][]{chapter.5}{5 Kt Lun v\340 Hng Ph\341t Trin}{}% 66
+\BOOKMARK [1][]{section.5.1}{5.1 Kt lun}{chapter.5}% 67
+\BOOKMARK [1][]{section.5.2}{5.2 Han ch, kh\363 khan}{chapter.5}% 68
+\BOOKMARK [1][]{section.5.3}{5.3 Phng hng ph\341t trin}{chapter.5}% 69
+\BOOKMARK [0][]{appendix*.3}{T\340i Liu Tham Khao}{}% 70

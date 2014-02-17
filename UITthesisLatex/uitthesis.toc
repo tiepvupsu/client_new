@@ -1,7 +1,6 @@
 \select@language {vietnam}
-\contentsline {chapter}{M\d {u}c l\d {u}c}{iii}{chapter*.1}
-\contentsline {chapter}{Danh s\'ach h\`inh v\~e}{vi}{chapter*.2}
-\contentsline {chapter}{Nomenclature}{vii}{chapter*.2}
+\contentsline {chapter}{M\d {u}c l\d {u}c}{ii}{chapter*.1}
+\contentsline {chapter}{Danh s\'ach h\`inh v\~e}{v}{chapter*.2}
 \contentsline {chapter}{\numberline {1}Gi\IeC {\'\ohorn }i Thi\IeC {\d \ecircumflex }u}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}T\IeC {\^e}n \IeC {\dj }\IeC {\`\ecircumflex } t\IeC {\`a}i}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}\IeC {\DJ }\IeC {\d \abreve }t v\IeC {\'\acircumflex }n \IeC {\dj }\IeC {\`\ecircumflex }}{1}{section.1.2}
@@ -9,59 +8,64 @@
 \contentsline {section}{\numberline {1.4}N\IeC {\d \ocircumflex }i dung v\IeC {\`a} gi\IeC {\'\ohorn }i h\IeC {\d a}n \IeC {\dj }\IeC {\`\ecircumflex } t\IeC {\`a}i}{2}{section.1.4}
 \contentsline {subsection}{\numberline {1.4.1}N\IeC {\d \ocircumflex }i dung \IeC {\dj }\IeC {\`\ecircumflex } t\IeC {\`a}i}{2}{subsection.1.4.1}
 \contentsline {subsection}{\numberline {1.4.2}Gi\IeC {\'\ohorn }i h\IeC {\d a}n \IeC {\dj }\IeC {\`\ecircumflex } t\IeC {\`a}i}{3}{subsection.1.4.2}
-\contentsline {section}{\numberline {1.5}C\IeC {\'\acircumflex }u tr\IeC {\'u}c kh\IeC {\'o}a lu\IeC {\d \acircumflex }n}{3}{section.1.5}
+\contentsline {section}{\numberline {1.5}C\IeC {\'\acircumflex }u tr\IeC {\'u}c kh\IeC {\'o}a lu\IeC {\d \acircumflex }n}{4}{section.1.5}
 \contentsline {chapter}{\numberline {2}Ki\IeC {\'\ecircumflex }n Th\IeC {\'\uhorn }c N\IeC {\`\ecircumflex }n T\IeC {\h a}ng V\IeC {\`a} Kh\IeC {\h a}o S\IeC {\'a}t}{5}{chapter.2}
 \contentsline {section}{\numberline {2.1}Ki\IeC {\'\ecircumflex }n th\IeC {\'\uhorn }c n\IeC {\`\ecircumflex }n t\IeC {\h a}ng}{5}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Ki\IeC {\'\ecircumflex }n th\IeC {\'\uhorn }c v\IeC {\`\ecircumflex } HTML5}{5}{subsection.2.1.1}
 \contentsline {subsubsection}{\numberline {2.1.1.1}T\IeC {\h \ocircumflex }ng quan HTML}{5}{subsubsection.2.1.1.1}
 \contentsline {subsubsection}{\numberline {2.1.1.2}HTML5}{7}{subsubsection.2.1.1.2}
-\contentsline {subsubsection}{\numberline {2.1.1.3}HTML5 trong thi\IeC {\'\ecircumflex }t b\IeC {\d i} di \IeC {\dj }\IeC {\d \ocircumflex }ng}{10}{subsubsection.2.1.1.3}
+\contentsline {subsubsection}{\numberline {2.1.1.3}HTML5 trong thi\IeC {\'\ecircumflex }t b\IeC {\d i} di \IeC {\dj }\IeC {\d \ocircumflex }ng}{9}{subsubsection.2.1.1.3}
 \contentsline {subsection}{\numberline {2.1.2}Ki\IeC {\'\ecircumflex }n th\IeC {\'\uhorn }c v\IeC {\`\ecircumflex } JavaScript}{12}{subsection.2.1.2}
 \contentsline {subsubsection}{\numberline {2.1.2.1}T\IeC {\h \ocircumflex }ng quan v\IeC {\`\ecircumflex } JavaScript}{12}{subsubsection.2.1.2.1}
-\contentsline {subsubsection}{\numberline {2.1.2.2}C\IeC {\'\acircumflex }u tr\IeC {\'u}c v\IeC {\`a} c\IeC {\'a}c th\IeC {\`a}nh ph\IeC {\`\acircumflex }n trong JavaScript}{13}{subsubsection.2.1.2.2}
+\contentsline {subsubsection}{\numberline {2.1.2.2}C\IeC {\'\acircumflex }u tr\IeC {\'u}c v\IeC {\`a} c\IeC {\'a}c th\IeC {\`a}nh ph\IeC {\`\acircumflex }n trong JavaScript}{12}{subsubsection.2.1.2.2}
 \contentsline {subsubsection}{\numberline {2.1.2.3}DOM}{15}{subsubsection.2.1.2.3}
-\contentsline {subsubsection}{\numberline {2.1.2.4}S\IeC {\d \uhorn } ki\IeC {\d \ecircumflex }n(event)}{16}{subsubsection.2.1.2.4}
+\contentsline {subsubsection}{\numberline {2.1.2.4}S\IeC {\d \uhorn } ki\IeC {\d \ecircumflex }n (event)}{15}{subsubsection.2.1.2.4}
 \contentsline {subsubsection}{\numberline {2.1.2.5}AJAX}{16}{subsubsection.2.1.2.5}
-\contentsline {subsubsection}{\numberline {2.1.2.6}LocalStorage}{18}{subsubsection.2.1.2.6}
-\contentsline {subsubsection}{\numberline {2.1.2.7}Th\IeC {\uhorn } vi\IeC {\d \ecircumflex }n Jquery}{18}{subsubsection.2.1.2.7}
+\contentsline {subsubsection}{\numberline {2.1.2.6}LocalStorage}{17}{subsubsection.2.1.2.6}
+\contentsline {subsubsection}{\numberline {2.1.2.7}Th\IeC {\uhorn } vi\IeC {\d \ecircumflex }n jQuery}{18}{subsubsection.2.1.2.7}
 \contentsline {subsubsection}{\numberline {2.1.2.8}Th\IeC {\uhorn } vi\IeC {\d \ecircumflex }n Jquery Mobile}{19}{subsubsection.2.1.2.8}
 \contentsline {subsubsection}{\numberline {2.1.2.9}Ghi ch\IeC {\'u} quan tr\IeC {\d o}ng c\IeC {\`\acircumflex }n nh\IeC {\'\ohorn } khi s\IeC {\h \uhorn } d\IeC {\d u}ng JavaScript}{21}{subsubsection.2.1.2.9}
 \contentsline {subsection}{\numberline {2.1.3}H\IeC {\d \ecircumflex } th\IeC {\'\ocircumflex }ng qu\IeC {\h a}n l\IeC {\'y} h\IeC {\d o}c t\IeC {\d \acircumflex }p Moodle}{21}{subsection.2.1.3}
-\contentsline {subsection}{\numberline {2.1.4}B\IeC {\d \ocircumflex } ph\IeC {\'a}t tri\IeC {\h \ecircumflex }n \IeC {\'\uhorn }ng d\IeC {\d u}ng Cordova (PhoneGap)}{22}{subsection.2.1.4}
+\contentsline {subsection}{\numberline {2.1.4}B\IeC {\d \ocircumflex } ph\IeC {\'a}t tri\IeC {\h \ecircumflex }n \IeC {\'\uhorn }ng d\IeC {\d u}ng Cordova (PhoneGap)}{23}{subsection.2.1.4}
 \contentsline {subsection}{\numberline {2.1.5}N\IeC {\`\ecircumflex }n t\IeC {\h a}ng \IeC {\'\uhorn }ng d\IeC {\d u}ng di \IeC {\dj }\IeC {\d \ocircumflex }ng Worklight}{24}{subsection.2.1.5}
-\contentsline {subsection}{\numberline {2.1.6}Truy\IeC {\`\ecircumflex }n th\IeC {\^o}ng qua Web services}{25}{subsection.2.1.6}
-\contentsline {subsubsection}{\numberline {2.1.6.1}T\IeC {\h \ocircumflex }ng quan v\IeC {\`\ecircumflex } Web services}{25}{subsubsection.2.1.6.1}
-\contentsline {subsubsection}{\numberline {2.1.6.2}\IeC {\DJ }\IeC {\d \abreve }c \IeC {\dj }i\IeC {\h \ecircumflex }m web services}{25}{subsubsection.2.1.6.2}
-\contentsline {section}{\numberline {2.2}Kh\IeC {\h a}o s\IeC {\'a}t}{27}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}IELTS Listening}{27}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}English Ant plus}{27}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Nh\IeC {\d \acircumflex }n x\IeC {\'e}t chung}{30}{subsection.2.2.3}
-\contentsline {section}{\numberline {2.3}T\IeC {\h \ocircumflex }ng k\IeC {\'\ecircumflex }t ch\IeC {\uhorn }\IeC {\ohorn }ng}{30}{section.2.3}
-\contentsline {chapter}{\numberline {3}H\IeC {\d \ecircumflex } Th\IeC {\'\ocircumflex }ng Luy\IeC {\d \ecircumflex }n Nghe Ti\IeC {\'\ecircumflex }ng Anh }{32}{chapter.3}
-\contentsline {section}{\numberline {3.1}\IeC {\DJ }\IeC {\d \abreve }t v\IeC {\'\acircumflex }n \IeC {\dj }\IeC {\`\ecircumflex }}{32}{section.3.1}
-\contentsline {section}{\numberline {3.2}\IeC {\DJ }\IeC {\`\ecircumflex } thi nghe IELTS}{33}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}T\IeC {\d a}i sao l\IeC {\d a}i ch\IeC {\d o}n \IeC {\dj }\IeC {\`\ecircumflex } thi IELTS?}{33}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}C\IeC {\'\acircumflex }u tr\IeC {\'u}c b\IeC {\`a}i thi}{34}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}C\IeC {\'a}ch t\IeC {\'\i }nh \IeC {\dj }i\IeC {\h \ecircumflex }m}{35}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}C\IeC {\'a}c d\IeC {\d a}ng c\IeC {\^a}u h\IeC {\h o}i}{35}{subsection.3.2.4}
-\contentsline {subsection}{\numberline {3.2.5}S\IeC {\'\ocircumflex } h\IeC {\'o}a c\IeC {\^a}u h\IeC {\h o}i b\IeC {\`\abreve }ng c\IeC {\'a}c th\IeC {\`a}nh ph\IeC {\`\acircumflex }n XML}{37}{subsection.3.2.5}
-\contentsline {section}{\numberline {3.3}Thi\IeC {\'\ecircumflex }t k\IeC {\'\ecircumflex } t\IeC {\'\i }nh n\IeC {\u a}ng luy\IeC {\d \ecircumflex }n nghe Offline}{38}{section.3.3}
-\contentsline {section}{\numberline {3.4}Thi\IeC {\'\ecircumflex }t k\IeC {\'\ecircumflex } t\IeC {\'\i }nh n\IeC {\u a}ng k\IeC {\'\ecircumflex }t n\IeC {\'\ocircumflex }i v\IeC {\'\ohorn }i Moodle}{38}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Thi\IeC {\'\ecircumflex }t k\IeC {\'\ecircumflex } t\IeC {\'\i }nh n\IeC {\u a}ng \IeC {\dj }\IeC {\u a}ng nh\IeC {\d \acircumflex }p v\IeC {\`a} l\IeC {\'\acircumflex }y token}{39}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Thi\IeC {\'\ecircumflex }t k\IeC {\'\ecircumflex } t\IeC {\'\i }nh n\IeC {\u a}ng l\IeC {\'\acircumflex }y \IeC {\dj }\IeC {\`\ecircumflex } luy\IeC {\d \ecircumflex }n nghe}{39}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Thi\IeC {\'\ecircumflex }t k\IeC {\'\ecircumflex } t\IeC {\'\i }nh n\IeC {\u a}ng ch\IeC {\'\acircumflex }m b\IeC {\`a}i v\IeC {\`a} \IeC {\dj }\IeC {\'a}nh gi\IeC {\'a} k\IeC {\~y} n\IeC {\u a}ng}{40}{subsection.3.4.3}
-\contentsline {section}{\numberline {3.5}T\IeC {\h \ocircumflex }ng k\IeC {\'\ecircumflex }t ch\IeC {\uhorn }\IeC {\ohorn }ng}{41}{section.3.5}
-\contentsline {chapter}{\numberline {4}Hi\IeC {\d \ecircumflex }n Th\IeC {\d \uhorn }c H\IeC {\d \ecircumflex } Th\IeC {\'\ocircumflex }ng Luy\IeC {\d \ecircumflex }n Nghe Ti\IeC {\'\ecircumflex }ng Anh}{42}{chapter.4}
-\contentsline {section}{\numberline {4.1}Thi\IeC {\'\ecircumflex }t k\IeC {\'\ecircumflex } l\IeC {\'\ohorn }p giao di\IeC {\d \ecircumflex }n \IeC {\'\uhorn }ng d\IeC {\d u}ng}{42}{section.4.1}
-\contentsline {section}{\numberline {4.2}Hi\IeC {\d \ecircumflex }n th\IeC {\d \uhorn }c t\IeC {\'\i }nh n\IeC {\u a}ng luy\IeC {\d \ecircumflex }n nghe offline}{43}{section.4.2}
-\contentsline {section}{\numberline {4.3}Hi\IeC {\d \ecircumflex }n th\IeC {\d \uhorn }c t\IeC {\'\i }nh n\IeC {\u a}ng k\IeC {\'\ecircumflex }t n\IeC {\'\ocircumflex }i v\IeC {\'\ohorn }i Moodle}{44}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}C\IeC {\'\acircumflex }u tr\IeC {\'u}c t\IeC {\uhorn }\IeC {\ohorn }ng t\IeC {\'a}c gi\IeC {\~\uhorn }a client v\IeC {\`a} server}{44}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}C\IeC {\'\acircumflex }u h\IeC {\`\i }nh tr\IeC {\^e}n moodle}{45}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}M\IeC {\^o} h\IeC {\`\i }nh x\IeC {\h \uhorn } l\IeC {\'y} tr\IeC {\^e}n client}{46}{subsection.4.3.3}
-\contentsline {section}{\numberline {4.4}Hi\IeC {\d \ecircumflex }n th\IeC {\d \uhorn }c vi\IeC {\d \ecircumflex }c tri\IeC {\h \ecircumflex }n khai l\IeC {\^e}n \IeC {\'\uhorn }ng d\IeC {\d u}ng di \IeC {\dj }\IeC {\d \ocircumflex }ng}{48}{section.4.4}
-\contentsline {section}{\numberline {4.5}T\IeC {\h \ocircumflex }ng k\IeC {\'\ecircumflex }t ch\IeC {\uhorn }\IeC {\ohorn }ng}{48}{section.4.5}
-\contentsline {chapter}{\numberline {5}K\IeC {\'\ecircumflex }t Lu\IeC {\d \acircumflex }n v\IeC {\`a} H\IeC {\uhorn }\IeC {\'\ohorn }ng Ph\IeC {\'a}t Tri\IeC {\h \ecircumflex }n}{49}{chapter.5}
-\contentsline {section}{\numberline {5.1}K\IeC {\'\ecircumflex }t lu\IeC {\d \acircumflex }n}{49}{section.5.1}
-\contentsline {section}{\numberline {5.2}H\IeC {\d a}n ch\IeC {\'\ecircumflex }, kh\IeC {\'o} kh\IeC {\u a}n}{49}{section.5.2}
-\contentsline {section}{\numberline {5.3}Ph\IeC {\uhorn }\IeC {\ohorn }ng h\IeC {\uhorn }\IeC {\'\ohorn }ng ph\IeC {\'a}t tri\IeC {\h \ecircumflex }n}{50}{section.5.3}
-\contentsline {chapter}{T\IeC {\`a}i Li\IeC {\d \ecircumflex }u Tham Kh\IeC {\h a}o}{51}{appendix*.3}
+\contentsline {subsubsection}{\numberline {2.1.5.1}Thi\IeC {\'\ecircumflex }t l\IeC {\d \acircumflex }p m\IeC {\^o}i tr\IeC {\uhorn }\IeC {\`\ohorn }ng}{24}{subsubsection.2.1.5.1}
+\contentsline {subsubsection}{\numberline {2.1.5.2}C\IeC {\`a}i \IeC {\dj }\IeC {\d \abreve }t m\IeC {\'a}y ch\IeC {\h u}}{29}{subsubsection.2.1.5.2}
+\contentsline {subsubsection}{\numberline {2.1.5.3}Ph\IeC {\'a}t tri\IeC {\h \ecircumflex }n \IeC {\'\uhorn }ng d\IeC {\d u}ng}{30}{subsubsection.2.1.5.3}
+\contentsline {subsubsection}{\numberline {2.1.5.4}X\IeC {\^a}y d\IeC {\d \uhorn }ng m\IeC {\d \ocircumflex }t \IeC {\'\uhorn }ng d\IeC {\d u}ng c\IeC {\'o} th\IeC {\h \ecircumflex } tri\IeC {\h \ecircumflex }n khai v\IeC {\`a}o c\IeC {\'a}c thi\IeC {\'\ecircumflex }t b\IeC {\d i} iOS v\IeC {\`a} Android}{32}{subsubsection.2.1.5.4}
+\contentsline {subsubsection}{\numberline {2.1.5.5}K\IeC {\'\ecircumflex }t lu\IeC {\d \acircumflex }n}{33}{subsubsection.2.1.5.5}
+\contentsline {subsection}{\numberline {2.1.6}Truy\IeC {\`\ecircumflex }n th\IeC {\^o}ng qua Web service}{33}{subsection.2.1.6}
+\contentsline {subsubsection}{\numberline {2.1.6.1}T\IeC {\h \ocircumflex }ng quan v\IeC {\`\ecircumflex } Web service}{33}{subsubsection.2.1.6.1}
+\contentsline {subsubsection}{\numberline {2.1.6.2}\IeC {\DJ }\IeC {\d \abreve }c \IeC {\dj }i\IeC {\h \ecircumflex }m web service}{34}{subsubsection.2.1.6.2}
+\contentsline {section}{\numberline {2.2}Kh\IeC {\h a}o s\IeC {\'a}t}{36}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}IELTS Listening}{36}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}English Ant plus}{38}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Nh\IeC {\d \acircumflex }n x\IeC {\'e}t chung}{40}{subsection.2.2.3}
+\contentsline {section}{\numberline {2.3}T\IeC {\h \ocircumflex }ng k\IeC {\'\ecircumflex }t ch\IeC {\uhorn }\IeC {\ohorn }ng}{40}{section.2.3}
+\contentsline {chapter}{\numberline {3}H\IeC {\d \ecircumflex } Th\IeC {\'\ocircumflex }ng Luy\IeC {\d \ecircumflex }n Nghe Ti\IeC {\'\ecircumflex }ng Anh }{41}{chapter.3}
+\contentsline {section}{\numberline {3.1}\IeC {\DJ }\IeC {\d \abreve }t v\IeC {\'\acircumflex }n \IeC {\dj }\IeC {\`\ecircumflex }}{41}{section.3.1}
+\contentsline {section}{\numberline {3.2}\IeC {\DJ }\IeC {\`\ecircumflex } thi nghe IELTS}{42}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}T\IeC {\d a}i sao l\IeC {\d a}i ch\IeC {\d o}n \IeC {\dj }\IeC {\`\ecircumflex } thi IELTS?}{42}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}C\IeC {\'\acircumflex }u tr\IeC {\'u}c b\IeC {\`a}i thi}{43}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}C\IeC {\'a}ch t\IeC {\'\i }nh \IeC {\dj }i\IeC {\h \ecircumflex }m}{44}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}C\IeC {\'a}c d\IeC {\d a}ng c\IeC {\^a}u h\IeC {\h o}i}{45}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}S\IeC {\'\ocircumflex } h\IeC {\'o}a c\IeC {\^a}u h\IeC {\h o}i b\IeC {\`\abreve }ng c\IeC {\'a}c th\IeC {\`a}nh ph\IeC {\`\acircumflex }n XML}{45}{subsection.3.2.5}
+\contentsline {section}{\numberline {3.3}Thi\IeC {\'\ecircumflex }t k\IeC {\'\ecircumflex } c\IeC {\'a}c t\IeC {\'\i }nh n\IeC {\u a}ng \IeC {\'\uhorn }ng d\IeC {\d u}ng}{47}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Thi\IeC {\'\ecircumflex }t k\IeC {\'\ecircumflex } t\IeC {\'\i }nh n\IeC {\u a}ng luy\IeC {\d \ecircumflex }n nghe Offline}{48}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Thi\IeC {\'\ecircumflex }t k\IeC {\'\ecircumflex } t\IeC {\'\i }nh n\IeC {\u a}ng \IeC {\dj }\IeC {\u a}ng nh\IeC {\d \acircumflex }p v\IeC {\`a} l\IeC {\'\acircumflex }y token}{49}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Thi\IeC {\'\ecircumflex }t k\IeC {\'\ecircumflex } t\IeC {\'\i }nh n\IeC {\u a}ng l\IeC {\'\acircumflex }y \IeC {\dj }\IeC {\`\ecircumflex } luy\IeC {\d \ecircumflex }n nghe}{50}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Thi\IeC {\'\ecircumflex }t k\IeC {\'\ecircumflex } t\IeC {\'\i }nh n\IeC {\u a}ng ch\IeC {\'\acircumflex }m b\IeC {\`a}i v\IeC {\`a} \IeC {\dj }\IeC {\'a}nh gi\IeC {\'a} k\IeC {\~y} n\IeC {\u a}ng}{51}{subsection.3.3.4}
+\contentsline {section}{\numberline {3.4}T\IeC {\h \ocircumflex }ng k\IeC {\'\ecircumflex }t ch\IeC {\uhorn }\IeC {\ohorn }ng}{52}{section.3.4}
+\contentsline {chapter}{\numberline {4}Hi\IeC {\d \ecircumflex }n Th\IeC {\d \uhorn }c H\IeC {\d \ecircumflex } Th\IeC {\'\ocircumflex }ng Luy\IeC {\d \ecircumflex }n Nghe Ti\IeC {\'\ecircumflex }ng Anh}{53}{chapter.4}
+\contentsline {section}{\numberline {4.1}Thi\IeC {\'\ecircumflex }t k\IeC {\'\ecircumflex } l\IeC {\'\ohorn }p giao di\IeC {\d \ecircumflex }n \IeC {\'\uhorn }ng d\IeC {\d u}ng}{53}{section.4.1}
+\contentsline {section}{\numberline {4.2}Hi\IeC {\d \ecircumflex }n th\IeC {\d \uhorn }c t\IeC {\'\i }nh n\IeC {\u a}ng luy\IeC {\d \ecircumflex }n nghe offline}{54}{section.4.2}
+\contentsline {section}{\numberline {4.3}Hi\IeC {\d \ecircumflex }n th\IeC {\d \uhorn }c t\IeC {\'\i }nh n\IeC {\u a}ng k\IeC {\'\ecircumflex }t n\IeC {\'\ocircumflex }i v\IeC {\'\ohorn }i Moodle}{55}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}C\IeC {\'\acircumflex }u tr\IeC {\'u}c t\IeC {\uhorn }\IeC {\ohorn }ng t\IeC {\'a}c gi\IeC {\~\uhorn }a client v\IeC {\`a} server}{55}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}C\IeC {\'\acircumflex }u h\IeC {\`\i }nh tr\IeC {\^e}n moodle}{55}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}M\IeC {\^o} h\IeC {\`\i }nh x\IeC {\h \uhorn } l\IeC {\'y} tr\IeC {\^e}n client}{57}{subsection.4.3.3}
+\contentsline {section}{\numberline {4.4}Hi\IeC {\d \ecircumflex }n th\IeC {\d \uhorn }c vi\IeC {\d \ecircumflex }c tri\IeC {\h \ecircumflex }n khai \IeC {\'\uhorn }ng d\IeC {\d u}ng}{58}{section.4.4}
+\contentsline {section}{\numberline {4.5}T\IeC {\h \ocircumflex }ng k\IeC {\'\ecircumflex }t ch\IeC {\uhorn }\IeC {\ohorn }ng}{63}{section.4.5}
+\contentsline {chapter}{\numberline {5}K\IeC {\'\ecircumflex }t Lu\IeC {\d \acircumflex }n v\IeC {\`a} H\IeC {\uhorn }\IeC {\'\ohorn }ng Ph\IeC {\'a}t Tri\IeC {\h \ecircumflex }n}{64}{chapter.5}
+\contentsline {section}{\numberline {5.1}K\IeC {\'\ecircumflex }t lu\IeC {\d \acircumflex }n}{64}{section.5.1}
+\contentsline {section}{\numberline {5.2}H\IeC {\d a}n ch\IeC {\'\ecircumflex }, kh\IeC {\'o} kh\IeC {\u a}n}{64}{section.5.2}
+\contentsline {section}{\numberline {5.3}Ph\IeC {\uhorn }\IeC {\ohorn }ng h\IeC {\uhorn }\IeC {\'\ohorn }ng ph\IeC {\'a}t tri\IeC {\h \ecircumflex }n}{65}{section.5.3}
+\contentsline {chapter}{T\IeC {\`a}i Li\IeC {\d \ecircumflex }u Tham Kh\IeC {\h a}o}{66}{appendix*.3}

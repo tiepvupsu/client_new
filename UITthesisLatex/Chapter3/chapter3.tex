@@ -14,7 +14,7 @@ Các tính năng cần thiết để xây dựng cho chương trình:
 
 \quad -	Luyện nghe online: đây là tính năng chủ chốt của chương trình. Người dùng sẽ đăng nhập vào hệ thống bằng tài khoản của Moodle, đăng nhập thành công thì người dùng có thể chọn khóa học mà mình muốn, chọn các bộ đề trong khóa học đó để luyện nghe.
 
-\quad - Còn hệ thống Moodle sẽ làm nhiệm vụ quản lý tài khoản người dùng, quản lý nội dung bài học, lưu trữ các bộ đề. 
+\quad - Hệ thống Moodle sẽ làm nhiệm vụ quản lý tài khoản người dùng, quản lý nội dung bài học, lưu trữ các bộ đề. 
 
 \quad -	Chức năng phụ: Xem thống kê kỹ năng: người sử dụng được xem lại điểm số những bài trắc nghiệm đã làm, với những đánh giá về kỹ năng nghe trong bài một cách khách quan nhất. Từ đó có thể rút ra những điểm yếu của bản thân trong việc luyện nghe.
 
@@ -43,8 +43,8 @@ Các câu hỏi và phần audio của chương trình được trích từ các
 \\
 \begin{figure}[!htb] 
 \centering
-\includegraphics[scale=0.6]{ielts9.png}
-\caption{Bìa sách Cambridge IELTS 9 (Nguồn: www.booktopia.com.au)}
+\includegraphics[scale=0.8]{ielts9.png}
+\caption{Bìa sách Cambridge IELTS 9 (Nguồn: covers.booktopia.com.au)}
 \end{figure}
 
 Vì nội dung chương trình chỉ mang tính chất tham khảo và không vì mục đích lợi nhuận nên nhóm đã sử dụng nội dung trong quyển sách nói trên. Nếu phát triển thành ứng dụng có tính phí, nhóm sẽ thay đổi với những nội dung có bản quyền.
@@ -119,17 +119,37 @@ Trong đó, chức năng của các thẻ như sau:
 
 \quad - Thẻ <question> chứa các thông tin về câu hỏi. Có 2 loại:
 
-\quad\quad - Loại có tham số multiple=”0” là các dạng câu hỏi điền từ, với phần nội dung của thẻ là đoạn mã HTML đã được định dạng và được gói trong cú pháp CDATA. Những ô trống để thí sinh có thể điền từ vào được thể hiện trong mã HTML bằng thẻ <div id=”” class=” questext”></div>.
+\quad \quad + Loại có tham số multiple=”0” là các dạng câu hỏi điền từ, với phần nội dung của thẻ là đoạn mã HTML đã được định dạng và được gói trong cú pháp CDATA. Những ô trống để thí sinh có thể điền từ vào được thể hiện trong mã HTML bằng thẻ <div id=”” class=” questext”></div>.
 
-Loại có tham số multiple=”1” là các dạng câu hỏi trắc nghiệm. Thẻ này có các thẻ con như <description> chứa thông tin câu hỏi và các thẻ <a>, <b>, <c> chứa các phương án lựa chọn trả lời. Đặc biệt là loại có tham số multiple=”2” là câu hỏi trắc nghiệm có 5 phương án lựa chọn với các thẻ phương án là <a>, <b>, <c>, <d> và <e>. Trong đó, thí sinh được chọn 2 phương án trả lời được cho là đúng.
-
-\section{Thiết kế tính năng luyện nghe Offline}
+\quad \quad + Loại có tham số multiple=”1” là các dạng câu hỏi trắc nghiệm. Thẻ này có các thẻ con như <description> chứa thông tin câu hỏi và các thẻ <a>, <b>, <c> chứa các phương án lựa chọn trả lời. Đặc biệt là loại có tham số multiple=”2” là câu hỏi trắc nghiệm có 5 phương án lựa chọn với các thẻ phương án là <a>, <b>, <c>, <d> và <e>. Trong đó, thí sinh được chọn 2 phương án trả lời được cho là đúng.
 
 
 
-\section{Thiết kế tính năng kết nối với Moodle}
 
-Chương trình sẽ được phát triển theo mô hình truyền thông giữa Client và Server, trong đó, Moodle sẽ đóng vai trò làm Server, còn các tablet của người sử dụng là Client. Việc kết nối sẽ được thực hiện qua giao thức TCP/IP. Máy chủ sẽ gửi về nội dung đề cho máy khách và máy khách có thể gửi bài làm lên cho máy chủ chấm đáp án.
+
+\section{Thiết kế các tính năng ứng dụng}
+Chương trình sẽ được phát triển theo mô hình truyền thông giữa Client và Server, trong đó, Moodle sẽ đóng vai trò làm Server, còn các tablet của người sử dụng là Client. Việc kết nối sẽ được thực hiện qua giao thức TCP/IP.
+\newpage
+\begin{figure}[!htb] 
+\centering
+\includegraphics[width=0.6\textwidth]{flowchart.png}
+\caption{Sơ đồ luồng chung của ứng dụng}
+\end{figure}
+
+
+\subsection{Thiết kế tính năng luyện nghe Offline}
+Client sẽ kiểm tra danh sách đề thi trong dữ liệu chương trình. Sau đó sẽ hiển thị danh sách các đề hiện có.
+
+Người sử dụng sẽ chọn đề. Nội dung đề được trả về là file XML và file audio.
+
+Nội dung audio sẽ được phát, đồng thời client hiển thị nội dung câu hỏi cho người sử dụng làm bài.
+
+\begin{figure}[!htb] 
+\centering
+\includegraphics[width=0.8\textwidth]{getQuesSeq.png}
+\caption{Sơ đồ sequence về hoạt động tải đề kiểm tra khi chạy offline}
+\end{figure}
+
 \subsection{Thiết kế tính năng đăng nhập và lấy token}
 
 Khi bắt chương trình, giữa client và server sẽ thiết lập một kết nối truyền tải dữ liệu.
@@ -162,6 +182,7 @@ Nội dung audio sẽ được phát, đồng thời client hiển thị nội d
 \includegraphics[width=0.8\textwidth]{getQuizSequence.png}
 \caption{Sơ đồ sequence về hoạt động tải đề kiểm tra}
 \end{figure}
+\newpage
 
 \subsection{Thiết kế tính năng chấm bài và đánh giá kỹ năng}
 
@@ -169,17 +190,14 @@ Sau khi người sử dụng làm bài xong và nhấn Submit, danh sách câu t
 
 Server sẽ dò và so sánh danh sách câu trả lời vừa nhận với danh sách đáp án đã lưu trước dựa theo mã đề. Câu trả lời đúng là câu trả lời có nội dung trùng với từ khóa trong đáp án.
 
-Sau khi chấm, danh sách số câu trả lời đúng theo từng Section sẽ được gửi về cho client. Từ đó, client đánh giá được kỹ năng của người dùng dựa trên số điểm của mỗi Section với mỗi kỹ năng riêng.\\
-\\
-\\
-\\
-\\
-\\
+Sau khi chấm, danh sách số câu trả lời đúng theo từng Section sẽ được gửi về cho client. Từ đó, client đánh giá được kỹ năng của người dùng dựa trên số điểm của mỗi Section với mỗi kỹ năng riêng.
+
 \begin{figure}[!htb] 
 \centering
 \includegraphics[width=0.8\textwidth]{getMarkSequenceOff.png}
 \caption{Sơ đồ sequence về hoạt động nộp bài và chấm bài}
 \end{figure}
+\newpage
 
 \section{Tổng kết chương}
 

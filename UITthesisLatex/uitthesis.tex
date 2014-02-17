@@ -27,7 +27,7 @@
                ĐẠI HỌC CÔNG NGHỆ THÔNG TIN}}
   \collegeordept{{KHOA MẠNG MÁY TÍNH \& TRUYỀN THÔNG}}  
   \degree{KỸ SƯ CÔNG NGHỆ THÔNG TIN}   
-  \title{NGHIÊN CỨU HỆ THỐNG MOODLE KẾT HỢP CÔNG NGHỆ HTML5 ỨNG DỤNG TRONG VIỆC HỌC LUYỆN NGHE MÔN TIẾNG ANH TRÊN MÁY TÍNH BẢNG} 
+  \title{NGHIÊN CỨU HỆ THỐNG MOODLE KẾT HỢP CÔNG NGHỆ HTML5 ỨNG DỤNG TRONG VIỆC LUYỆN NGHE MÔN TIẾNG ANH TRÊN MÁY TÍNH BẢNG} 
   \crest{\includegraphics[scale=.20]{UITLogo}} 
   \supervisor{{TS. NGUYỄN ANH TUẤN }}
   \author{{	
@@ -40,6 +40,7 @@
 \usepackage{StyleFiles/watermark}
 \usepackage{url}
 \usepackage{listings}
+
 \onehalfspacing
 
 \begin{document}
@@ -50,14 +51,16 @@
 \frontmatter % book mode only
 \pagenumbering{roman}
 %\include{Dedication/dedication}
-\include{Abstract/abstract}
 \include{Acknowledgement/acknowledgement}
+
+
 
 
 \tableofcontents
 \listoffigures
- \printnomenclature  
- \addcontentsline{toc}{chapter}{Nomenclature}
+% \printnomenclature  
+ %\addcontentsline{toc}{chapter}{Nomenclature}
+\include{Abstract/abstract}
 
 \mainmatter  
 \include{Chapter1/chapter1}

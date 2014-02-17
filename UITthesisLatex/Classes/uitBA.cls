@@ -166,7 +166,7 @@
 \setlength{\textheight}{20.84cm}
 \setlength{\textwidth}{14.5cm}
 \setlength{\marginparsep}{1mm}
-\setlength{\marginparwidth}{3cm}
+\setlength{\marginparwidth}{3.5cm}
 \setlength{\footskip}{2.36cm}
 
 \pagestyle{fancy}
@@ -323,7 +323,7 @@
 \newenvironment{abstractslong} {\begin{alwayssingle} \pagestyle{empty}
   \begin{center}
   \vspace*{1.5cm}
-  {\Large \bfseries  TÓM TẮT}
+  {\Large \bfseries  TÓM TẮT KHOÁ LUẬN}
   \end{center}
   \vspace{0.5cm} \begin{quote}}
 {\end{quote}\end{alwayssingle}}
