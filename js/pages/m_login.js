@@ -95,7 +95,7 @@ $("#page-login").on('change',function() {
             {
                 username: username,
                 password: password,
-                service: "moodle_elearning" //change to your custom services                  
+                service: "moodle_elearning" //change to your custom services  //default:moodle_mobile_app                
             }    
             ,function(json) {
                 if(typeof(json.token) != 'undefined'){   
