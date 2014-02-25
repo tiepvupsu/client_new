@@ -20,7 +20,7 @@
 	var audio = $("#audioPlayer");
 	var audioDuration=audio.get(0).duration;
 	var countinueCount;
-	var testtime=60;//time in second
+	var testtime=45;//time in second
 	//init
 	
 	console.log(codeName);
@@ -531,15 +531,25 @@
 			setInterval(function () {
 				if (countinueCount==true){
 			    var time= (new Date() - startTime);
+			    
 			    var second=((Math.round(time/1000) ) % 60);
 			    var minute=Math.floor(time/1000/60);
+			    if(isTestMode){
+			    	var timeremain=(testtime-minute*60-second);
+			  		var s = Math.round(time/1000);		    
+
+				   	$("#timeline").attr("max", testtime);
+				   	$("#timeline").val(s);
+				   	$("#timeline").slider( "refresh" );
+			    }
+
 
 			   $("span.countS").html(second);
 			   $("span.countM").html(minute);
 
 			   sessionStorage.setItem("takentime",(minute*60+second));
 			   if (isTestMode()){
-				   	if ( (20) <=second ){
+				   	if ( (testtime) <=second ){
 					   		countinueCount=false;
 					   		getAnswerKey();
 					   		/*
@@ -556,6 +566,7 @@
 						}
 			   		}
 			   	}
+			   
 			
 			}, 1000);
 			

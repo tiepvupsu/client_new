@@ -32,28 +32,28 @@
 	            Back
 	        </a>
 	        <h3>
-	           <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+	        	<form class=" test_mode">	
+  					<input type="range" name="slider-2" id="timeline" data-mini="true" data-highlight="true" min="0" max="100" value="1">
+	        	</form>
+
+	           <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true" class="practice_mode">
 		        <input type="radio" name="radio-choice-b" id="radio-choice-c" value="mm" checked="checked">
-		        <label for="radio-choice-c"><span class="countM"></span> min</label>
+		        <label for="radio-choice-c"><span class="countM"></span> min </label>
 		        <input type="radio" name="radio-choice-b" id="radio-choice-d" value="ss">
-		        <label for="radio-choice-d"><span class="countS"></span> sec</label>
-			</fieldset>
+		        <label for="radio-choice-d"><span class="countS"></span> sec </label>
+				</fieldset>
 			</h3>
+
 	      </header>  
 		<article data-role="content">
 		<div class="main">	
 			<div class="player practice_mode">
-				<div data-role="controlgroup" data-type="horizontal" data-mini="true">
-						<form style="display:none;">
-						    <input type="range" data-highlight="true" name="slider-12" id="sliderTime" min="0" data-mini="true">
-						</form>
-					<audio id="audioPlayer" controls>
+				<audio id="audioPlayer" controls>
 						<source id="audioSrc" src=""  type="audio/mpeg">
 						Your browser does not support the audio tag.
 					</audio>
-					<!--
+				<div data-role="controlgroup" data-type="horizontal" data-mini="true">						
 				    <a href="#" data-icon="action" data-role="button" data-mini="true" data-theme="b" data-inline="true" id="btnPlay">Play</a>
-					-->
 				    <a href="#" data-icon="arrow-l" data-role="button" data-mini="true" data-theme="b" data-inline="true" id="btnSkipBack">Skip Backward</a>
 				    <a href="#" data-icon="arrow-r" data-role="button" data-mini="true" data-theme="b" data-inline="true" data-iconpos="right" id="btnSkipForward" >Skip Fordward</a>
 				    

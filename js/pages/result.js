@@ -48,7 +48,7 @@
 			$(xml).find('question').each(function(){
 				var correct = $(this).attr('correct');
 				if (null!==sessionStorage.getItem("correctAns")){
-					//if (sessionStorage.getItem("correctAns")==correct){
+					if (sessionStorage.getItem("correctAns")==correct){
 						var mark = $(this).attr('lmark');
 						var currentdate = new Date(); 
 						var datetime =currentdate.getDate() + "/"
@@ -69,9 +69,7 @@
 							$(".mark").html("Unknown");
 							$(".rating").html(Math.round((correctAns/totalQues*100))+"%");
 						}
-						
-
-					//}
+					}
 				}
 			});
 	}

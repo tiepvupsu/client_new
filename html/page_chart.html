@@ -2,6 +2,9 @@
 <html>
 <head>
 <meta charset="utf-8">
+	<link rel="stylesheet" href="../css/UITListening.css">
+	<link rel="stylesheet" href="../css/jquery.mobile.structure-1.4.0.css">
+	<link rel="stylesheet" href="../css/jquery.mobile.theme-1.4.0.css">
 	<link rel="stylesheet" href="../css/jquery.mobile-1.4.0.css">
 	<script src="../js/jquery-1.10.2.js"></script>
 	<script src="../js/jquery.mobile-1.4.0.js"></script>
@@ -16,18 +19,36 @@
 <body>
 	<section id="page" data-role="page">
 		<header data-role="header">
-			<h1>Header</h1>
+			<h1>Ranking</h1>
+			<a data-role="button" data-transition="pop" data-theme="b" data-icon="check" data-iconpos="right"  class="ui-btn-right" id="btnRefresh">
+	            Refresh
+	        </a>
 		</header><!-- /header -->
 		<article data-role="content">
 			<div id="chart1" style="height:480px;width:90%;"></div>
 		</article><!-- /content -->
-		<footer data-role="footer">
-			<h1>Footer</h1>
-		</footer><!-- /footer -->
-	</section><!-- /page -->
-	
-	<script>
-		//location.reload();
+		<footer data-role="footer" data-position="fixed">
+			<div data-role="navbar" data-iconpos="top">
+	            <ul>
+	                <li>
+	                    <a href="page_result.html" data-transition="fade" data-theme="" data-icon="edit"
+	                    >
+	                        Current Test Result
+	                    </a>
+	                </li>
+	                <li>
+	                    <a href="page_chart.html" data-transition="fade" data-theme="" data-icon="info" class="ui-btn-active ui-state-persist">
+	                        Statics
+	                    </a>
+	                </li>
+	            </ul>
+	        </div>
+	        <script>
+		
+		$("#btnRefresh").click(function(event) {
+			/* Act on the event */
+			location.reload();
+		});
 		$(document).ready(function(){
 			var url = "extData.json";
 			var data={
@@ -93,5 +114,10 @@
 
 		});
 	</script>
+		</footer><!-- /footer -->
+
+	</section><!-- /page -->
+	
+	
 </body>
 </html>
