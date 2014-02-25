@@ -14,12 +14,13 @@
 	var urlImg=unitUrl+"_lis_img/";
 	var isPraceticeMode=true;//set mode pratice or test
 	var lastAns=-1;
-	var ansQues=[];
+	var ansQues=[];//store answer
 	var totalQues;
 	var correctAns=0;
 	var audio = $("#audioPlayer");
 	var audioDuration=audio.get(0).duration;
-	var countinueCount=true;
+	var countinueCount;
+	var testtime=60;//time in second
 	//init
 	
 	console.log(codeName);
@@ -39,7 +40,7 @@
 		}
 		
 	}
-	countQuestion(urlXML);//to set value to totalQues
+	//countQuestion(urlXML);//to set value to totalQues
 	__init();
 	handle_user_multichoices();
 	handle_audio_control(audio);
@@ -149,13 +150,22 @@
 		$("#btnFinish").click(function(event) {
 			/* Act on the event */
 			countinueCount=false;
+			getAnswerKey();
+			/*
 			$.ajax({
 				type: "GET",
 				url: urlXMLKey,
 				dataType: "xml",
 				success: getAnswerKey
 			});
+			*/
 		});
+		$.ajax({
+				type: "GET",
+				url: urlXMLKey,
+				dataType: "xml",
+				success: storeAnswerKey2Arr
+			});
 
 	/* 
 		*********************
@@ -164,7 +174,7 @@
 	*/
 
 		function __init(){
-
+			countinueCount=true;
 			if (isTestMode()){
 				$(".practice_mode").hide();
 				$(".test_mode").show();
@@ -242,23 +252,40 @@
 				/* Act on the event */
 				audio.currentTime+=offsecTime;
 			});
-
-			$(".seekBar a").bind('change', function(event){
+			
+			$(audio).bind('timeupdate durationchange updateMediaState', function(event) {
 				/* Act on the event */
-				var updateTime=$(this).attr("valuenow")*(audio.duration/100);
-				console.log(updateTime);
-				audio.currentTime=updateTime;
-			});
-	
-			$("#seekBar").bind('change', function(event) {
-				/* Act on the event */
-				var updateTime=$(this).attr("valuenow")*(audio.duration/100);
-				console.log(updateTime);
-				audio.currentTime=updateTime;
+				var duration = $.prop(this,'duration');
+				var valuenow =$.prop(this,'currentTime');
 
+	            if (!duration) {
+	                return;
+	            }
+	            $('#sliderTime').prop({
+	                'max': duration,
+	                disabled: false
+	            });
+
+	            $( "#sliderTime" ).bind( 'slidestop', function( event ) { 
+		        	valuenow=$(this).prop("value");
+		    		console.log(valuenow);
+		    		
+		    	});
+		        //$('#sliderTime').prop('value',valuenow).slider('refresh');
+		        
+
+		        /* 
+		        try {
+		            
+		            $( "#sliderTime" ).bind( "change", function(event, ui) {
+					  valuenow=$(this).prop("value");
+					});
+		        } catch (er) {}
+		        */
+	         
 			});
 			/*
-			$(audio).bind('timeupdate', function(event) {
+			$(audio).bind('timeupdate durationchange updateMediaState', function(event) {
 				
 				var updateSeek=audio.currentTime*(100/audio.duration);
 				console.log(updateSeek);
@@ -290,6 +317,12 @@
 			var multiNumber; 
 			var qty;
 			var description ="";
+
+			//get total question in test
+			totalQues= parseInt($(xml).find('listening amount').attr("value"));
+			console.log(totalQues);
+			sessionStorage.setItem("totalQues_currenttest",totalQues);
+
 			$(xml).find('listening question').each(function(){
 				var id = parseInt($(this).attr('id'));
 				
@@ -456,7 +489,27 @@
 			}
 			return false;
 		}
-		function getAnswerKey(xml){
+		function storeAnswerKey2Arr(xml){
+			$(xml).find('key').each(function(){
+				var id = $(this).attr('id');
+				var key = $(this).attr('answer');
+				console.log(id+" "+key);
+				ansQues[id]=key;
+			});
+			console.log(ansQues);
+		}
+		function getAnswerKey(){
+			for (var i=1;i<=totalQues;i++){
+				key=ansQues[i];
+				ans=getSavedAnswer(i);
+				if (null!==ans){
+					if(key==ans){
+						++correctAns;
+					}
+				}
+			}
+			sessionStorage.setItem("correctAns",correctAns);
+			/*
 			$(xml).find('key').each(function(){
 				var id = $(this).attr('id');
 				var key = $(this).attr('answer');
@@ -468,10 +521,8 @@
 						sessionStorage.setItem("correctAns",correctAns);
 					}
 				}
-			});
-			
+			}); */
 			console.log(correctAns);
-
 		}
 		function counter(){
 			var startTime = new Date();
@@ -486,16 +537,19 @@
 			   $("span.countS").html(second);
 			   $("span.countM").html(minute);
 
-			   sessionStorage.setItem("takentime",minute+"-"+second);
+			   sessionStorage.setItem("takentime",(minute*60+second));
 			   if (isTestMode()){
 				   	if ( (20) <=second ){
 					   		countinueCount=false;
+					   		getAnswerKey();
+					   		/*
 					   		$.ajax({
 								type: "GET",
 								url: urlXMLKey,
 								dataType: "xml",
 								success: getAnswerKey
 							});
+							*/
 							$.mobile.changePage("page_result.html",'slideup');
 							minute=0;second=0;
 							return;

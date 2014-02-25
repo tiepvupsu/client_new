@@ -12,6 +12,9 @@ a, abbr, address, article, aside, audio, b, blockquote, body, canvas, caption, c
 	margin: 0 auto;
 	width: 320px
 }*/
+#content {
+	margin: 0 auto;
+}
 div.result{
 	margin: 20px 200px;
 }

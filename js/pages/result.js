@@ -6,6 +6,7 @@
 	var urlXMLKey="../data/"+codeName+"/"+codeName+"ques.xml";
 	var isModeOnline=false;
 	var totalQues=parseInt(sessionStorage.getItem("totalQues_currenttest"));
+	var takentime=sessionStorage.getItem("takentime");
 
 	console.log(urlXMLKey);
 	console.log(urlXML);
@@ -47,18 +48,20 @@
 			$(xml).find('question').each(function(){
 				var correct = $(this).attr('correct');
 				if (null!==sessionStorage.getItem("correctAns")){
-					if (sessionStorage.getItem("correctAns")==correct){
+					//if (sessionStorage.getItem("correctAns")==correct){
 						var mark = $(this).attr('lmark');
 						var currentdate = new Date(); 
 						var datetime =currentdate.getDate() + "/"
 						            + (currentdate.getMonth()+1)  + "/" 
 						            + currentdate.getFullYear() + "--"  
 						            + currentdate.getHours() + "h:"  
-						            + currentdate.getMinutes() + "m:";
+						            + currentdate.getMinutes() + "m";
+
 						$(".datetime").html(datetime);
 						$(".correct").html(correctAns);
 						$(".incorrect").html((totalQues-correctAns));
 						$(".totalQ").html(totalQues);
+						$(".takentime").html(Math.floor(takentime/60)+"m"+(takentime%60)+"s");
 						if (totalQues==40){
 							$(".mark").html(mark);
 							$(".rating").html(Math.round((correctAns/totalQues*100))+"%");
@@ -68,7 +71,7 @@
 						}
 						
 
-					}
+					//}
 				}
 			});
 	}
