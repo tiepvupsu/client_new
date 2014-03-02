@@ -28,10 +28,16 @@ h3.correctLis{
 	display: inline-block;
 
 }
-input.quesfil{
+input.queswrong{
 	border: none;
 	border-bottom: 2px solid red;
 	background: none;
+}
+.wrongans{
+	border: 2px solid red;
+}
+.trueans{
+	border: 2px solid #3388cc;
 }
 .questext input select{
 	border-bottom: 2px solid green;
@@ -61,10 +67,13 @@ input.quesfil{
 	display: none;
 }
 span.correct{
-	color: green;
-	font-size: 1.2em;
+	color: #3388cc;
+	font-size: 1.1em;
 }
 span.incorrect{
 	color:red;
-	font-size: 1.2em;
+	font-size: 1.1em;
+}
+.myPlayer{
+
 }

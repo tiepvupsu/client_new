@@ -7,7 +7,8 @@
 	var unitUrl="../data/"+codeName+"/"+codeName;
 	var audioUrl = unitUrl+".mp3";
 	var currentQues = 1;
-	var typeQues=-1;
+	var currentQuesRange;
+	var currentQuesType=-1;
 	var offsetInc=0,offsetDesc=1;
 	var urlXML=unitUrl+"ques.xml";
 	var urlXMLKey=unitUrl+"key.xml";
@@ -78,7 +79,7 @@
 			window.console.clear();
 			//storing user answer before change question , using sessionStorage :D, maximum 5MB :(o)
 			//saveSingleAnswer(currentQues,lastAns);
-			$( "input[type=text].quesfil" ).addClass('aaaaaaaa');
+			//$( "input[type=text].quesfil" ).addClass('aaaaaaaa');
 			clearLastAnswer();
 			
 			
@@ -104,9 +105,9 @@
 				dataType: "xml",
 				success: parseXml,
 			});
-
+			console.log("currentQues type" +currentQuesType);
 			console.log("current "+currentQues);
-			console.log("currentQues type" +typeQues);
+			
 			
 		});
 		//previous 
@@ -137,9 +138,70 @@
 				dataType: "xml",
 				success: parseXml
 			});
-			
+			console.log("currentQues type" +currentQuesType);
+			console.log("current "+currentQues);
 		});
-		
+		//
+		$("#btnCheckAns").click(function(event){
+			/* Act on the event */
+			//console.log(currentQuesRange+"ques");
+			if(currentQuesType===0)
+			{
+				if (currentQuesRange>1)
+				{
+					var total=currentQues+currentQuesRange;
+				}
+				
+			
+				for (var i=currentQues;i<total;++i)
+				{
+					var container=$("#"+codeName+i);
+					
+					if(getSavedAnswer(i)!==null)
+					if(getSavedAnswer(i)==='')
+					{
+						container.removeClass('wrongans trueans');
+						console.log(i+" is null");
+					}
+					else
+						{
+							if (ansQues[i]===getSavedAnswer(i).trim())
+							{
+								console.log(i+" is correct");
+								container.removeClass('wrongans');
+								container.addClass('trueans');
+							}
+							else
+							{
+								console.log(i+" is incorrect");
+								container.removeClass('trueans');
+								container.addClass('wrongans');
+							}
+						}
+				}
+			}
+			else if(currentQuesType===1)
+			{
+				var container=$("#"+codeName+i);
+				if(getSavedAnswer(currentQues)!==null)
+				{	var cA =getSavedAnswer(currentQues).toUpperCase();
+					if (ansQues[currentQues].toUpperCase()===cA)
+					{
+						console.log(currentQues+" is correct");
+						
+						$('span.alertmess').remove();
+						$("#lbChoice"+cA).append('<span class="alertmess correct"> Correct </span>');
+					}
+					else
+					{
+						console.log(currentQues+" is incorrect");
+						$('span.alertmess').remove();
+						$("#lbChoice"+cA).append('<span class="alertmess incorrect"> Incorrect </span>');
+					}
+				}		
+			}
+				
+		});
 		
 		$("#btnSubmit").click(function(event) {
 			/* Act on the event */
@@ -151,6 +213,20 @@
 			/* Act on the event */
 			countinueCount=false;
 			getAnswerKey();
+			/*
+			$.ajax({
+				type: "GET",
+				url: urlXMLKey,
+				dataType: "xml",
+				success: getAnswerKey
+			});
+			*/
+		});
+		$("#btnQuit").click(function(event) {
+			/* Act on the event */
+			countinueCount=false;
+			sessionStorage.clear();
+			$("input[type='text']").val("");
 			/*
 			$.ajax({
 				type: "GET",
@@ -182,6 +258,7 @@
 				$(".practice_mode").show();
 				$(".test_mode").hide();
 			}
+
 			//sessionStorage.clear();
 			$("div.result").hide();
 			updateAudioUrl(audioUrl);
@@ -192,7 +269,7 @@
 							dataType: "xml",
 							success: parseXml
 						});
-				console.log("currentQues type" +typeQues);
+				console.log("currentQues type" +currentQuesType);
 				console.log("current "+currentQues);
 			
 		}
@@ -206,7 +283,16 @@
 
 				$("input[type=checkbox]").click(function(event) {
 					/* Act on the event */
-					console.log("checkbox selected "+$(this).val());
+					var notCache=$(this).attr('data-cacheval');
+					console.log(notCache);
+				
+				  	//console.log("checkbox selected "+$(this).val());
+				  
+					//var currans+=$(this).val();
+					//saveMultiAnswer(currentQues,$(this).val())
+				});
+				$("input[type='checkbox']").bind( "change", function(event, ui) {
+
 				});
 		}
 		function handle_user_type(cQues,qty){
@@ -317,7 +403,7 @@
 			var multiNumber; 
 			var qty;
 			var description ="";
-
+			var direction,dir;
 			//get total question in test
 			totalQues= parseInt($(xml).find('listening amount').attr("value"));
 			console.log(totalQues);
@@ -330,8 +416,12 @@
 				if(id === currentQues){
 					multiNumber = parseInt($(this).attr('multiple'));
 					qty=parseInt($(this).attr('qty'));
-					typeQues=multiNumber;
-					
+					currentQuesType=multiNumber;
+					currentQuesRange=qty;
+					dir=$(this).attr('dir');
+					direction=$(xml).find('listening directions '+'direction'+dir).text();
+					console.log("direction"+direction);
+
 					if (currentQues===1){
 						preMulti=parseInt($(xml).find('listening question').last().attr('multiple'));
 						if (preMulti===0){
@@ -350,6 +440,7 @@
 					
 					switch (multiNumber){
 						case 0:
+							
 							description=$(this).text();
 							
 							if (!isNaN(qty))	offsetInc=qty;
@@ -357,6 +448,7 @@
 							$("#quesDetail").html(description);
 							for (i=0;i<qty;i++){
 								var container="#ques"+(id+i);
+								//$(container).addClass('ui-field-contain');
 								$(container).html('<input type="text" name="'+(codeName+(id+i))+'" id="'+(codeName+(id+i))+'" data-mini="true" class="quesfil"/>');
 							}
 							//<input type="text" name="name" id="basic" data-mini="true" />
@@ -371,9 +463,14 @@
 							var choiceA = $(this).find('a').text();
 							var choiceB = $(this).find('b').text();
 							var choiceC = $(this).find('c').text();
+							var choiceD = $(this).find('d').text();
 							$("#lbChoiceA").html("(A) " + choiceA);
 							$("#lbChoiceB").html("(B) " + choiceB);
 							$("#lbChoiceC").html("(C) " + choiceC);
+							if (choiceD.length>1){
+
+								$("#lbChoiceD").html("(D) " + choiceD);
+							}
 							offsetInc=1;
 							break;
 						case 2:
@@ -409,6 +506,8 @@
 						$("#quesTitle").html("Question " + currentQues);
 						console.log("current ques :" +currentQues);
 					}
+
+					$("#quesTitle").append("<br />"+direction);
 					console.log("___________________________________________");
 
 					
@@ -422,7 +521,7 @@
 
 				//find the current question and act :D
 				if(id === currentQues){
-					typeQues=(parseInt($(this).attr('multiple')));
+					currentQuesType=(parseInt($(this).attr('multiple')));
 				}
 			});
 		}
@@ -440,11 +539,11 @@
 			}
 			sessionStorage.setItem(codeName+ques, ans);
 		}
-		function saveMultiAnswer(ques,ans1,ans2){
+		function saveMultiAnswer(ques,arr){
 			if (-1==ans){
 				return;
 			}
-
+			sessionStorage.setItem(codeName+ques, arr);
 		}
 		function getSavedAnswer(ques){
 			return sessionStorage.getItem(codeName+ques);

@@ -23,12 +23,12 @@
 	<!--application UI goes here-->
 	<section id="page" data-role="page">
 	    <header data-theme="a" data-role="header" data-position="fixed">
-	        <a href="#popupDialogFinish" data-role="button" data-rel="popup" data-position-to="window" data-transition="pop" data-theme="b" href="#" data-icon="check" data-iconpos="right"
+	        <a href="#popupDialogFinish" data-role="button" data-rel="popup" data-position-to="window" data-transition="slide" data-theme="b" href="#" data-icon="check" data-iconpos="right"
 	        class="ui-btn-right" id="btnSubmit">
 	            Submit
 	        </a>
-	        <a data-role="button" href="page_list.html" data-icon="back" data-iconpos="left"
-	        class="ui-btn-left" data-transition="slide" data-direction="reverse" id="btnBack">
+	        <a data-role="button" href="#popupDialogQuit" data-rel="popup" data-position-to="window" data-icon="back" data-iconpos="left"
+	        class="ui-btn-left" data-transition="slide" id="btnBack">
 	            Back
 	        </a>
 	        <h3>
@@ -47,11 +47,14 @@
 	      </header>  
 		<article data-role="content">
 		<div class="main">	
-			<div class="player practice_mode">
-				<audio id="audioPlayer" controls>
+			<div class="player practice_mode" data-role="controlgroup" data-type="horizontal">
+				<div class="myPlayer" data-role="controlgroup" data-type="horizontal" data-mini="true">
+					<audio id="audioPlayer" controls>
 						<source id="audioSrc" src=""  type="audio/mpeg">
 						Your browser does not support the audio tag.
 					</audio>
+				</div>
+				
 				<div data-role="controlgroup" data-type="horizontal" data-mini="true">						
 				    <a href="#" data-icon="action" data-role="button" data-mini="true" data-theme="b" data-inline="true" id="btnPlay">Play</a>
 				    <a href="#" data-icon="arrow-l" data-role="button" data-mini="true" data-theme="b" data-inline="true" id="btnSkipBack">Skip Backward</a>
@@ -80,7 +83,7 @@
 					</div>
 					<div class="choices_single">
 						<div  data-role="fieldcontain">
-									<fieldset data-role="controlgroup">
+									<fieldset data-role="controlgroup" class="singlechoie">
 								     	<input type="radio" name="radio-choice" id="radio-choice-1" class="radio-ans" value="A"/>
 								     	<label for="radio-choice-1" id="lbChoiceA"></label>
 
@@ -125,7 +128,19 @@
 			        <h3 class="ui-title">Are you sure you want to finish this test?</h3>
 			    	<p>This action cannot be undone.</p>
 			        <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Cancel</a>
-			        <a href="page_result.html" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b"  data-transition="pop" id="btnFinish">Finish</a>
+			        <a href="page_result.html" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b"  data-transition="slide" id="btnFinish">Finish</a>
+			    </div>
+			</div>
+
+			<div data-role="popup" id="popupDialogQuit" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+			    <div data-role="header" data-theme="a">
+			    <h1>Quit Test?</h1>
+			    </div>
+			    <div role="main" class="ui-content">
+			        <h3 class="ui-title">Are you sure you want to quit this test?</h3>
+			    	<p>This action cannot be undone.</p>
+			        <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Cancel</a>
+			        <a href="page_list.html" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b"  data-transition="slide" data-direction="reverse" id="btnQuit">Quit</a>
 			    </div>
 			</div>
 		</div>
@@ -135,7 +150,7 @@
 			<div data-role="controlgroup" data-type="horizontal" data-mini="true">
       				<button id="btnPrevQues" data-icon="arrow-l" data-mini="true" data-inline="true" data-transition="flip">Prev</button>
       				<button  data-icon="star" data-mini="true" data-inline="true" class="practice_mode">Show Answer</button>
-      				<button  data-icon="star" data-mini="true" data-inline="true" class="practice_mode">Check Answer</button>
+      				<button  id="btnCheckAns" data-icon="star" data-mini="true" data-inline="true" class="practice_mode">Check Answer</button>
                     <button id="btnNextQues" data-icon="arrow-r" data-mini="true" data-inline="true" data-iconpos="right">Next</button>
         	</div>
       	<script type="text/javascript" src="../js/pages/listening.js" >
