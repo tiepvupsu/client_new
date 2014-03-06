@@ -1,4 +1,4 @@
-
+//(function(){
 
 	var codeName=localStorage.getItem("current_test");
 	var correctAns=parseInt(sessionStorage.getItem("correctAns"));
@@ -11,17 +11,16 @@
 	console.log(urlXMLKey);
 	console.log(urlXML);
 	callAjax();
-	if(sessionStorage.getItem('isOnline')==='yes'){
-		isModeOnline=true;
+
+	if(localStorage.getItem('isOnline')=='yes'){
+			if(sessionStorage.getItem('back_to_page')){
+						btp=sessionStorage.getItem('back_to_page');
+						console.log(btp);
+						$("#btnResult2List").attr('href',btp);
+			}
 	}
-	if(isModeOnline){
-		if(sessionStorage.getItem('back_to_page')){
-			btp=sessionStorage.getItem('back_to_page');
-			console.log(btp);
-			$("#btnBack").attr('href',btp);
-		}
-		
-	}
+	// change to localStorage
+	
 	$("#btnBack").click(function(event) {
 		/* Act on the event */
 		countinueCount=false;
@@ -36,12 +35,15 @@
 	
 	
 	function callAjax(){
+		
+
 		$.ajax({
 				type: "GET",
 				url: urlXML,
 				dataType: "xml",
 				success: getEILTSConvert,
 		});
+
 	}
 	
 	function getEILTSConvert(xml){
@@ -77,3 +79,4 @@
 		//store testing result - 
 
 	}
+//});

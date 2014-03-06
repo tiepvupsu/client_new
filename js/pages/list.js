@@ -45,6 +45,7 @@
     	$("#lmytests").append('<li><a id="test'+id+'" codeTest="'+codeName+'">'+codeName+'<p>'+codeName+'</p></a></li>');
                 $("#test"+id).click(function(){                        
                     localStorage.setItem("current_test",$(this).attr('codeTest'));
+                    localStorage.setItem('isOnline','no');
                     $.mobile.changePage("page_select_mode.html");
         });
     }

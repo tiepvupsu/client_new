@@ -14,7 +14,7 @@
         var contents = "";
         var cm = sessionStorage.getItem('current_cmid');
         var isAQuiz=false;
-        sessionStorage.setItem('isOnline','yes');
+        localStorage.setItem('isOnline','yes');
 
         if(cm !== null){
             
@@ -73,7 +73,7 @@
             }
             
             
-            contents += '<a href="#" data-slow="'+cm.url+'" data-role="button" rel="external" target="_blank">View activity in Moodle</a>';
+            //contents += '<a href="#" data-slow="'+cm.url+'" data-role="button" rel="external" target="_blank">View activity in Moodle</a>';
 
             if (isAQuiz){
                 contents += '<a href="page_select_mode.html" data-role="button" id="btnDoQuiz">Do quiz</a>';

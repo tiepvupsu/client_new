@@ -84,6 +84,7 @@ $("#page-login").on('change',function() {
             localStorage.setItem('tokens',JSON.stringify(tokens));
             localStorage.setItem('current_site',sites.length - 1);                                         
             sessionStorage.setItem('current_token',mytoken);
+            localStorage.setItem('isOnline','yes');
             $.mobile.changePage("moodle_contents.html",'slideup');
            
            

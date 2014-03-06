@@ -26,7 +26,7 @@
 	
 	console.log(codeName);
 	counter();
-	if(sessionStorage.getItem('isOnline')==='yes'){
+	if(localStorage.getItem('isOnline')==='yes'){
 		isModeOnline=true;
 	}
 	if(isModeOnline){
@@ -37,7 +37,7 @@
 		if(sessionStorage.getItem('back_to_page')){
 			btp=sessionStorage.getItem('back_to_page');
 			console.log(btp);
-			$("#btnBack").attr('href',btp);
+			$("#btnQuit").attr('href',btp);
 		}
 		
 	}
@@ -227,6 +227,8 @@
 			countinueCount=false;
 			sessionStorage.clear();
 			$("input[type='text']").val("");
+			stopAudio(audio);
+
 			/*
 			$.ajax({
 				type: "GET",
@@ -381,6 +383,12 @@
 				//var minute=(second / 60);
 				//$(".counter").html(minute+" mm :"+second+" ss");
 			});*/
+		}
+		function stopAudio(audioSelector){
+			var audio=$(audioSelector).get(0);
+			audio.currentTime = 0;
+			audio.pause();
+			
 		}
 		
 		function updateAudioUrl(url){
