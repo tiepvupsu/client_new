@@ -22,7 +22,7 @@
 	
 	<!--application UI goes here-->
 	<section id="page" data-role="page">
-	    <header data-theme="a" data-role="header" data-position="fixed">
+	    <header data-theme="a" data-role="header" data-position="fixed" data-tap-toggle="false">
 	        <a href="#popupDialogFinish" data-role="button" data-rel="popup" data-position-to="window" data-transition="slide" data-theme="b" href="#" data-icon="check" data-iconpos="right"
 	        class="ui-btn-right" id="btnSubmit">
 	            Submit
@@ -47,7 +47,7 @@
 	      </header>  
 		<article data-role="content">
 		<div class="main">	
-			<div class="player practice_mode" data-role="controlgroup" data-type="horizontal">
+			<div class="player practice_mode" data-role="controlgroup" data-type="horizontal" data-position="fixed">
 				<div class="myPlayer" data-role="controlgroup" data-type="horizontal" data-mini="true">
 					<audio id="audioPlayer" controls preload="auto">
 						<source id="audioSrc" src=""  type="audio/mpeg">
@@ -146,7 +146,7 @@
 		</div>
 		</article><!-- /content -->
 		
-		<footer data-theme="a" data-role="footer" data-position="fixed">
+		<footer data-theme="a" data-role="footer" data-position="fixed" data-tap-toggle="false">
 			<div data-role="controlgroup" data-type="horizontal" data-mini="true">
       				<button id="btnPrevQues" data-icon="arrow-l" data-mini="true" data-inline="true" data-transition="flip">Prev</button>
       				<button  data-icon="star" data-mini="true" data-inline="true" class="practice_mode">Show Answer</button>

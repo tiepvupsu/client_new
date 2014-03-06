@@ -68,15 +68,37 @@
 							$(".mark").html(mark);
 							$(".rating").html(Math.round((correctAns/totalQues*100))+"%");
 						}else{
-							$(".mark").html("Unknown");
+							mark=Math.round((correctAns/totalQues*9));
+							$(".mark").html("Unknown"+mark);
+							
 							$(".rating").html(Math.round((correctAns/totalQues*100))+"%");
 						}
+
+						storeScore(datetime,mark);
+						//sessionStorage.clear();
 					}
 				}
 			});
 	}
-	function storeScore(correct,total,mark){
-		//store testing result - 
+	function storeScore(time,mark){
+		//store testing result -
+		var jsonDataRs=localStorage.getItem("result");
+
+		if (jsonDataRs){
+			jsonDataRs = JSON.parse(jsonDataRs);
+		} else{
+			jsonDataRs ={					    
+					    "result": []
+						};
+		}
+		
+		
+		if (jsonDataRs.result[jsonDataRs.result.length-1].time !==time){
+			var data={"time": time,"point": mark};
+			jsonDataRs.result.push(data);
+			jsonDataRs=localStorage.setItem("result",JSON.stringify(jsonDataRs));
+		}
 
 	}
+
 //});
