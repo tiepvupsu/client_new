@@ -36,7 +36,7 @@
 
 		if(sessionStorage.getItem('back_to_page')){
 			btp=sessionStorage.getItem('back_to_page');
-			console.log(btp);
+			//console.log(btp);
 			$("#btnQuit").attr('href',btp);
 		}
 		
@@ -70,13 +70,13 @@
 			$("audio").get(0).play();
 			if (isTestMode) {
 				$(this).addClass('ui-state-disabled');
-				console.log("test");
+				//console.log("test");
 
 			}
 		});
 		//next question
 		$("#btnNextQues").click(function() {
-			window.console.clear();
+			//window.console.clear();
 			//storing user answer before change question , using sessionStorage :D, maximum 5MB :(o)
 			//saveSingleAnswer(currentQues,lastAns);
 			//$( "input[type=text].quesfil" ).addClass('aaaaaaaa');
@@ -105,14 +105,11 @@
 				dataType: "xml",
 				success: parseXml,
 			});
-			console.log("currentQues type" +currentQuesType);
-			console.log("current "+currentQues);
-			
-			
+			console.log(currentQues+"type" +currentQuesType);
 		});
 		//previous 
 		$("#btnPrevQues").click(function() {
-			window.console.clear();
+			//window.console.clear();
 			//storing user answer before change question , using localStorage :D, maximum 5MB :(o)
 			//saveSingleAnswer(currentQues,lastAns);
 			clearLastAnswer();
@@ -138,8 +135,7 @@
 				dataType: "xml",
 				success: parseXml
 			});
-			console.log("currentQues type" +currentQuesType);
-			console.log("current "+currentQues);
+			console.log(currentQues+"type" +currentQuesType);
 		});
 		//
 		$("#btnCheckAns").click(function(event){
@@ -161,19 +157,19 @@
 					if(getSavedAnswer(i)==='')
 					{
 						container.removeClass('wrongans trueans');
-						console.log(i+" is null");
+						//console.log(i+" is null");
 					}
 					else
 						{
 							if (ansQues[i]===getSavedAnswer(i).trim())
 							{
-								console.log(i+" is correct");
+								//console.log(i+" is correct");
 								container.removeClass('wrongans');
 								container.addClass('trueans');
 							}
 							else
 							{
-								console.log(i+" is incorrect");
+								//console.log(i+" is incorrect");
 								container.removeClass('trueans');
 								container.addClass('wrongans');
 							}
@@ -187,14 +183,14 @@
 				{	var cA =getSavedAnswer(currentQues).toUpperCase();
 					if (ansQues[currentQues].toUpperCase()===cA)
 					{
-						console.log(currentQues+" is correct");
+						//console.log(currentQues+" is correct");
 						
 						$('span.alertmess').remove();
 						$("#lbChoice"+cA).append('<span class="alertmess correct"> Correct </span>');
 					}
 					else
 					{
-						console.log(currentQues+" is incorrect");
+						//console.log(currentQues+" is incorrect");
 						$('span.alertmess').remove();
 						$("#lbChoice"+cA).append('<span class="alertmess incorrect"> Incorrect </span>');
 					}
@@ -203,12 +199,11 @@
 				
 		});
 		
-		$("#btnSubmit").click(function(event) {
+		$("#btnShowAnswer").click(function(event) {
 			/* Act on the event */
-			//event.preventDefault();
-			console.log("checking answer...");
-			
+			alert("Not working");
 		});
+		
 		$("#btnFinish").click(function(event) {
 			/* Act on the event */
 			countinueCount=false;
@@ -222,6 +217,7 @@
 			});
 			*/
 		});
+
 		$("#btnQuit").click(function(event) {
 			/* Act on the event */
 			countinueCount=false;
@@ -238,6 +234,7 @@
 			});
 			*/
 		});
+		
 		$.ajax({
 				type: "GET",
 				url: urlXMLKey,
