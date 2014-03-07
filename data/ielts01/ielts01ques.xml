@@ -86,16 +86,20 @@
 			<b>a video.</b>
 			<c>a calendar.</c>
 		</question>
-		<question id="19" multiple="2" dir="4">
+		<question id="19" multiple="1" dir="3">
 			<description>Which TWO pieces of information does the speaker give about the fitness test?</description>
 			<a>You need to reserve a place.</a>
 			<b>It is free to account holders.</b>
 			<c>You get advice on how to improve your health.</c>
-			<d>It takes place in a special clinic.</d>
-			<e>It is cheaper this month.</e>
+			
 		</question>
-
-		<question id="21" multiple="1">
+		<question id="20" multiple="1" dir="3">
+			<description>After she gave her presentation, Hiroko felt</description>
+			<a>delighted.</a>
+			<b>dissatisfied.</b>
+			<c>embarrassed.</c>
+		</question>
+		<question id="21" multiple="1" dir="5">
 			<direction>One reason why Spiros felt happy about his marketing presentation was that</direction>
 			<a>he was not nervous.</a>
 			<b>his style was good.</b>
