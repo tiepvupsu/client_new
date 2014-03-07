@@ -1,6 +1,11 @@
 (function() {
 
         console.log("m_contents.js");
+$("#btnReLoad").click(function(event) {
+    /* Act on the event */
+     //$('#lmycourses').listview().listview('refresh');
+     window.location.reload();
+});
 $("#page-contents").on('pagebeforeshow',function() {        
         setupPage();
         logInfo("Page show fired");
@@ -34,7 +39,8 @@ $("#page-contents").on('pagebeforeshow',function() {
                     $.mobile.changePage("moodle_course_contents.html");
                 });
             });            
-            $('#lmycourses').listview().listview('refresh');        
+            $('#lmycourses').listview().listview('refresh');
+
         }
         
         var data = {};
@@ -42,6 +48,6 @@ $("#page-contents").on('pagebeforeshow',function() {
         data.userid = sites[localStorage.getItem("current_site")].userid;
         
         moodleWSCall('core_enrol_get_users_courses', data, listCourses, {});
-            
+       
 }); 
 })();
