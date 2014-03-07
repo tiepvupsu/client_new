@@ -68,15 +68,19 @@ input.queswrong{
 }
 span.correct{
 	color: #3388cc;
-	font-size: 1.1em;
 }
 span.incorrect{
 	color:red;
-	font-size: 1.1em;
 }
 .myPlayer{
 
 }
 .player{
 	margin-top: 0px;
+}
+.mark{
+	color: green;
+}
+.rs{
+	font-size: 1.2em;
 }

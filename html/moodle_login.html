@@ -11,9 +11,7 @@
     		<link rel="stylesheet" href="../css/jquery.mobile-1.4.0.css">
     		<script src="../js/jquery-1.10.2.js"></script>
     		<script src="../js/jquery.mobile-1.4.0.js"></script>
-    		<script src="../js/xml2json.js"></script>
-		    <script src="../js/md5.js"></script>
-		    <script src="../js/common.js"></script>
+    		
     		
     	</head>
 <body id="content" >
@@ -21,7 +19,7 @@
 <!--application UI goes here-->
 <div id="page-login" data-role="page" data-transition="flip">
     <div  data-role="header" >
-        <a id="page_main.html" data-transition="slide">Return</a>
+        <a href="page_main.html" data-transition="slide" data-icon="home" data-iconpos="left">Home</a>
         <h1>Login</h1>
         <a  data-icon="grid" data-mini="true" data-inline="true" id="bsave"> Connect</a>
     </div>
@@ -29,7 +27,7 @@
 		<div class="whiteroundtable">
             <div data-role="fieldcontain">
                 <label for="isiteurl"><span data-lang="siteurl">Site URL</span></label>
-                <input type="url" name="siteurl" id="isiteurl" value="http://192.168.56.1/moodle25"  />
+                <input type="url" name="siteurl" id="isiteurl" value="http://192.168.137.1/moodle25"  />
             </div>
             <div data-role="fieldcontain">
                 <label for="iusername"><span data-lang="username">Username</span></label>
@@ -59,6 +57,9 @@
                 </ul>
             </div>
             <script type="text/javascript" src="../js/pages/m_login.js"></script>
+            <script src="../js/xml2json.js"></script>
+            <script src="../js/md5.js"></script>
+            <script src="../js/common.js"></script>
     </div>
     
 </div>

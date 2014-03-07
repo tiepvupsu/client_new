@@ -59,14 +59,13 @@
 						$(".correct").html(correctAns);
 						$(".incorrect").html((totalQues-correctAns));
 						$(".totalQ").html(totalQues);
-						$(".takentime").html(Math.floor(takentime/60)+"m"+(takentime%60)+"s");
+						$(".takentime").html(Math.floor(takentime/60)+"' "+(takentime%60)+'"');
 						if (totalQues==40){
 							$(".mark").html(mark);
 							$(".rating").html(Math.round((correctAns/totalQues*100))+"%");
 						}else{
 							mark=Math.round((correctAns/totalQues*9));
 							$(".mark").html(mark);
-							
 							$(".rating").html(Math.round((correctAns/totalQues*100))+"%");
 						}
 
