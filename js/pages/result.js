@@ -53,11 +53,7 @@
 					if (sessionStorage.getItem("correctAns")==correct){
 						var mark = $(this).attr('lmark');
 						var currentdate = new Date(); 
-						var datetime =currentdate.getDate() + "/"
-						            + (currentdate.getMonth()+1)  + "/" 
-						            + currentdate.getFullYear() + "--"  
-						            + currentdate.getHours() + "h:"  
-						            + currentdate.getMinutes() + "m";
+						var datetime =sessionStorage.getItem("datetime");
 
 						$(".datetime").html(datetime);
 						$(".correct").html(correctAns);
@@ -69,7 +65,7 @@
 							$(".rating").html(Math.round((correctAns/totalQues*100))+"%");
 						}else{
 							mark=Math.round((correctAns/totalQues*9));
-							$(".mark").html("Unknown"+mark);
+							$(".mark").html(mark);
 							
 							$(".rating").html(Math.round((correctAns/totalQues*100))+"%");
 						}
@@ -90,6 +86,9 @@
 			jsonDataRs ={					    
 					    "result": []
 						};
+						var data={"time": time,"point": mark};
+			jsonDataRs.result.push(data);
+			jsonDataRs=localStorage.setItem("result",JSON.stringify(jsonDataRs));
 		}
 		
 		

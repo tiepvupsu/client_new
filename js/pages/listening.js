@@ -208,6 +208,13 @@
 			/* Act on the event */
 			countinueCount=false;
 			getAnswerKey();
+			var currentdate = new Date();
+			var datetime =currentdate.getDate() + "/"
+						            + (currentdate.getMonth()+1)  + "/" 
+						            + currentdate.getFullYear() + "-"  
+						            + currentdate.getHours() + "h:"  
+						            + currentdate.getMinutes() + "m";
+			sessionStorage.setItem("datetime",datetime);
 			/*
 			$.ajax({
 				type: "GET",
@@ -234,7 +241,7 @@
 			});
 			*/
 		});
-		
+
 		$.ajax({
 				type: "GET",
 				url: urlXMLKey,

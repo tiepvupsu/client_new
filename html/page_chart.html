@@ -99,7 +99,7 @@
 			$.getJSON(url, function (jsonData) {
 				$.jqplot.config.enablePlugins = true;
 				jsonData=data;
-			    sId = jsonData.studentId;
+			    //sId = jsonData.studentId;
 			    $.each(jsonData.result, function (key, val) {
 			    	ticks.push(val.time);
 			        s1.push(val.point);
@@ -107,7 +107,7 @@
 			    console.log(s1);
 
 				plot1 = $.jqplot('chart1', [s1], {
-					title: sId + "'s Statistics",
+					title: "Statistics",
 					animate: !$.jqplot.use_excanvas,
 					seriesDefaults: {
 						renderer:$.jqplot.BarRenderer,
