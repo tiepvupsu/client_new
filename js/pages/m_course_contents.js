@@ -1,6 +1,6 @@
 (function() {
  console.log("m_course_contents.js");   
- $("#page-course_contents").on('pagebeforeshow',function() {   
+ //$("#page-course_contents").on('pagebeforeshow',function() {   
 
     var sectionsData = {};
 
@@ -57,5 +57,5 @@
         
         moodleWSCall('core_course_get_contents', data, showContents, {});
             
-});    
+//});    
 })();

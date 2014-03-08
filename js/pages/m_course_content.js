@@ -1,8 +1,8 @@
            
 (function() {
-console.log("m_course_content.js");
-$("#page-course_content").on('pagebeforeshow',function() {
-                
+
+    $("#page-course_content").on('pagebeforeshow',function() {
+        console.log("m_course_content.js");        
         setupPage();
         logInfo("Page show fired");
         
@@ -101,6 +101,6 @@ $("#page-course_content").on('pagebeforeshow',function() {
         }
   
             
-});
+    });
     
 })();
